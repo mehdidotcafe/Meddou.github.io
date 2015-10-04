@@ -1,0 +1,11 @@
+<article class="blog default" med-scroll-on-swipe="both">
+  <div ng-repeat="article in blog" class="bloc fromTop" ng-class="article.category" ng-click="setCurrentArticle(article)">
+    <h3>{{article.title}}</h3>
+    <h4>{{article.category}}</h4>
+    <h4>{{article.date}}</h4>
+  </div>
+</article>
+<article class="paper right" med-scroll-on-swipe="horizontal">
+  <med-html-insert class="readable" med-scroll-on-swipe="both">
+  </med-html-insert>
+</article>

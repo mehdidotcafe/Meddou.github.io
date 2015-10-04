@@ -1,0 +1,56 @@
+<article class="projects default" med-scroll-on-swipe="both">
+  <med-project-sidebar visibility-var="visibleSidebar" class="projectSidebar" ng-show="visibleSidebar" project-model="projectModel"></med-project-sidebar>
+  <aside class="sidebarShowButton" ng-hide="visibleSidebar">
+    <med-svg src="./style/images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
+  </aside>
+  <div class="medInfoContainer" med-scroll-on-swipe="vertical" tabindex="0">
+    <med-info-bloc class="bloc underline fromTop" ng-repeat="info in configFile.projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch></med-info-bloc>
+  </div>
+</article>
+<article class="description right" med-scroll-on-swipe="horizontal">
+  <div ng-hide="currentProject">
+  </div>
+  <div class="projectPresentation" ng-hide="!currentProject"  med-scroll-on-swipe="vertical">
+    <section class="projectSummaryContainer">
+      <div class="bloc topic underline">
+      <h2> Resume du <span class="keyword">sujet</span> </h2>
+      wwjwkk
+        <!-- {{currentProject.description[0]}} -->
+      </div>
+      <div class="bloc difficulties underline">
+        <h5>Difficultes</h5>
+        lala
+        <!-- {{currentProject.description[1]}} -->
+      </div>
+      <div class="bloc debriefing underline">
+        <h5>Debrie<span class="keyword">fing</span></h5>
+        kaka
+        <!-- {{currentProject.description[2]}} -->
+      </div>
+    </section>
+    <section class="projectDataContainer">
+      <aside class="bloc UI underline rangePercentageContainer projectName">
+        <span>{{currentProject.name}}</span>
+      </aside>
+      <img class="bloc imgContainer underline"src="{{currentProject.img}}"></img>
+      <aside class="bloc UI rangePercentageContainer">
+        <span class="skillInRange">Temps</span>
+        <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
+        <div class="rangePercentage time" style="width: {{(currentProject.time * 10) + '%'}}"></div>
+      </aside>
+      <aside class="bloc UI rangePercentageContainer">
+        <span class="skillInRange">Personnes</span>
+        <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
+        <div class="rangePercentage numberPerson" style="width: {{(currentProject.numberPerson * 15) + '%'}}"></div>
+      </aside>
+      <aside class="bloc UI rangePercentageContainer">
+        <span class="skillInRange">Amour</span>
+        <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
+        <div class="rangePercentage love" style="width: {{(currentProject.love * 20) + '%'}}"></div>
+      </aside>
+      <aside class="downloadBloc">
+        <em>Telechargez moi !</em>
+      </aside>
+    </section>
+  </div>
+</article>

@@ -1,0 +1,9 @@
+<article class="contact default">
+  <fieldset>
+    <input class="bloc underline noBorder contactInput fromLeft" placeholder="Nom" ng-model="info.name" required> </input>
+    <input class="bloc underline noBorder contactInput fromRight" placeholder="Sujet" ng-model="info.subject" required> </input>
+    <input class="bloc underline noBorder contactInput fromLeft" placeholder="Email" ng-model="info.email" required> </input>
+    <textarea type="text" id="contactMsg" class="bloc underline noBorder fromLeft" placeholder="Message" ng-model="info.mail" required></textarea>
+    <button id="contactButton" class="bloc underline noBorder fromRight" ng-click="doMailto()">Envoyer !</button>
+  </fieldset>
+</article>

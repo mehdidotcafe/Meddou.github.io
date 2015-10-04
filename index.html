@@ -1,11 +1,62 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="websiteApp">
   <head>
-    <title>Meddou.github.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="./styles/images/newlogo.png">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>Mehdi Meddour</title>
+    <!-- A Changer lors du push -->
+    <base href="/">
+    <!-- <base href="/www/Meddou.github.io/"> -->
   </head>
-  <body ng-app="websiteApp">
-    <navbar></navbar>
-    <script src="/js/directives/navbar.js"></script>
-    <script src="/js/libraries/angular.min.js"></script>
+  <body ng-controller="indexCtrl" tabindex="0" ng-keydown="handleKey($event)">
+    <med-navbar ng-controller="navbarCtrl"></med-navbar>
+    <aside id="browserInfo" class="fromTop" ng-hide="isChrome">
+      <div>
+        <med-svg src="style/images/svg/cross.svg" ng-click="isChrome = !isChrome"></med-svg>
+        <span>
+          <hr>
+          Attention ce site est optimise pour Google Chrome, AngularJS oblige...
+        </span>
+      </div>
+    </aside>
+    <div ng-view ng-class="!navbarIsHidden ? 'containerWithNavbar' : 'containerWithoutNavbar'" onload="indexingService()"></div>
+    <aside id="indexUI" ng-controller="indexUICtrl">
+      <div ng-class="$index == indexingService.getCurrentIndex() ? 'indexCircleActive' : 'indexCircle'" ng-click="indexingService.goToIndex($index)" ng-repeat="window in indexingService.getWindowMax() track by $index"></div>
+    </aside>
+    <!-- libraries -->
+    <script src="./js/libraries/angular.min.js"></script>
+    <script src="./js/libraries/angular-route.min.js"></script>
+    <script src="./js/libraries/angular-animate.min.js"></script>
+    <!-- end of libraries -->
+    <!-- services -->
+    <script src="./js/services/indexingService.js"></script>
+    <script src="./js/services/translationService.js"></script>
+    <!-- end of services -->
+    <!-- controllers -->
+    <script src="./js/controllers/meCtrl.js"></script>
+    <script src="./js/controllers/blogCtrl.js"></script>
+    <script src="./js/controllers/projectsCtrl.js"></script>
+    <script src="./js/controllers/skillsCtrl.js"></script>
+    <script src="./js/controllers/contactCtrl.js"></script>
+    <script src="./js/controllers/indexUICtrl.js"></script>
+    <!-- end of controllers -->
+    <!-- routes -->
+    <script src="./js/routes.js"></script>
+    <!-- end of routes -->
+    <!-- med-directives -->
+    <script src="./js/directives/medNavbar.js"></script>
+    <script src="./js/directives/medGestures.js"></script>
+    <script src="./js/directives/medInput.js"></script>
+    <script src="./js/directives/medProjectSidebar.js"></script>
+    <script src="./js/directives/medInfoBloc.js"></script>
+    <script src="./js/directives/medSvg.js"></script>
+    <script src="./js/directives/medAnimation.js"></script>
+    <script src="./js/directives/medMdParser.js"></script>
+    <!-- end of med-directives -->
+    <!-- website directives -->
+    <script src="./js/controllers/website.js"></script>
+    <script src="./js/controllers/medNavbarCtrl.js"></script>
+    <!-- end of website directives -->
   </body>
 </html>

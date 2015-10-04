@@ -1,0 +1,24 @@
+<article class="cursus default" med-scroll-on-swipe="vertical">
+  <div class="skillBloc" ng-repeat="language in languages track by $index">
+    <div class="bloc picture underline">
+      <div class="comments">
+        <p>
+          {{language.comments}}
+        </p>
+      </div>
+      <med-svg src="{{language.img}}"></med-svg>
+    </div>
+    <aside class="bloc rangePercentageContainer inSkill">
+      <span class="skillInRange">Competences</span>
+      <span class="percentageInRange"><sup>{{language.percentage}}</sup></span>
+      <div class="rangePercentage skill" style="width: {{language.percentage + '%'}}"></div>
+    </aside>
+    <aside class="bloc rangePercentageContainer inSkill">
+      <span class="skillInRange">Amour</span>
+      <span class="percentageInRange"><sup>{{language.love}}</sup></span>
+      <div class="rangePercentage love" style="width: {{language.love + '%'}}"></div>
+    </aside>
+  </div>
+</article>
+<article class="skill right">
+</article>

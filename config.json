@@ -1,0 +1,204 @@
+{
+  "blog": [
+    {
+      "title": "Roadmap du site & Impressions",
+      "date": "07/11/2015",
+      "category": "actu",
+      "src": "websiteRoadmap"
+    }
+  ],
+  "skills": [
+    {
+      "type": "C",
+      "img": "style/images/skills/c.svg",
+      "comments": "Malloc <3",
+      "percentage": 90,
+      "love": 90
+    },
+    {
+      "type": "HTML - CSS",
+      "img": "style/images/skills/html.svg",
+      "comments": "Flex <3",
+      "percentage": 80,
+      "love": 70
+    },
+    {
+      "type": "Git",
+      "img": "style/images/skills/git.svg",
+      "comments": "Ca compile on push !",
+      "percentage": 75,
+      "love": 80
+    },
+    {
+      "type": "AngularJS",
+      "img": "style/images/skills/angularJs.svg",
+      "comments": "MVC <3",
+      "percentage": 70,
+      "love": 70
+    },
+    {
+      "type": "Javascript",
+      "img": "style/images/skills/javascript.svg",
+      "comments": "JSON <3",
+      "percentage": 70,
+      "love": 60
+    },
+    {
+      "type": "Java",
+      "img": "style/images/skills/java.svg",
+      "comments": "Garbage Collector <3",
+      "percentage": 60,
+      "love": 95
+    },
+    {
+      "type": "NodeJS",
+      "img": "style/images/skills/nodeJs.svg",
+      "comments": "Backend <3",
+      "percentage": 50,
+      "love": 50
+    },
+    {
+      "type": "MySQL",
+      "img": "style/images/skills/mySql.svg",
+      "comments": "Select * from epitech_tp </3",
+      "percentage": 50,
+      "love": 10
+    },
+    {
+      "type": "OpenGL",
+      "img": "style/images/skills/openGl.svg",
+      "comments": "OpenGL > DirectX",
+      "percentage": 30,
+      "love": 90
+    },
+    {
+      "type": "Google",
+      "img": "style/images/skills/google.svg",
+      "comments": "Man Google <3",
+      "percentage": 142,
+      "love": 142
+    }
+  ],
+  "projects":
+  {
+    "lemin": {
+      "name": "Lemin",
+      "language": "C",
+      "time": 4,
+      "difficulty": "medium",
+      "context": "school",
+      "numberPerson": 5,
+      "love": 4,
+      "img": "style/images/projects/lemin.png",
+      "ico": "style/images/projects/lemin.png",
+      "description": ""
+    },
+    "raytracer": {
+      "name": "Raytracer",
+      "language": "C",
+      "time": 4,
+      "difficulty": "medium",
+      "context": "school",
+      "numberPerson": 5,
+      "love": 4,
+      "img": "style/images/projects/raytracer.png",
+      "ico": "style/images/projects/raytracer.png",
+      "description": ""
+    },
+    "42sh": {
+      "name": "42sh",
+      "language": "C",
+      "time": 4,
+      "difficulty": "medium",
+      "context": "school",
+      "numberPerson": 5,
+      "love": 5,
+      "img": "style/images/projects/minishell2.png",
+      "ico": "style/images/projects/minishell2.png",
+      "description":
+      [
+        "L'objectif etait de recoder un shell de type sh. Ce project est la suite d'une serie de projet du meme type avec toujours plus de fonctionnalites. Ici l'ajout majeur etait les '&&' et '||'",
+        "C'est Moi",
+        "Note finale 18"
+      ]
+    },
+    "minishell2": {
+      "name": "Minishell 2",
+      "language": "C",
+      "time": 4,
+      "difficulty": "medium",
+      "context": "school",
+      "numberPerson": 1,
+      "love": 5,
+      "img": "style/images/projects/minishell2.png",
+      "ico": "style/images/projects/minishell2.png",
+      "description": ""
+    },
+    "bocalEmblem": {
+      "name": "Bocal Emblem",
+      "language": "C",
+      "time": 4,
+      "difficulty": "medium",
+      "context": "school",
+      "numberPerson": 1,
+      "love": 5,
+      "img": "style/images/projects/bocalEmblem.png",
+      "ico": "style/images/projects/bocalEmblem.png",
+      "description": ""
+    },
+    "this": {
+      "name": "This",
+      "language": "Javascript",
+      "time": 8,
+      "difficulty": "high",
+      "context": "home",
+      "numberPerson": 1,
+      "love": 5,
+      "img": "style/images/projects/myWebsite.png",
+      "ico": "style/images/projects/myWebsite.png",
+      "description": ""
+    },
+    "cloudindus": {
+      "name": "Cloudindus",
+      "language": "Javascript",
+      "time": 24,
+      "difficulty": "high",
+      "context": "school",
+      "numberPerson": 1,
+      "love": 4,
+      "img": "style/images/projects/cloudindus.png",
+      "ico": "style/images/projects/cloudindus.png",
+      "description": ""
+    },
+    "calculator": {
+      "name": "Calculator",
+      "language": "Java",
+      "time": 1,
+      "difficulty": "medium",
+      "context": "home",
+      "numberPerson": 1,
+      "love": 5,
+      "img": "style/images/projects/ant.png",
+      "ico": "style/images/projects/ant.png",
+      "description": ""
+    },
+    "snake": {
+      "name": "Snake",
+      "language": "Java",
+      "time": 1,
+      "difficulty": "easy",
+      "context": "home",
+      "numberPerson": 1,
+      "love": 5,
+      "img": "style/images/projects/ant.png",
+      "ico": "style/images/projects/ant.png",
+      "description": ""
+    }
+  },
+  "hobbies": [
+    "coder", "le cafe", " pas jQuery", "Java", "Starcraft 2", "le foot", "l'OM"
+  ],
+  "gestures": [
+    "Gestez", "Touchez", "Glisser", "Appuyer", "Slidez"
+  ]
+}

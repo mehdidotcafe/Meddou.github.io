@@ -1,0 +1,134 @@
+<article class="presentation default" med-scroll-on-swipe="both">
+  <section class="infoContainer">
+    <div class="bloc years underline fromLeft">
+      <em><span class="keyword">{{years}}</span> ans <span class="keyword">&&</span><br /><span class="keyword">{{hours}}</span> heures <span class="keyword">&&</span><br /> <span class="keyword">{{seconds}}</span> secondes</em>
+    </div>
+    <div class="bloc dev underline fromLeft">
+      <em ng-bind-html="'developer' | translate"></em>
+      <!-- <em><span class="keyword">Dev</span>eloppeur </em> -->
+    </div>
+    <div class="bloc like underline fromLeft">
+        <em>J'aime bien</br><med-word-switch class="keyword" words="hobbies" delay="2000" parent-class="presentation"></med-word-switch></em>
+    </div>
+    <a class="downloadBloc cv underline fromLeft" target="_self" href="resources/CV/MEDDOUR_Mehdi_CV.pdf" download="MEDDOUR_Mehdi_CV.pdf">
+      <em>Mon <span class="keyword2">CV</span></em>
+    </a>
+  </div>
+  </section>
+  <section class="infoContainer">
+    <div class="bloc names underline fromRight">
+      <em><span class="keyword">M</span>ehdi <span class="keyword">M</span>eddour</em>
+    </div>
+    <div class="bloc msg underline fromRight">
+      <em>Coder <span class="keyword">=</span> Art Actuellement en deuxieme annee a <span class="epitech"><a href="http://www.epitech.eu" target="_blank">Epitech</a></span>.</em>
+    </div>
+    <div class="bloc aboutWebsite underline fromRight">
+      <em><span class="keyword"><med-word-switch delay="5500" words="gestures" parent-class="presentation"></med-word-switch> </span> pour naviguer</span></em>
+    </div>
+    <div class="bloc studient underline fromRight">
+      <em href="http://www.epitech.eu/">Etudian<span class="keyword">t</span></em>
+    </div>
+  </section>
+  <section class="photoContainer fromBot"></section>
+</article>
+<article class="skill right" med-scroll-on-swipe="both">
+  <div class="skillBloc" ng-repeat="language in configFile.skills track by $index">
+    <div class="bloc picture underline">
+      <div class="comments">
+        <p>
+          {{language.comments}}
+        </p>
+      </div>
+      <med-svg src="{{language.img}}"></med-svg>
+    </div>
+    <aside class="bloc rangePercentageContainer inSkill">
+      <span class="skillInRange">Competences</span>
+      <span class="percentageInRange"><sup>{{language.percentage}}</sup></span>
+      <div class="rangePercentage skill" style="width: {{language.percentage + '%'}}"></div>
+    </aside>
+    <aside class="bloc rangePercentageContainer inSkill">
+      <span class="skillInRange">Amou<span class="keyword">r</span></span>
+      <span class="percentageInRange"><sup>{{language.love}}</sup></span>
+      <div class="rangePercentage love" style="width: {{language.love + '%'}}"></div>
+    </aside>
+  </div>
+</article>
+<article class="cursus right" med-scroll-on-swipe="both">
+  <section id="school">
+    <div class="bloc underline grow">
+      <h5 class="epitech">Epitech</h5>
+      <fieldset>
+        <div class="lifeInfo"> <span class="keyword">Annee:</span> 2014 - 2019 </div>
+        <div class="lifeInfo"> <span class="keyword">Titre:</span> Expert en informatique </div>
+        <div class="lifeInfo"> <span class="keyword">Lieu:</span> Marseille </div>
+      </fieldset>
+    </div>
+    <div class="bloc underline">
+      <h5>Lycee <span class="keyword">Thiers</span></h5>
+      <fieldset>
+        <div class="lifeInfo">
+          <span class="keyword">Annee:</span> 2014
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Titre:</span> Baccalaureat Scientifique
+        </div>
+      <div class="lifeInfo">
+        <span class="keyword">Lieu:</span> Marseille
+      </div>
+      </fieldset>
+    </div>
+  </section>
+  <section id="work">
+    <div class="bloc underline">
+      <h5>Stage A <span class="keyword">Cloudindus</span></h5>
+      <fieldset>
+        <div class="lifeInfo">
+          <span class="keyword">Annee:</span> 2015
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Duree:</span> 6 mois
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Statut:</span> Developpeur
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Lieu:</span> Marseille
+        </div>
+      </fieldset>
+    </div>
+    <div class="bloc underline">
+      <h5>Stage A <span class="keyword">Numericable</span></h5>
+      <fieldset>
+        <div class="lifeInfo">
+          <span class="keyword">Annee:</span> 2012
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Duree:</span> 1 semaine
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Statut:</span> Vendeur
+        </div>
+      <div class="lifeInfo">
+        <span class="keyword">Lieu:</span> Marseille
+      </div>
+      </fieldset>
+    </div>
+    <div class="bloc underline">
+      <h5>Stage A <span class="keyword">Micromania</span></h5>
+      <fieldset>
+        <div class="lifeInfo">
+          <span class="keyword">Annee:</span> 2011
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Duree:</span> 1 semaine
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Statut:</span> Vendeur
+        </div>
+        <div class="lifeInfo">
+          <span class="keyword">Lieu:</span> Marseille
+        </div>
+      </fieldset>
+    </div>
+  </section>
+</article>
