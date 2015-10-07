@@ -6,7 +6,7 @@
   <div class="medInfoContainer" med-scroll-on-swipe="vertical" tabindex="0">
     <div class="infoBloc bloc underline fromTop" ng-repeat="info in configFile.projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
       <h1 ng-class="info.name.split(' ').length > 1 ? 'twoPart' : 'onePart'">{{info.name}}</h1>
-      <img class="imgOnLoad" ng-src="{{info.ico}}"/>
+      <img ng-src="{{info.ico}}"/>
     </div>
   </div>
 </article>
