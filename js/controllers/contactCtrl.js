@@ -22,7 +22,6 @@ contactApp.controller("contactCtrl", function($scope)
     // if ($scope.info.subject)
     //   mailto += "subject=" + $scope.info.subject;
 
-    console.log(mailto);
     window.location.href = mailto;
   }
 

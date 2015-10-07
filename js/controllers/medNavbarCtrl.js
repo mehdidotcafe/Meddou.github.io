@@ -8,6 +8,5 @@ navbarApp.controller("navbarCtrl", function($scope, indexingService, translation
   $scope.setLanguage = function(language)
   {
     translationService.setLanguage(language);
-    $scope.$apply();
   }
 });

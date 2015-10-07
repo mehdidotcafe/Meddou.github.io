@@ -3,26 +3,30 @@
     <med-svg src="./style/images/down.svg"></med-svg>
 </aside>
 <nav class="navbar" ng-hide="$parent.navbarIsHidden == true">
-  <img med-rotate-on-hover class="navbarLogo" src="./style/images/newlogo.png"/>
+  <a href="me"><img med-rotate-on-hover class="navbarLogo" src="./style/images/newlogo.png"/></a>
   <a href="me" class="navbarTab" ng-hide="!mode">
     <img class="navPicture" src="./style/images/chopper.gif"/>
-    <div>Moi</div>
+    <div>{{'navbar.me' | translate}}</div>
   </a>
   <a href="blog" class="navbarTab" ng-hide="!mode">
     <med-svg class="navPicture" src="./style/images/svg/blog.svg"></med-svg>
-    <div>Blog</div>
+    <div>blog</div>
   </a>
   <a href="projects" class="navbarTab" ng-hide="!mode">
     <med-svg class="navPicture" src="./style/images/svg/projects.svg"></med-svg>
-    <div>Projets</div>
+    <div>{{'navbar.projects' | translate}}</div>
   </a>
   <a href="contact" class="navbarTab" ng-hide="!mode">
     <med-svg class="navPicture" src="./style/images/svg/email.svg"></med-svg>
-    <div>Contact</div>
+    <div>{{'navbar.contact' | translate}}</div>
   </a>
-  <a class="navbarTab languageTab" ng-hide="mode">
-    <span ng-click="setLanguage('french')">Francais</span>
-    <span ng-click="setLanguage('english')">Anglais</span>
+  <a class="navbarTab languageTab" ng-click="setLanguage('fr')" ng-hide="mode">
+    <med-svg class="navPicture" src="./style/images/svg/baguette.svg"></med-svg>
+    <div>{{'navbar.french' | translate}}</div>
+  </a>
+  <a class="navbarTab languageTab" ng-click="setLanguage('en')" ng-hide="mode">
+    <med-svg class="navPicture" src="./style/images/svg/bigBen.svg"></med-svg>
+    <div>{{'navbar.english' | translate}}</div>
   </a>
   <div class="navbarTabOption">
     <div class="navPictureLittle" ng-click="$parent.navbarIsHidden = !$parent.navbarIsHidden">

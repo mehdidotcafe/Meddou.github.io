@@ -2,14 +2,14 @@
 <html ng-app="websiteApp">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="./styles/images/newlogo.png">
+    <link rel="shortcut icon" href="style/images/newlogo.png">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <title>Mehdi Meddour</title>
     <!-- A Changer lors du push -->
-    <base href="/">
-    <!-- <base href="/www/Meddou.github.io/"> -->
+    <!-- <base href="/"> -->
+    <base href="/www/Meddou.github.io/">
   </head>
-  <body ng-controller="indexCtrl" tabindex="0" ng-keydown="handleKey($event)">
+  <body ng-cloak ng-controller="indexCtrl" tabindex="0" ng-keydown="handleKey($event)">
     <med-navbar ng-controller="navbarCtrl"></med-navbar>
     <aside id="browserInfo" class="fromTop" ng-hide="isChrome">
       <div>
@@ -37,7 +37,6 @@
     <script src="./js/controllers/meCtrl.js"></script>
     <script src="./js/controllers/blogCtrl.js"></script>
     <script src="./js/controllers/projectsCtrl.js"></script>
-    <script src="./js/controllers/skillsCtrl.js"></script>
     <script src="./js/controllers/contactCtrl.js"></script>
     <script src="./js/controllers/indexUICtrl.js"></script>
     <!-- end of controllers -->
@@ -49,7 +48,6 @@
     <script src="./js/directives/medGestures.js"></script>
     <script src="./js/directives/medInput.js"></script>
     <script src="./js/directives/medProjectSidebar.js"></script>
-    <script src="./js/directives/medInfoBloc.js"></script>
     <script src="./js/directives/medSvg.js"></script>
     <script src="./js/directives/medAnimation.js"></script>
     <script src="./js/directives/medMdParser.js"></script>

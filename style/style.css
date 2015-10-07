@@ -109,6 +109,11 @@ fieldset span
   font-size: 3vh;
 }
 
+img.imgOnLoad
+{
+  animation: opacityOnLoad 5s;
+}
+
 /* NAVBAR */
 
 nav.navbar
@@ -190,21 +195,21 @@ nav.navbar a.languageTab span
 
 a.navbarTab.ng-hide-remove
 {
-  -webkit-transform: translate(1000px, 0);
-  -moz-transform: translate(1000px, 0);
-  -ms-transform: translate(1000px, 0);
-  -o-transform: translate(1000px, 0);
-  transform: translate(1000px, 0);
+  -webkit-transform: translate(-500%, 0);
+  -moz-transform: translate(-500%, 0);
+  -ms-transform: translate(-500%, 0);
+  -o-transform: translate(-500%, 0);
+  transform: translate(-500%, 0);
   opacity: 0;
 }
 
 a.navbarTab.ng-hide-add.ng-hide-add-active
 {
-  -webkit-transform: translate(1000px, 0);
-  -moz-transform: translate(1000px, 0);
-  -ms-transform: translate(1000px, 0);
-  -o-transform: translate(1000px, 0);
-  transform: translate(1000px, 0);
+  -webkit-transform: translate(-500%, 0);
+  -moz-transform: translate(-500%, 0);
+  -ms-transform: translate(-500%, 0);
+  -o-transform: translate(-500%, 0);
+  transform: translate(-500%, 0);
   opacity: 0;
 }
 
@@ -316,6 +321,8 @@ aside#browserInfo div span
 
 /* END BROWSER INFO */
 
+/* START CONTAINER WITH NAVBAR */
+
 div.containerWithNavbar.ng-enter-active
 {
   -webkit-transform: scale(0.8);
@@ -357,10 +364,14 @@ div.containerWithoutNavbar
   -webkit-transform: translate(0, -80px);
   -moz-transform: translate(0, -80px);
   -ms-transform: translate(0, -80px);
-  -o-transform: translate(0, -80px);\
+  -o-transform: translate(0, -80px);
   transform: translate(0, -80px);
   transition: 0.3s;
 }
+
+/* END CONTAINERWITHNAVBAR */
+
+/* START ARTICLE */
 
 article
 {
@@ -392,13 +403,13 @@ article section
   justify-content: space-around;
 }
 
-article section div
+/*article section div
 {
   text-transform: uppercase;
   font-size: 64px;
   color: rgb(30, 24, 43);
   font-family: futura;
-}
+}*/
 
 article.default
 {
@@ -553,7 +564,7 @@ div.title em
 
 /* directive d'info bloc */
 
-article div med-info-bloc
+article div div.infoBloc
 {
   flex-grow: 1;
   overflow: hidden;
@@ -566,24 +577,24 @@ article div med-info-bloc
   transition: 1s;
 }
 
-article div med-info-bloc:focus
+article div div.infoBloc:focus
 {
   border: 0px;
 }
 
-article div med-info-bloc.ng-enter
+article div div.infoBloc.ng-enter
 {
   opacity: 0;
   transform: rotate(90deg);
 }
 
-article div med-info-bloc.ng-enter-active
+article div div.infoBloc.ng-enter-active
 {
   opacity: 1;
   transform: rotate(-35deg);
 }
 
-article div med-info-bloc.ng-leave-active
+article div div.infoBloc.ng-leave-active
 {
   opacity: 0;
   transform: translate(0, 1000px) rotate(135deg);
@@ -602,7 +613,7 @@ article div.medInfoContainer
   min-width: 640px;
 }
 
-article div med-info-bloc h1
+article div div.infoBloc h1
 {
   z-index: 2;
   position: absolute;
@@ -623,7 +634,7 @@ article div med-info-bloc h1
   transition: 0.5s ease-in-out all;
 }
 
-article div med-info-bloc:hover h1.onePart
+article div div.infoBloc:hover h1.onePart
 {
   -webkit-transform: translate(0, 4em);
   -moz-transform: translate(0, 4em);
@@ -632,7 +643,7 @@ article div med-info-bloc:hover h1.onePart
   transform: translate(0, 4em);
 }
 
-article div med-info-bloc:hover h1.twoPart
+article div div.infoBloc:hover h1.twoPart
 {
   -webkit-transform: translate(0, 2.7em);
   -moz-transform: translate(0, 2.7em);
@@ -641,7 +652,7 @@ article div med-info-bloc:hover h1.twoPart
   transform: translate(0, 2.7em);
 }
 
-article div med-info-bloc:hover img
+article div div.infoBloc:hover img
 {
   -ms-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -650,7 +661,7 @@ article div med-info-bloc:hover img
   transform: scale(1.5);
 }
 
-article div med-info-bloc img
+article div div.infoBloc img
 {
   z-index: 1;
   position: absolute;
@@ -662,7 +673,7 @@ article div med-info-bloc img
   transition: 0.5s ease-in-out all;
   }
 
-/* END INFO BLOC */
+ /* END ARTICLE */
 
 #indexUI
 {
@@ -918,8 +929,9 @@ div.projectPresentation
 
 div.projectPresentation section.projectSummaryContainer
 {
-  flex-grow: 1;
+  flex-grow: 2;
   min-width: 500px;
+  min-height: 98%;
   display: flex;
   justify-content: flex-start;
   text-align: right;
@@ -930,9 +942,17 @@ div.projectPresentation section.projectDataContainer
 {
   flex-grow: 1;
   min-width: 500px;
+  min-height: 98%;
   display: flex;
   flex-direction: column;
   margin: 0.5%;
+}
+
+span.projectLanguage
+{
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 
 img.imgContainer
@@ -957,6 +977,7 @@ aside.UI > *
   margin: 0.5%;
   width: 24vw;
   max-width: 80vw;
+  min-height: 98%;
 }
 
 .like
@@ -1203,6 +1224,7 @@ aside.rangePercentageContainer
   font-weight: bold;
   font-family: futura;
   background-color: rgb(30, 24, 43);
+  max-height: 75px;
 }
 
 aside.rangePercentageContainer span
@@ -1281,8 +1303,15 @@ aside.rangePercentageContainer div.rangePercentage.time
   color: rgb(100, 149, 237);
 }
 
+.topic div, .difficulties div, .debriefing div
+{
+  position: absolute;
+  right: 0;
+}
+
 .topic
 {
+  position: relative;
   flex-grow: 4;
   font-size: 32px;
 }

@@ -21,11 +21,6 @@ sliderService.service("indexingService", function($timeout)
       max: 2,
       currIdx: 0
     },
-    "skills": {
-      name: "skills",
-      max: 2,
-      currIdx: 0
-    },
     "contact": {
       name: "contact",
       max: 1,

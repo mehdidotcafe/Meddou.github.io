@@ -1,8 +1,8 @@
-var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "blogApp", "medInfoBlocApp", "contactApp", "skillsApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medMdParserApp", "indexingServiceApp", "translationServiceApp", "ngAnimate"]);
+var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "blogApp", "contactApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medMdParserApp", "indexingServiceApp", "translationServiceApp", "ngAnimate"]);
 
 websiteApp.run(function(translationService)
 {
-  translationService.setLanguage("french");
+  translationService.setLanguage("fr", true);
 });
 
 websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, translationService)

@@ -17,6 +17,7 @@ projectApp.controller("projectsCtrl", function($scope, indexingService)
     color: "",
     img: "",
     ico: "",
+    downloadLink: "",
     description: []
   };
 
@@ -58,7 +59,7 @@ projectApp.filter("filterProject", function()
       {
         var unmatched = [];
 
-        angular.forEach($scope.filteredProject, function(project)
+        function checkProjectArray(project)
         {
           isGood = true;
           for (var key in project)
@@ -71,23 +72,9 @@ projectApp.filter("filterProject", function()
             res[position++] = project;
           else
             unmatched.push(project);
-        });
-        angular.forEach($scope.unmatchedProject, function(project)
-        {
-          isGood = true;
-          for (var key in project)
-          {
-              if (project.hasOwnProperty(key) && (typeof(projectModel[key]) == "number" && projectModel[key] != -1 && project[key] != projectModel[key])
-              || ((typeof(projectModel[key]) != "number") && projectModel[key] != "" && project[key].toLowerCase().indexOf(projectModel[key].toLowerCase())))
-                isGood = false;
-          }
-          if (isGood == true)
-          {
-            res[position++] = project;
-          }
-          else
-            unmatched.push(project);
-        });
+        }
+        angular.forEach($scope.filteredProject, checkProjectArray);
+        angular.forEach($scope.unmatchedProject, checkProjectArray);
         $scope.unmatchedProject = unmatched;
       }
       $scope.filteredProject = res;

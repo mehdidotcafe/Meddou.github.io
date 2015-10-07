@@ -91,6 +91,7 @@
       "love": 4,
       "img": "style/images/projects/lemin.png",
       "ico": "style/images/projects/lemin.png",
+      "downloadLink": "",
       "description": ""
     },
     "raytracer": {
@@ -103,6 +104,7 @@
       "love": 4,
       "img": "style/images/projects/raytracer.png",
       "ico": "style/images/projects/raytracer.png",
+      "downloadLink": "",
       "description": ""
     },
     "42sh": {
@@ -115,6 +117,7 @@
       "love": 5,
       "img": "style/images/projects/minishell2.png",
       "ico": "style/images/projects/minishell2.png",
+      "downloadLink": "",
       "description":
       [
         "L'objectif etait de recoder un shell de type sh. Ce project est la suite d'une serie de projet du meme type avec toujours plus de fonctionnalites. Ici l'ajout majeur etait les '&&' et '||'",
@@ -132,6 +135,7 @@
       "love": 5,
       "img": "style/images/projects/minishell2.png",
       "ico": "style/images/projects/minishell2.png",
+      "downloadLink": "",
       "description": ""
     },
     "bocalEmblem": {
@@ -144,6 +148,7 @@
       "love": 5,
       "img": "style/images/projects/bocalEmblem.png",
       "ico": "style/images/projects/bocalEmblem.png",
+      "downloadLink": "",
       "description": ""
     },
     "this": {
@@ -156,6 +161,7 @@
       "love": 5,
       "img": "style/images/projects/myWebsite.png",
       "ico": "style/images/projects/myWebsite.png",
+      "downloadLink": "",
       "description": ""
     },
     "cloudindus": {
@@ -168,6 +174,7 @@
       "love": 4,
       "img": "style/images/projects/cloudindus.png",
       "ico": "style/images/projects/cloudindus.png",
+      "downloadLink": "",
       "description": ""
     },
     "calculator": {
@@ -180,6 +187,7 @@
       "love": 5,
       "img": "style/images/projects/ant.png",
       "ico": "style/images/projects/ant.png",
+      "downloadLink": "",
       "description": ""
     },
     "snake": {
@@ -192,6 +200,7 @@
       "love": 5,
       "img": "style/images/projects/ant.png",
       "ico": "style/images/projects/ant.png",
+      "downloadLink": "",
       "description": ""
     }
   },

@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "me": "Moi",
+    "projects": "Projets",
+    "contact": "Contact",
+    "french": "Francais",
+    "english": "Anglais"
+  },
+  "me": {
+    "me": {
+      "developper": "<span class='keyword'>Dev</span>loppeur",
+      "years": "ans",
+      "hours": "heures",
+      "secondes": "secondes",
+      "Ilike": "J'aime bien",
+      "codingArt": "Coder <span class='keyword'>=</span> Art",
+      "currentSatus": "Actuellement en deuxieme annee a <span class='epitech'><a href='http://www.epitech.eu' target='_blank'>Epitech</a></span>.",
+      "toNavigate": "Pour naviguer",
+      "studient": "Etudian<span class='keyword'>t</span>",
+      "myResume": "Mon CV"
+    },
+    "skills": {
+      "skill": "Competences",
+      "love": "Amou<span class='keyword'>r</span>"
+    },
+    "experience": {
+      "years": "Annee",
+      "title": "Titre",
+      "duration": "Duree",
+      "status": "Status"
+    }
+  },
+  "blog": {
+
+  },
+  "projects": {
+    "projectPreview": {
+      "projectName": "Nom de projet",
+      "language": "Langage",
+      "place": "Lieu",
+      "persons": "Personnes",
+      "love": "Amour",
+      "inWeek": "En Semaines"
+    },
+    "projectView": {
+      "projectSummary": "Resume du <span class='keyword'>sujet</span>",
+      "difficulties": "Difficulte",
+      "time": "Temps",
+      "downloadMe": "Telechargez moi !"
+    }
+  },
+  "contact": {
+    "name": "Nom",
+    "subject": "Sujet",
+    "send": "Envoyer !"
+  }
+}
