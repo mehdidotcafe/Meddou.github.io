@@ -48,7 +48,7 @@ medGesturesApp.directive("medScrollOnSwipe", function($window, $document, indexi
           newX = event.touches[0].clientX - startX;
         }
         if ((attrs.medScrollOnSwipe == "vertical" || attrs.medScrollOnSwipe == "both") && Math.abs(newY) > Math.abs(newX))
-          (elem[0].scrollTop -= newY / 5) < 0 && (elem[0].scrollTop = 0);
+          (elem[0].scrollTop -= newY / 7) < 0 && (elem[0].scrollTop = 0);
         else if ((attrs.medScrollOnSwipe == "horizontal"  || attrs.medScrollOnSwipe == "both") && Math.abs(newX) >= Math.abs(newY))
         {
           if (newX >= width / 5 && moveIsOver == false)
@@ -88,7 +88,6 @@ medGesturesApp.directive("medOnTouch", function($parse)
     restrict: "A",
     link: function(scope, elem, attrs)
     {
-      var toExec = $parse(attrs.ngClick);
       var startX;
       var startY;
 
@@ -103,10 +102,7 @@ medGesturesApp.directive("medOnTouch", function($parse)
         event.preventDefault();
         if (startY + 10 >= event.changedTouches[0].clientY && startY - 10 <= event.changedTouches[0].clientY &&
             startX + 10 >= event.changedTouches[0].clientX && startX - 10 <= event.changedTouches[0].clientX)
-            {
-              console.log(toExec);
-              toExec();
-          }
+              scope.$eval(attrs.ngClick);
       });
     }
   });

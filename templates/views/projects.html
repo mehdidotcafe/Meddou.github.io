@@ -35,27 +35,27 @@
       </div>
     </section>
     <section class="projectDataContainer">
-      <aside class="bloc UI underline rangePercentageContainer projectName">
+      <aside class="bloc UI underline projectName">
         <h2>{{currentProject.name}}</h2>
       </aside>
-      <aside class="bloc UI underline rangePercentageContainer projectName">
-        <span><span class="keyword">Langage:</span> <span class="projectLanguage">{{currentProject.language}}</span></span>
+      <aside class="bloc UI underline rangePercentageContainer">
+        <span><span class="keyword">Langage</span> <span class="projectLanguage">{{currentProject.language}}</span></span>
       </aside>
       <!-- <img class="bloc imgContainer underline"src="{{currentProject.img}}"></img> -->
       <aside class="bloc UI rangePercentageContainer">
         <span class="skillInRange">Temps</span>
         <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
-        <div class="rangePercentage time" style="width: {{(currentProject.time * 10) + '%'}}"></div>
+        <div class="rangePercentage time" ng-style="{width: (currentProject.time * 10) + '%'}"></div>
       </aside>
       <aside class="bloc UI rangePercentageContainer">
         <span class="skillInRange">Personnes</span>
         <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
-        <div class="rangePercentage numberPerson" style="width: {{(currentProject.numberPerson * 15) + '%'}}"></div>
+        <div class="rangePercentage numberPerson" ng-style="{width: (currentProject.numberPerson * 15) + '%'}"></div>
       </aside>
       <aside class="bloc UI rangePercentageContainer">
         <span class="skillInRange">Amour</span>
         <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
-        <div class="rangePercentage love" style="width: {{(currentProject.love * 20) + '%'}}"></div>
+        <div class="rangePercentage love" ng-style="{width: (currentProject.love * 20) + '%'}"></div>
       </aside>
       <aside class="downloadBloc">
         <em>Telechargez moi !</em>

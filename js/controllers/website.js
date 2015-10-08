@@ -9,6 +9,13 @@ websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, t
 {
   $scope.navbarIsHidden = false;
   $scope.isChrome = !!window.chrome;
+  $scope.configFile = {
+    blog: [],
+    skills: [],
+    projects: {},
+    hobbies: [],
+    gestures: []
+  };
 
   $scope.indexingService = function()
   {

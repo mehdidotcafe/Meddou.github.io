@@ -4,7 +4,6 @@ meApp.controller("meCtrl", function($scope, $timeout)
 {
   $scope.gestures = $scope.$parent.configFile.gestures;
   $scope.hobbies = $scope.$parent.configFile.hobbies;
-
   $scope.life = $scope.$parent.configFile.life;
   $scope.years;
   $scope.hours;

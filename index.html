@@ -6,16 +6,15 @@
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <title>Mehdi Meddour</title>
     <!-- A Changer lors du push -->
-    <base href="/">
-    <!-- <base href="/www/Meddou.github.io/"> -->
+    <!-- <base href="/"> -->
+    <base href="/www/Meddou.github.io/">
   </head>
   <body ng-cloak ng-controller="indexCtrl" tabindex="0" ng-keydown="handleKey($event)">
     <med-navbar ng-controller="navbarCtrl"></med-navbar>
-    <aside id="browserInfo" class="fromTop" ng-hide="isChrome">
+    <aside id="browserInfo" ng-hide="isChrome">
       <div>
         <med-svg src="style/images/svg/cross.svg" ng-click="isChrome = !isChrome"></med-svg>
         <span>
-          <hr>
           Attention ce site est optimise pour Google Chrome, AngularJS oblige...
         </span>
       </div>

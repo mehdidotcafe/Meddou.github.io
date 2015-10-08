@@ -25,7 +25,7 @@ medInputApp.directive("medRangeSelector", function()
           {
             $scope.toFill = "";
             for (var i = 0; i <= $scope.max; ++i)
-              angular.element($element[0].children[i]).css({fill: $scope.color})
+              angular.element($element[0].children[i]).css({fill: $scope.color});
           }
           else
             $scope.toFill = val + $scope.min;
@@ -68,7 +68,7 @@ medInputApp.directive("medRangeSelector", function()
           }
         }
       },
-    template: '<med-svg-in-range-selector ng-repeat="step in stepAsArray track by $index" ng-click="setValue($index)" src="{{src}}" idx={{$index}} color="{{color}}" set-value="setValue"></med-svg-in-range-selector>'
+    template: '<med-svg-in-range-selector ng-repeat="step in stepAsArray track by $index" ng-click="setValue($index)" med-on-touch src="{{src}}" idx={{$index}} color="{{color}}" set-value="setValue"></med-svg-in-range-selector>'
   });
 });
 

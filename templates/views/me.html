@@ -48,12 +48,12 @@
     <aside class="bloc rangePercentageContainer inSkill">
       <span class="skillInRange">Competences</span>
       <span class="percentageInRange"><sup>{{language.percentage}}</sup></span>
-      <div class="rangePercentage skill" style="width: {{language.percentage + '%'}}"></div>
+      <div class="rangePercentage skill" ng-style="{width: language.percentage + '%'}"></div>
     </aside>
     <aside class="bloc rangePercentageContainer inSkill">
       <span class="skillInRange">Amou<span class="keyword">r</span></span>
       <span class="percentageInRange"><sup>{{language.love}}</sup></span>
-      <div class="rangePercentage love" style="width: {{language.love + '%'}}"></div>
+      <div class="rangePercentage love" ng-style="{width: language.love + '%'}"></div>
     </aside>
   </div>
 </article>

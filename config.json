@@ -16,18 +16,18 @@
       "love": 90
     },
     {
+      "type": "Git",
+      "img": "style/images/skills/git.svg",
+      "comments": "Ca compile on push !",
+      "percentage": 85,
+      "love": 80
+    },
+    {
       "type": "HTML - CSS",
       "img": "style/images/skills/html.svg",
       "comments": "Flex <3",
       "percentage": 80,
       "love": 70
-    },
-    {
-      "type": "Git",
-      "img": "style/images/skills/git.svg",
-      "comments": "Ca compile on push !",
-      "percentage": 75,
-      "love": 80
     },
     {
       "type": "AngularJS",
@@ -69,7 +69,7 @@
       "img": "style/images/skills/openGl.svg",
       "comments": "OpenGL > DirectX",
       "percentage": 30,
-      "love": 90
+      "love": 70
     },
     {
       "type": "Google",
@@ -92,7 +92,11 @@
       "img": "style/images/projects/lemin.png",
       "ico": "style/images/projects/lemin.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Le sujet original etait de faire traverser des fourmis d'un point A a un point B, dans une fourmiliere representee par des tubes et des salles tout ca via un fichier de conf.Evidemment il fallait eviter collisions entre fourmis.Cependant notre rendu est bien mieux, avec deux equipes de fourmis guerrieres voulant atteindre la base de l'autre dans une meme fourmiliere.",
+        "Interface graphique en OpenGL, Arbre binaire",
+        "Tres bon projet agreable a realiser, note finale 42 / 20 (oui oui)"
+      ]
     },
     "raytracer": {
       "name": "Raytracer",
@@ -105,7 +109,11 @@
       "img": "style/images/projects/raytracer.png",
       "ico": "style/images/projects/raytracer.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Il fallait decrire des scenes de raytracing avec des objets plus ou moins compliques, cercle, cylindre, cone.Le sujet autorisant beaucoup de bonus, nous avons ajoutes plusieurs fonctionnalites comme la transparence, la reflexion, les textures, le clustering",
+        "Des formules mathemetiques assez difficiles a comprendre, une librarie by Epitech assez compliquee a utiliser",
+        "N'aimant pas tellement le raytracing j'ai eu la chance de faire le clustering, qui fut tres agreable. Note finale 28 / 20"
+      ]
     },
     "42sh": {
       "name": "42sh",
@@ -120,9 +128,9 @@
       "downloadLink": "",
       "description":
       [
-        "L'objectif etait de recoder un shell de type sh. Ce project est la suite d'une serie de projet du meme type avec toujours plus de fonctionnalites. Ici l'ajout majeur etait les '&&' et '||'",
-        "C'est Moi",
-        "Note finale 18"
+        "L'objectif etait de recoder un shell de type sh. Ce project est la suite d'une trilogie afin de parvenir a un rendu correct. Ici l'ajout majeur etait les '&&' et '||' sachant que le plus gros a ete fait dans le minishell2.",
+        "Fin d'annee, nous etions assez fatigues.",
+        "Finalement 18 / 20 mais ont auraient pu et du faire mieux."
       ]
     },
     "minishell2": {
@@ -136,7 +144,11 @@
       "img": "style/images/projects/minishell2.png",
       "ico": "style/images/projects/minishell2.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Episode 2 de la trilogie de recode d'un terminal sh. Les ajouts etaient les redirections ainsi que les pipes.En consequence, il fallait un parseur qui tienne la route.",
+        "Aucune.",
+        "Projet que j'ai tres bien aime, que j'ai fini tres tot ce qui m'a permis de faire des bonus (prompt en termcaps, historique). Note finale 20 / 20"
+      ]
     },
     "bocalEmblem": {
       "name": "Bocal Emblem",
@@ -149,7 +161,11 @@
       "img": "style/images/projects/bocalEmblem.png",
       "ico": "style/images/projects/bocalEmblem.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Rush de 48h a deux ou il fallait coder un Fire Emblem like sans interface graphique. Neanmoins etant en avance j'ai pu faire une interface graphique en CSFML.",
+        "Le delai",
+        "Ma grande premiere sur une interface graphique, un push apres l'heure limite aura raison de nous :(. Note finale: 1.5 / 20"
+      ]
     },
     "this": {
       "name": "This",
@@ -162,7 +178,11 @@
       "img": "style/images/projects/myWebsite.png",
       "ico": "style/images/projects/myWebsite.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Mon portfolio qui, j'espere, vous plait. Le but premier de sa creation etait d'augmenter mes competences en web sur le temps libre que j'avais apres mon stage.Il est aussi evident qu'il sert a me promouvoir aussi et a me demarquer.",
+        "Premier projet personnel de cette ampleur, retard d'une semaine sur ma prevision de delai :(",
+        "Pas de debriefing, le site etant en constante evolution"
+      ]
     },
     "cloudindus": {
       "name": "Cloudindus",
@@ -175,7 +195,11 @@
       "img": "style/images/projects/cloudindus.png",
       "ico": "style/images/projects/cloudindus.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS",
+        "Le code peut documente",
+        "Toujours en cours"
+      ]
     },
     "calculator": {
       "name": "Calculator",
@@ -188,7 +212,11 @@
       "img": "style/images/projects/ant.png",
       "ico": "style/images/projects/ant.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Une calculatrice Java en AWT realisee pendant ma premiere annee pour apprendre le Java tout seul",
+        "Aucune",
+        "Java, c'est lourd"
+      ]
     },
     "snake": {
       "name": "Snake",
@@ -201,7 +229,11 @@
       "img": "style/images/projects/ant.png",
       "ico": "style/images/projects/ant.png",
       "downloadLink": "",
-      "description": ""
+      "description": [
+        "Un snake en AWT pour apprendre Java",
+        "Aucune",
+        "Un projet plutot facile et efficace"
+      ]
     }
   },
   "hobbies": [

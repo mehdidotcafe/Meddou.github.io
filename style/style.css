@@ -133,6 +133,7 @@ nav.navbar
   -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 5);
   -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 5);
   transition: 0.5s;
+  max-height: 80px;
 }
 
 nav.navbar.ng-hide
@@ -282,7 +283,7 @@ aside#browserInfo
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border-bottom: 5px solid rgb(30, 24, 43);
-  transition: 0.5;
+  opacity: 0.8;
 }
 
 aside#browserInfo med-svg
@@ -466,7 +467,7 @@ article.paper med-html-insert.readable
   height: 90vh;
   width: 60vw;
   min-width: 500px;
-  box-shadow: 12px 0 15px -4px rgba(100, 100, 100, 0.8), -12px 0 8px -4px rgba(100, 100, 100, 0.8);
+  box-shadow: 12px 0 15px -4px rgba(50, 50, 50, 0.8), -12px 0 8px -4px rgba(50, 50, 50, 0.8);
   background-color: rgb(250, 250, 250);
   overflow: hidden;
   align-self: center;
@@ -540,7 +541,6 @@ article.contact fieldset > *
 {
   overflow-y: scroll;
   height: 35%;
-  /*flex-grow: 2;*/
 }
 
 article div.title
@@ -789,8 +789,8 @@ med-range-selector med-svg-in-range-selector, med-switch-selector med-svg-in-swi
 {
   margin-right: 7px;
   margin-left: 7px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 med-switch-selector med-svg-in-switch-selector
@@ -964,11 +964,6 @@ aside.UI
 {
   flex-grow: 1;
   font-size: 36px;
-}
-
-aside.UI > *
-{
-  text-align: right;
 }
 
 .infoContainer
@@ -1219,6 +1214,17 @@ aside.inSkill
   height: 15%;
 }
 
+aside.projectName
+{
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: futura;
+  background-color: rgb(30, 24, 43);
+  max-height: 150px;
+}
+
 aside.rangePercentageContainer
 {
   font-weight: bold;
@@ -1309,17 +1315,16 @@ aside.rangePercentageContainer div.rangePercentage.time
   right: 0;
 }
 
-.topic
+.topic, .difficulties, .debriefing
 {
   position: relative;
   flex-grow: 4;
-  font-size: 32px;
+  font-size: 4vmin;
 }
 
 .difficulties, .debriefing
 {
   flex-grow: 1;
-  font-size: 32px;
 }
 
 
