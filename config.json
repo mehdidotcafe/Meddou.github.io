@@ -51,6 +51,13 @@
       "love": 95
     },
     {
+      "type": "SFML",
+      "img": "style/images/skills/SFML.svg",
+      "comments": "sfRenderWindow <3",
+      "percentage": 55,
+      "love": 85
+    },
+    {
       "type": "NodeJS",
       "img": "style/images/skills/nodeJs.svg",
       "comments": "Backend <3",
@@ -60,7 +67,7 @@
     {
       "type": "MySQL",
       "img": "style/images/skills/mySql.svg",
-      "comments": "Select * from epitech_tp </3",
+      "comments": "Select * from epitech_tp < /3",
       "percentage": 50,
       "love": 10
     },
@@ -69,6 +76,13 @@
       "img": "style/images/skills/openGl.svg",
       "comments": "OpenGL > DirectX",
       "percentage": 30,
+      "love": 70
+    },
+    {
+      "type": "Anglais",
+      "img": "style/images/skills/ukFlag.svg",
+      "comments": "TOEIC : 680 <br /><a href='https://fr.wikipedia.org/wiki/Test_of_English_for_International_Communication' target='_blank'> What is it ?</a>",
+      "percentage": 68,
       "love": 70
     },
     {
@@ -190,14 +204,14 @@
       "time": 24,
       "difficulty": "high",
       "context": "school",
-      "numberPerson": 1,
+      "numberPerson": 5,
       "love": 4,
       "img": "style/images/projects/cloudindus.png",
       "ico": "style/images/projects/cloudindus.png",
       "downloadLink": "",
       "description": [
         "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS",
-        "Le code peut documente",
+        "Un code tres peu documente",
         "Toujours en cours"
       ]
     },
@@ -237,7 +251,7 @@
     }
   },
   "hobbies": [
-    "coder", "le cafe", " pas jQuery", "Java", "Starcraft 2", "le foot", "l'OM"
+    "coder", "le cafe", " pas jQuery", "Java", "Starcraft 2", "le foot", "l'OM", "LOL", "la musique"
   ],
   "gestures": [
     "Gestez", "Touchez", "Glisser", "Appuyer", "Slidez"

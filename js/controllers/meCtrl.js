@@ -1,13 +1,18 @@
 var meApp = angular.module("meApp", ["indexingServiceApp"]);
 
-meApp.controller("meCtrl", function($scope, $timeout)
+meApp.controller("meCtrl", function($scope, $timeout, $sce)
 {
-  $scope.gestures = $scope.$parent.configFile.gestures;
-  $scope.hobbies = $scope.$parent.configFile.hobbies;
-  $scope.life = $scope.$parent.configFile.life;
   $scope.years;
   $scope.hours;
   $scope.seconds;
+  $scope.gestures = $scope.$parent.configFile.gestures;
+  $scope.hobbies = $scope.$parent.configFile.hobbies;
+  $scope.life = $scope.$parent.configFile.life;
+
+  $scope.insertHTML = function(comments)
+  {
+    return ($sce.trustAsHtml(comments));
+  }
 
   function getLife()
   {
