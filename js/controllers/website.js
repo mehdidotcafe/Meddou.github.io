@@ -7,8 +7,8 @@ websiteApp.run(function(translationService)
 
 websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, translationService)
 {
-  $scope.navbarIsHidden = false;
   $scope.isChrome = !!window.chrome;
+  $scope.navbarIsHidden = false;
   $scope.configFile = {
     blog: [],
     skills: [],

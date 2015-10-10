@@ -18,7 +18,7 @@
     {
       "type": "Git",
       "img": "style/images/skills/git.svg",
-      "comments": "Ca compile on push !",
+      "comments": "Git merge <3",
       "percentage": 85,
       "love": 80
     },
@@ -103,7 +103,6 @@
       "context": "school",
       "numberPerson": 5,
       "love": 4,
-      "img": "style/images/projects/lemin.png",
       "ico": "style/images/projects/lemin.png",
       "downloadLink": "",
       "description": [
@@ -120,7 +119,6 @@
       "context": "school",
       "numberPerson": 5,
       "love": 4,
-      "img": "style/images/projects/raytracer.png",
       "ico": "style/images/projects/raytracer.png",
       "downloadLink": "",
       "description": [
@@ -137,7 +135,6 @@
       "context": "school",
       "numberPerson": 5,
       "love": 5,
-      "img": "style/images/projects/minishell2.png",
       "ico": "style/images/projects/minishell2.png",
       "downloadLink": "",
       "description":
@@ -155,7 +152,6 @@
       "context": "school",
       "numberPerson": 1,
       "love": 5,
-      "img": "style/images/projects/minishell2.png",
       "ico": "style/images/projects/minishell2.png",
       "downloadLink": "",
       "description": [
@@ -172,7 +168,6 @@
       "context": "school",
       "numberPerson": 1,
       "love": 5,
-      "img": "style/images/projects/bocalEmblem.png",
       "ico": "style/images/projects/bocalEmblem.png",
       "downloadLink": "",
       "description": [
@@ -189,7 +184,6 @@
       "context": "home",
       "numberPerson": 1,
       "love": 5,
-      "img": "style/images/projects/myWebsite.png",
       "ico": "style/images/projects/myWebsite.png",
       "downloadLink": "",
       "description": [
@@ -206,7 +200,6 @@
       "context": "school",
       "numberPerson": 5,
       "love": 4,
-      "img": "style/images/projects/cloudindus.png",
       "ico": "style/images/projects/cloudindus.png",
       "downloadLink": "",
       "description": [
@@ -223,7 +216,6 @@
       "context": "home",
       "numberPerson": 1,
       "love": 5,
-      "img": "style/images/projects/ant.png",
       "ico": "style/images/projects/ant.png",
       "downloadLink": "",
       "description": [
@@ -240,7 +232,6 @@
       "context": "home",
       "numberPerson": 1,
       "love": 5,
-      "img": "style/images/projects/ant.png",
       "ico": "style/images/projects/ant.png",
       "downloadLink": "",
       "description": [

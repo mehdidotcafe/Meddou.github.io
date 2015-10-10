@@ -15,7 +15,6 @@ projectApp.controller("projectsCtrl", function($scope, indexingService)
     numberPerson: -1,
     love: -1,
     color: "",
-    img: "",
     ico: "",
     downloadLink: "",
     description: []
