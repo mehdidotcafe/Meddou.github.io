@@ -2,7 +2,7 @@
 <html ng-app="websiteApp">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="style/images/newlogo.png">
+    <link rel="shortcut icon" href="style/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <title>Mehdi Meddour</title>
     <!-- A Changer lors du push -->
@@ -11,7 +11,7 @@
   </head>
   <body ng-controller="indexCtrl" tabindex="0" ng-keydown="handleKey($event)">
     <med-navbar ng-controller="navbarCtrl"></med-navbar>
-    <aside ng-cloak id="browserInfo" ng-hide="isChrome">
+    <aside id="browserInfo" ng-hide="isChrome">
       <div>
         <med-svg src="style/images/svg/cross.svg" ng-click="isChrome = !isChrome"></med-svg>
         <span>
@@ -32,6 +32,7 @@
     <script src="./js/services/indexingService.js"></script>
     <script src="./js/services/translationService.js"></script>
     <!-- end of services -->
+    <script src="./js/directives/medPostParams.js"></script>
     <!-- controllers -->
     <script src="./js/controllers/meCtrl.js"></script>
     <script src="./js/controllers/blogCtrl.js"></script>
@@ -50,6 +51,7 @@
     <script src="./js/directives/medSvg.js"></script>
     <script src="./js/directives/medAnimation.js"></script>
     <script src="./js/directives/medMdParser.js"></script>
+    <script src="./js/directives/medLazyLoad.js"></script>
     <!-- end of med-directives -->
     <!-- website directives -->
     <script src="./js/controllers/website.js"></script>

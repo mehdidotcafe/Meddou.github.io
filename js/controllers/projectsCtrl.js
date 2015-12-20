@@ -1,6 +1,6 @@
-var projectApp = angular.module("projectsCtrl", ["indexingServiceApp"])
+var projectApp = angular.module("projectsCtrl", ["indexingServiceApp", "postParamsApp"])
 
-projectApp.controller("projectsCtrl", function($scope, indexingService)
+projectApp.controller("projectsCtrl", function($scope, indexingService, $location)
 {
   $scope.visibleSidebar = true;
   $scope.currentProject = undefined;
@@ -19,12 +19,29 @@ projectApp.controller("projectsCtrl", function($scope, indexingService)
     downloadLink: "",
     description: []
   };
+  $scope.projects = {};
 
   $scope.setProject = function(project)
   {
     $scope.currentProject = project;
     indexingService.goToIndex(1);
   };
+
+  $scope.getProjects = function()
+  {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "./resources/projects.json", true);
+    xhr.onload = function(event)
+    {
+      if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 400)
+        $scope.projects = JSON.parse(xhr.responseText);
+      else
+        $scope.projects = {};
+      $scope.$digest();
+    }
+    xhr.send();
+  }
 });
 
 projectApp.filter("filterProject", function()
@@ -45,8 +62,18 @@ projectApp.filter("filterProject", function()
           for (var key in project)
           {
               if (project.hasOwnProperty(key) && (typeof(projectModel[key]) == "number" && projectModel[key] != -1 && project[key] != projectModel[key])
-              || ((typeof(projectModel[key]) != "number") && projectModel[key] != "" && project[key].toLowerCase().indexOf(projectModel[key].toLowerCase())))
+              || ((typeof(projectModel[key]) == "string") && typeof(project[key]) == "string" && projectModel[key] != "" && project[key].toLowerCase().indexOf(projectModel[key].toLowerCase())))
                 isGood = false;
+                else if (key == "language" && projectModel[key])
+                {
+                  var maybeIsGood = false;
+                  for (var i = 0; i < project.language.length; i++)
+                  {
+                    if (project.language[i].toLowerCase().indexOf(projectModel.language.toLowerCase()) == 0)
+                      maybeIsGood = true;
+                  }
+                  if (!maybeIsGood) isGood = false;
+                }
           }
           if (isGood == true)
             res[position++] = project;
@@ -63,9 +90,20 @@ projectApp.filter("filterProject", function()
           isGood = true;
           for (var key in project)
           {
-              if (project.hasOwnProperty(key) && (typeof(projectModel[key]) == "number" && projectModel[key] != -1 && project[key] != projectModel[key])
-              || ((typeof(projectModel[key]) != "number") && projectModel[key] != "" && project[key].toLowerCase().indexOf(projectModel[key].toLowerCase())))
+              if (project.hasOwnProperty(key) && (typeof(projectModel[key]) == "number"
+              && projectModel[key] != -1 && project[key] != projectModel[key])
+              || ((typeof(projectModel[key]) == "string") && typeof(project[key]) == "string" && projectModel[key] != "" && project[key].toLowerCase().indexOf(projectModel[key].toLowerCase())))
                 isGood = false;
+              else if (key == "language" && projectModel[key])
+              {
+                var maybeIsGood = false;
+                for (var i = 0; i < project.language.length; i++)
+                {
+                  if (project.language[i].toLowerCase().indexOf(projectModel.language.toLowerCase()) == 0)
+                    maybeIsGood = true;
+                }
+                if (!maybeIsGood) isGood = false;
+              }
           }
           if (isGood == true)
             res[position++] = project;

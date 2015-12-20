@@ -51,11 +51,12 @@ medAnimationApp.directive("medWordSwitch", function($timeout)
           elem[0].style.opacity = "0";
           $timeout(addWord, 500);
         }
-        $timeout(innerWord, parseInt(scope.delay) + 1000);
+        // $timeout(innerWord, parseInt(scope.delay) + 1000);
       }
 
       elem[0].innerHTML = scope.words[0];
-      $timeout(innerWord, parseInt(scope.delay) + 1000);
+      innerWord();
+      setInterval(innerWord, parseInt(scope.delay) + 1000);
     }
   })
 });

@@ -1,0 +1,45 @@
+{
+  "cv": {
+    "schools": [
+      {
+        "name": "{Epitech}",
+        "year": "2014 - 2019",
+        "title": "Expert en informatique",
+        "place": "Marseille"
+      },
+      {
+        "thing": "Lycee",
+        "name": "Thiers",
+        "year": "2014",
+        "title": "Baccalaureat Scientifique",
+        "place": "Marseille"
+      }
+    ],
+    "works": [
+      {
+        "thing": "Stage A",
+        "name": "Logique Industrie",
+        "year": "2015",
+        "length": "6 mois",
+        "job": "Developpeur",
+        "place": "Bouc Bel Air"
+      },
+      {
+        "thing": "Stage A",
+        "name": "Numericable",
+        "year": "2012",
+        "length": "1 semaine",
+        "job": "Vendeur",
+        "place": "Marseille"
+      },
+      {
+        "thing": "Stage A",
+        "name": "Micromania",
+        "year": "2011",
+        "length": "1 semaine",
+        "job": "Vendeur",
+        "place": "Marseille"
+      }
+    ]
+  }
+}

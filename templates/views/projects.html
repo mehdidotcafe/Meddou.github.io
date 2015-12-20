@@ -1,10 +1,10 @@
-<article class="projects default" med-scroll-on-swipe="both">
+<article class="projects default" med-scroll-on-swipe="both" med-lazy-load="getProjects()">
   <med-project-sidebar visibility-var="visibleSidebar" class="projectSidebar" ng-show="visibleSidebar" project-model="projectModel"></med-project-sidebar>
   <aside class="sidebarShowButton" ng-hide="visibleSidebar">
     <med-svg src="./style/images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
   </aside>
   <div class="medInfoContainer" med-scroll-on-swipe="vertical" tabindex="0">
-    <div class="infoBloc bloc underline fromTop" ng-repeat="info in configFile.projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
+    <div class="infoBloc bloc underline fromTop" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
       <h1 ng-class="info.name.split(' ').length > 1 ? 'twoPart' : 'onePart'">{{info.name}}</h1>
       <img ng-src="{{info.ico}}"/>
     </div>
@@ -39,7 +39,7 @@
         <h2>{{currentProject.name}}</h2>
       </aside>
       <aside class="bloc UI underline rangePercentageContainer">
-        <span><span class="keyword">Langage</span> <span class="projectLanguage">{{currentProject.language}}</span></span>
+        <span><span class="keyword">Technologies</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
       </aside>
       <!-- <img class="bloc imgContainer underline"src="{{currentProject.img}}"></img> -->
       <aside class="bloc UI rangePercentageContainer">

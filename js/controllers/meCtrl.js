@@ -1,17 +1,56 @@
 var meApp = angular.module("meApp", ["indexingServiceApp"]);
 
-meApp.controller("meCtrl", function($scope, $timeout, $sce)
+meApp.controller("meCtrl", function($scope, $timeout, $sce, $location)
 {
   $scope.years;
   $scope.hours;
   $scope.seconds;
-  $scope.gestures = $scope.$parent.configFile.gestures;
-  $scope.hobbies = $scope.$parent.configFile.hobbies;
-  $scope.life = $scope.$parent.configFile.life;
+  $scope.gestures = [];
+  $scope.hobbies = [];
+  $scope.skills = [];
+  $scope.life;
+
+  var getResourceFile = function(fileName, scope, isArray)
+  {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "./resources/" + fileName + ".json", true);
+    xhr.onload = function(event)
+    {
+      if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 400)
+        scope[fileName] = isArray ? JSON.parse(xhr.responseText)[fileName] : JSON.parse(xhr.responseText);
+      else
+        scope[fileName] = {};
+      scope.$digest();
+    }
+    xhr.send();
+  }
+
+  $scope.getGesturesAndHobbies = function()
+  {
+    getResourceFile("gestures", $scope, true);
+    getResourceFile("hobbies", $scope, true);
+  }
+
+  $scope.getSkill = function()
+  {
+    getResourceFile("skills", $scope, true);
+  }
+
+  $scope.getCV = function()
+  {
+    getResourceFile("cv", $scope, true);
+  }
 
   $scope.insertHTML = function(comments)
   {
     return ($sce.trustAsHtml(comments));
+  }
+
+  $scope.showProjects = function(language)
+  {
+    console.log(language);
+    $location.path("/projects").search({language: language});
   }
 
   function getLife()

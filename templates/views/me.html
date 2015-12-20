@@ -1,4 +1,4 @@
-<article class="presentation default" med-scroll-on-swipe="both">
+<article class="presentation default" med-scroll-on-swipe="both" med-lazy-load="getGesturesAndHobbies()">
   <section class="infoContainer">
     <div class="bloc years underline fromLeft">
       <em><span class="keyword">{{years}}</span> ans <span class="keyword">&&</span><br /><span class="keyword">{{hours}}</span> heures <span class="keyword">&&</span><br /> <span class="keyword">{{seconds}}</span> secondes</em>
@@ -21,7 +21,7 @@
       <em><span class="keyword">M</span>ehdi <span class="keyword">M</span>eddour</em>
     </div>
     <div class="bloc msg underline fromRight">
-      <em>Actuellement en deuxieme annee a <span class="epitech"><a href="http://www.epitech.eu" target="_blank">{Epitech}</a></span><br /><span class="keyword">&&</span> Developpeur a Logique Industrie.</em>
+      <em>Actuellement en deuxieme annee a <span class="epitech"><a href="http://www.epitech.eu" target="_blank">{Epitech}</a></span>.</em>
     </div>
     <div class="bloc names underline fromRight">
       <em>Coder <span class="keyword">=</span> Art</em>
@@ -35,9 +35,9 @@
   </section>
   <section class="photoContainer fromBot"></section>
 </article>
-<article class="skill right" med-scroll-on-swipe="both">
-  <div class="skillBloc" ng-repeat="language in configFile.skills track by $index">
-    <div class="bloc picture underline">
+<article class="skill right" med-scroll-on-swipe="both" med-lazy-load="getSkill()">
+  <div class="skillBloc" ng-repeat="language in skills track by $index">
+    <div class="bloc picture underline" ng-click="showProjects(language.type)">
       <div class="comments">
         <p ng-bind-html="insertHTML(language.comments)"></p>
       </div>
@@ -55,80 +55,32 @@
     </aside>
   </div>
 </article>
-<article class="cursus right" med-scroll-on-swipe="both">
+<article class="cursus right" med-scroll-on-swipe="both" med-lazy-load="getCV()">
   <section id="school">
-    <div class="bloc underline grow">
-      <h5 class="epitech">{Epitech}</h5>
+    <div ng-repeat="school in cv.schools" class="bloc underline grow opacityOnLoad">
+      <h5><span ng-show="school.thing">{{school.thing}} </span><span class="keyword">{{school.name}}<span></h5>
       <fieldset>
-        <div class="lifeInfo"> <span class="keyword">Annee:</span> 2014 - 2019 </div>
-        <div class="lifeInfo"> <span class="keyword">Titre:</span> Expert en informatique </div>
-        <div class="lifeInfo"> <span class="keyword">Lieu:</span> Marseille </div>
-      </fieldset>
-    </div>
-    <div class="bloc underline">
-      <h5>Lycee <span class="keyword">Thiers</span></h5>
-      <fieldset>
-        <div class="lifeInfo">
-          <span class="keyword">Annee:</span> 2014
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">Titre:</span> Baccalaureat Scientifique
-        </div>
-      <div class="lifeInfo">
-        <span class="keyword">Lieu:</span> Marseille
-      </div>
+        <div class="lifeInfo"> <span class="keyword">Annee:</span> {{school.year}}</div>
+        <div class="lifeInfo"> <span class="keyword">Titre:</span> {{school.title}}</div>
+        <div class="lifeInfo"> <span class="keyword">Lieu:</span> {{school.place}}</div>
       </fieldset>
     </div>
   </section>
   <section id="work">
-    <div class="bloc underline">
-      <h5>Stage A <span class="keyword">Cloudindus</span></h5>
+    <div ng-repeat="work in cv.works" class="bloc underline opacityOnLoad">
+      <h5>{{work.thing}} <span class="keyword">{{work.name}}</span></h5>
       <fieldset>
         <div class="lifeInfo">
-          <span class="keyword">Annee:</span> 2015
+          <span class="keyword">Annee:</span> {{work.year}}
         </div>
         <div class="lifeInfo">
-          <span class="keyword">Duree:</span> 6 mois
+          <span class="keyword">Duree:</span> {{work.length}}
         </div>
         <div class="lifeInfo">
-          <span class="keyword">Statut:</span> Developpeur
+          <span class="keyword">Statut:</span> {{work.job}}
         </div>
         <div class="lifeInfo">
-          <span class="keyword">Lieu:</span> Marseille
-        </div>
-      </fieldset>
-    </div>
-    <div class="bloc underline">
-      <h5>Stage A <span class="keyword">Numericable</span></h5>
-      <fieldset>
-        <div class="lifeInfo">
-          <span class="keyword">Annee:</span> 2012
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">Duree:</span> 1 semaine
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">Statut:</span> Vendeur
-        </div>
-      <div class="lifeInfo">
-        <span class="keyword">Lieu:</span> Marseille
-      </div>
-      </fieldset>
-    </div>
-    <div class="bloc underline">
-      <h5>Stage A <span class="keyword">Micromania</span></h5>
-      <fieldset>
-        <div class="lifeInfo">
-          <span class="keyword">Annee:</span> 2011
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">Duree:</span> 1 semaine
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">Statut:</span> Vendeur
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">Lieu:</span> Marseille
+          <span class="keyword">Lieu:</span> {{work.place}}
         </div>
       </fieldset>
     </div>

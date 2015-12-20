@@ -1,4 +1,4 @@
-var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "blogApp", "contactApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medMdParserApp", "indexingServiceApp", "translationServiceApp", "ngAnimate"]);
+var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "blogApp", "contactApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medMdParserApp", "medLazyLoadApp", "indexingServiceApp", "translationServiceApp", "ngAnimate"]);
 
 websiteApp.run(function(translationService)
 {
@@ -9,33 +9,33 @@ websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, t
 {
   $scope.isChrome = !!window.chrome;
   $scope.navbarIsHidden = false;
-  $scope.configFile = {
-    blog: [],
-    skills: [],
-    projects: {},
-    hobbies: [],
-    gestures: []
-  };
+  // $scope.configFile = {
+  //   blog: [],
+  //   skills: [],
+  //   projects: {},
+  //   hobbies: [],
+  //   gestures: []
+  // };
 
   $scope.indexingService = function()
   {
     indexingService.setCurrentWindow(window.location.href);
   };
 
-  function getConfigFile()
-  {
-    var req = new XMLHttpRequest();
-
-    req.open("GET", "./config.json", true);
-    req.onload = function(event)
-    {
-      if (req.readyState == 4 && req.status >= 200 && req.status < 400)
-        $scope.configFile = JSON.parse(req.responseText);
-      else
-        $scope.configFile = JSON.parse("{}");
-    }
-    req.send(null);
-  }
+  // function getConfigFile()
+  // {
+  //   var req = new XMLHttpRequest();
+  //
+  //   req.open("GET", "./config.json", true);
+  //   req.onload = function(event)
+  //   {
+  //     if (req.readyState == 4 && req.status >= 200 && req.status < 400)
+  //       $scope.configFile = JSON.parse(req.responseText);
+  //     else
+  //       $scope.configFile = JSON.parse("{}");
+  //   }
+  //   req.send(null);
+  // }
 
   $scope.handleKey = function(event)
   {
@@ -48,5 +48,5 @@ websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, t
   }
 
   translationService.setScope($scope);
-  getConfigFile();
+  // getConfigFile();
 });

@@ -138,7 +138,7 @@ nav.navbar
 
 nav.navbar.ng-hide
 {
-  transition: 0.5s;
+  transition: 1s;
   transform: translate(0, -80px);
 }
 
@@ -271,6 +271,7 @@ aside.navPictureShow
 
 aside#browserInfo
 {
+  display: none;
   z-index: 3;
   position: absolute;
   top: 80px;
@@ -326,24 +327,24 @@ aside#browserInfo div span
 
 div.containerWithNavbar.ng-enter-active
 {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0;
-  transition: 0.5s ease-in-out all;
+  -webkit-transform: translate(-50vw, 0);
+  -moz-transform: translate(-50vw, 0);
+  -ms-transform: translate(-50vw, 0);
+  -o-transform: translate(-50vw, 0);
+  transform: translate(-50vw, 0);
+  /*opacity: 0;*/
+  transition: 1s ease-in-out all;
 }
 
 div.containerWithNavbar.ng-leave-active
 {
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
-  transform: scale(2);
-  opacity: 0;
-  transition: 0.5s ease-in-out all;
+  -webkit-transform: translate(100vw, 0);
+  -moz-transform: translate(100vw, 0);
+  -ms-transform: translate(100vw, 0);
+  -o-transform: translate(100vw, 0);
+  transform: translate(100vw, 0);
+  /*opacity: 0;*/
+  transition: 1s ease-in-out all;
 }
 
 div.containerWithNavbar
@@ -351,7 +352,7 @@ div.containerWithNavbar
   position: relative;
   overflow: hidden;
   height: calc(100vh - 80px);
-  transition: 0.5s;
+  transition: 1s;
 }
 
 div.containerWithoutNavbar
@@ -825,6 +826,10 @@ med-project-sidebar
   to {top: 0px;}
 }
 
+.opacityOnLoad
+{
+  animation: opacityOnLoad 1s;
+}
 
 @keyframes opacityOnLoad
 {
@@ -1148,7 +1153,7 @@ div.bloc.picture
   justify-content: center;
 }
 
-div.bloc.picture med-svg
+div.bloc.picture med-svg, div.bloc.picture img
 {
   flex-direction: column;
   justify-content: center;
@@ -1158,7 +1163,7 @@ div.bloc.picture med-svg
   width: 100%;
 }
 
-div.bloc.picture med-svg svg
+div.bloc.picture med-svg svg, div.bloc.picture img
 {
   transition: 1s;
   height: 60%;
@@ -1218,7 +1223,7 @@ div.bloc.picture:hover
   border-bottom: 5px solid rgb(0, 200, 200);
 }
 
-div.bloc.picture:hover med-svg svg, div.bloc div.comments:hover + med-svg svg
+div.bloc.picture:hover med-svg svg, div.bloc div.comments:hover + med-svg svg, div.bloc.picture:hover img
 {
   transition: 1s;
   -webkit-filter: brightness(2);
@@ -1279,12 +1284,13 @@ aside.rangePercentageContainer div.rangePercentage
   position: absolute;
   height: 5px;
   bottom: 0px;
-
+  width: 0px;
+  transition: 3s ease-in-out;
 }
 
 aside.rangePercentageContainer div.rangePercentage.skill
 {
-  background-color: rgb(255,218,185);
+  background-color: rgb(255,215,0);
 }
 
 aside.rangePercentageContainer div.rangePercentage.love
@@ -1315,6 +1321,11 @@ aside.rangePercentageContainer div.rangePercentage.time
   width: calc(25vw - 2%);
   min-width: 325px;
   height: 37vh;
+  animation: opacityOnLoad 1s;
+}
+
+.skillBloc .picture {
+  cursor: pointer;
 }
 
 .keyword
@@ -1485,8 +1496,9 @@ article.blog div.bloc
 
 article.blog div.bloc:hover
 {
+  cursor: pointer;
   transition: 1s;
-  background-color: rgba(30, 24, 43, 0.5);
+  background-color: rgba(30, 84, 93, 1);
 }
 
 article.blog div.bloc h3

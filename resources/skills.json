@@ -1,0 +1,94 @@
+{
+  "skills": [
+  {
+    "type": "C",
+    "img": "style/images/skills/c.svg",
+    "comments": "Malloc ♥",
+    "percentage": 90,
+    "love": 90
+  },
+  {
+    "type": "Git",
+    "img": "style/images/skills/git.svg",
+    "comments": "Git merge ♥",
+    "percentage": 85,
+    "love": 80
+  },
+  {
+    "type": "HTML",
+    "img": "style/images/skills/html.svg",
+    "comments": "Flexboxes ♥",
+    "percentage": 80,
+    "love": 70
+  },
+  {
+    "type": "AngularJS",
+    "img": "style/images/skills/angularJs.svg",
+    "comments": "MVC ♥",
+    "percentage": 75,
+    "love": 70
+  },
+  {
+    "type": "Javascript",
+    "img": "style/images/skills/javascript.svg",
+    "comments": "JSON ♥",
+    "percentage": 70,
+    "love": 80
+  },
+  {
+    "type": "MongoDB",
+    "img": "style/images/skills/mongodb.svg",
+    "comments": "Collection.insert ♥",
+    "percentage": 65,
+    "love": 55
+  },
+  {
+    "type": "Java",
+    "img": "style/images/skills/java.svg",
+    "comments": "Garbage Collector ♥",
+    "percentage": 60,
+    "love": 95
+  },
+  {
+    "type": "NodeJS",
+    "img": "style/images/skills/nodeJs.svg",
+    "comments": "Backend ♥",
+    "percentage": 60,
+    "love": 65
+  },
+  {
+    "type": "MySQL",
+    "img": "style/images/skills/mySql.svg",
+    "comments": "Select * from epitech_tp < /3",
+    "percentage": 50,
+    "love": 10
+  },
+  {
+    "type": "SFML",
+    "img": "style/images/skills/SFML.svg",
+    "comments": "sfRenderWindow ♥",
+    "percentage": 45,
+    "love": 85
+  },
+  {
+    "type": "OpenGL",
+    "img": "style/images/skills/openGl.svg",
+    "comments": "OpenGL > Direct3D",
+    "percentage": 30,
+    "love": 70
+  },
+  {
+    "type": "Anglais",
+    "img": "style/images/skills/ukFlag.svg",
+    "comments": "TOEIC : 680 <br /><a href='https://fr.wikipedia.org/wiki/Test_of_English_for_International_Communication' target='_blank'> What is it ?</a>",
+    "percentage": 68,
+    "love": 70
+  },
+  {
+    "type": "Google",
+    "img": "style/images/skills/google.svg",
+    "comments": "Man Google ♥",
+    "percentage": 142,
+    "love": 142
+  }]
+}

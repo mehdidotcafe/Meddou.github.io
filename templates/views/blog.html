@@ -1,4 +1,4 @@
-<article class="blog default" med-scroll-on-swipe="both">
+<article class="blog default" med-scroll-on-swipe="both" med-lazy-load="getBlog()">
   <div ng-repeat="article in blog" class="bloc fromTop" ng-class="article.category" ng-click="setCurrentArticle(article)">
     <h3>{{article.title}}</h3>
     <h4>{{article.category}}</h4>
