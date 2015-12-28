@@ -3,29 +3,27 @@ var sliderService = angular.module("indexingServiceApp", []);
 sliderService.service("indexingService", function($timeout)
 {
   var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  // var articles = document.getElementsByTagName("article");
-  // var container = document.getElementsByClassName("scrollContainer");
   var firstView = true;
   var currWindowName;
   var windowsInDOM = [];
   var windows = {
-    "me": {
-      name: "me",
+    "Me": {
+      name: "Me",
       max: 3,
       currIdx: 0
     },
-    "blog": {
-      name: "blog",
+    "Blog": {
+      name: "Blog",
       max: 2,
       currIdx: 0
     },
-    "projects": {
-      name: "projects",
+    "Projects": {
+      name: "Projects",
       max: 2,
       currIdx: 0
     },
-    "contact": {
-      name: "contact",
+    "Contact": {
+      name: "Contact",
       max: 1,
       currIdx: 0
     }
@@ -62,7 +60,7 @@ sliderService.service("indexingService", function($timeout)
     var splitedLocation = location.split("?")[0].split("/");
     var blocs = document.getElementsByClassName("bloc");
 
-    currWindowName = splitedLocation[splitedLocation.length - 1] || "me";
+    currWindowName = splitedLocation[splitedLocation.length - 1] || "Me";
     windows[currWindowName].currIdx = 0;
     if (firstView == false)
     {
@@ -75,57 +73,6 @@ sliderService.service("indexingService", function($timeout)
     firstView = false;
   };
 
-  // function scrollLeft()
-  // {
-  //   var stack = 100;
-  //
-  //   function doItLeft()
-  //   {
-  //     --stack;
-  //     if (stack > 5)
-  //     {
-  //       container[0].scrollLeft -= windowWidth / 100;
-  //       $timeout(doItLeft, 5);
-  //     }
-  //     else
-  //     {
-  //       container[0].scrollLeft -= windowWidth / 100 + windowWidth % 100;
-  //       stack = 100;
-  //     }
-  //   }
-  //   doItLeft();
-  //   // console.log(0);
-  //   // container[0].scrollLeft -= parseInt(windowWidth / 100);
-  //   // if (container[0].scrollLeft % windowWidth != 0)
-  //   //   $timeout(scrollLeft, 10);
-  // }
-
-  // function scrollRight()
-  // {
-  //   var stack = 100;
-  //
-  //   function doItRight()
-  //   {
-  //     --stack;
-  //     if (stack > 0)
-  //     {
-  //       container[0].scrollLeft += windowWidth / 100;
-  //       $timeout(doItRight, 5);
-  //     }
-  //     else
-  //     {
-  //       container[0].scrollLeft += windowWidth / 100 + windowWidth % 100;
-  //       stack = 100;
-  //     }
-  //   }
-  //   doItRight();
-  //   // console.log(1);
-  //   // container[0].scrollLeft += windowWidth;
-  //   // console.log(container[0].scrollLeft);
-  //   // if (container[0].scrollLeft % windowWidth != 0)
-  //   //   $timeout(scrollRight, 10);
-  // }
-
   this.goToIndex = function(idx)
   {
     document.activeElement.blur();
@@ -137,10 +84,7 @@ sliderService.service("indexingService", function($timeout)
         windowsInDOM[windows[currWindowName].currIdx].classList.remove("left");
         windowsInDOM[windows[currWindowName].currIdx].classList.add("right");
         if (windows[currWindowName].currIdx > 0)
-        {
-          // scrollLeft();
           --windows[currWindowName].currIdx;
-        }
         // else
         //   scope.idx = scope.windows.length - 1;
         windowsInDOM[windows[currWindowName].currIdx].classList.remove("right");
@@ -153,10 +97,7 @@ sliderService.service("indexingService", function($timeout)
         windowsInDOM[windows[currWindowName].currIdx].classList.remove("right");
         windowsInDOM[windows[currWindowName].currIdx].classList.add("left");
         if (windows[currWindowName].currIdx < windows[currWindowName].max - 1)
-        {
-          // scrollRight();
           ++windows[currWindowName].currIdx;
-        }
         // else
         //   scope.idx = 0;
         windowsInDOM[windows[currWindowName].currIdx].classList.remove("left");

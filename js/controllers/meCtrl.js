@@ -49,8 +49,7 @@ meApp.controller("meCtrl", function($scope, $timeout, $sce, $location)
 
   $scope.showProjects = function(language)
   {
-    console.log(language);
-    $location.path("/projects").search({language: language});
+    $location.path("/Projects").search({language: language});
   }
 
   function getLife()

@@ -1,6 +1,6 @@
 var navbarApp = angular.module("medNavbarApp");
 
-navbarApp.controller("navbarCtrl", function($scope, indexingService, translationService)
+navbarApp.controller("navbarCtrl", function($scope, indexingService, translationService, $route)
 {
   $scope.currentLink = null;
   $scope.mode = true;

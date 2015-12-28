@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "me": "Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "french": "French",
+    "english": "English"
+  },
+  "me": {
+    "me": {
+      "developper": "*_Dev_*loper",
+      "years": "years",
+      "hours": "hours",
+      "secondes": "secondes",
+      "Ilike": "I Like",
+      "codingArt": "Coding *_=_* Art",
+      "currentSatus": "Studient At ",
+      "toNavigate": "to navigate",
+      "studient": "Studien*_t_*",
+      "myResume": "My resume"
+    },
+    "skills": {
+      "skill": "Skil*_l_*",
+      "love": "*_L_*ove"
+    },
+    "experience": {
+      "years": "Year",
+      "title": "Degree",
+      "duration": "Duration",
+      "status": "Job"
+    }
+  },
+  "blog": {
+
+  },
+  "projects": {
+    "projectPreview": {
+      "projectName": "Project's Name",
+      "language": "Language",
+      "place": "Place",
+      "persons": "Team's Length",
+      "love": "Love",
+      "inWeek": "In weeks"
+    },
+    "projectView": {
+      "techno": "Technology",
+      "debriefing": "Debrief*_ing_*",
+      "projectSummary": "*_Subjet_* Summary",
+      "difficulties": "Difficulties",
+      "time": "Duration",
+      "downloadMe": "Download Me !"
+    }
+  },
+  "contact": {
+    "contactMe": "Contact Me !"
+  }
+}

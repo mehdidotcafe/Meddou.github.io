@@ -1,6 +1,6 @@
 var translation = angular.module("translationServiceApp", ["ngRoute"]);
 
-translation.service("translationService", function($route)
+translation.service("translationService", function($route, $rootScope, $location)
 {
   var isFirst = true;
   var file = undefined;
@@ -10,14 +10,16 @@ translation.service("translationService", function($route)
   {
     var req = new XMLHttpRequest();
 
-    req.open("GET", "lang/" + languageFile.toLowerCase() + ".json");
+    if (!opt)
+    {
+      $location.path("/").search({lang: languageFile});
+      location.reload();
+    }
+    req.open("GET", "lang/" + languageFile + ".json");
     req.onreadystatechange = function(event)
     {
       if (req.readyState == 4 && req.status >= 200 && req.status < 400)
-      {
         file = JSON.parse(req.responseText);
-        !opt && $route.reload();
-      }
     }
     req.send(null);
   }
@@ -47,6 +49,6 @@ translation.filter("translate", ["translationService", "$sce", function(translat
           return (parseJson(key.slice(1), jsonField[key[0]]));
         return (jsonField[id] || keyAsString)
       }
-      return ($sce.trustAsHtml(parseJson(keyAsArray, translationService.getFile())));
+      return ($sce.trustAsHtml(parseJson(keyAsArray, translationService.getFile()).replace("*_", "<span class='keyword'>").replace("_*", "</span>")));
     });
 }]);

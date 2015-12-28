@@ -8,26 +8,26 @@
   },
   "me": {
     "me": {
-      "developper": "<span class='keyword'>Dev</span>loppeur",
+      "developper": "*_Dev_*loppeur",
       "years": "ans",
       "hours": "heures",
       "secondes": "secondes",
       "Ilike": "J'aime bien",
-      "codingArt": "Coder <span class='keyword'>=</span> Art",
-      "currentSatus": "Actuellement en deuxieme annee a <span class='epitech'><a href='http://www.epitech.eu' target='_blank'>Epitech</a></span>.",
+      "codingArt": "Coder *_=_* Art",
+      "currentSatus": "Actuellement en deuxieme annee a",
       "toNavigate": "Pour naviguer",
-      "studient": "Etudian<span class='keyword'>t</span>",
+      "studient": "Etudian*_t_*",
       "myResume": "Mon CV"
     },
     "skills": {
-      "skill": "Competences",
-      "love": "Amou<span class='keyword'>r</span>"
+      "skill": "Compe*_t_*ences",
+      "love": "Amou*_r_*"
     },
     "experience": {
       "years": "Annee",
       "title": "Titre",
       "duration": "Duree",
-      "status": "Status"
+      "status": "Poste"
     }
   },
   "blog": {
@@ -43,15 +43,15 @@
       "inWeek": "En Semaines"
     },
     "projectView": {
-      "projectSummary": "Resume du <span class='keyword'>sujet</span>",
+      "techno": "Technologies",
+      "debriefing": "Debrief*_ing_*",
+      "projectSummary": "Resume du *_sujet_*",
       "difficulties": "Difficulte",
       "time": "Temps",
       "downloadMe": "Telechargez moi !"
     }
   },
   "contact": {
-    "name": "Nom",
-    "subject": "Sujet",
-    "send": "Envoyer !"
+    "contactMe": "Me contacter !"
   }
 }

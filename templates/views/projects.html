@@ -16,19 +16,19 @@
   <div class="projectPresentation" ng-hide="!currentProject"  med-scroll-on-swipe="vertical">
     <section class="projectSummaryContainer">
       <div class="bloc topic underline">
-        <h2> Resume du <span class="keyword">sujet</span> </h2>
+        <h2> <span ng-bind-html="'projects.projectView.projectSummary' | translate"></span> </h2>
         <div>
           {{currentProject.description[0]}}
         </div>
       </div>
       <div class="bloc difficulties underline">
-        <h5>Difficultes</h5>
+        <h5>{{'projects.projectView.difficulties' | translate}}</h5>
         <div>
           {{currentProject.description[1]}}
         </div>
       </div>
       <div class="bloc debriefing underline">
-        <h5>Debrie<span class="keyword">fing</span></h5>
+        <h5><span ng-bind-html="'projects.projectView.debriefing' | translate"></span></h5>
         <div>
           {{currentProject.description[2]}}
         </div>
@@ -39,26 +39,26 @@
         <h2>{{currentProject.name}}</h2>
       </aside>
       <aside class="bloc UI underline rangePercentageContainer">
-        <span><span class="keyword">Technologies</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
+        <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
       </aside>
       <!-- <img class="bloc imgContainer underline"src="{{currentProject.img}}"></img> -->
       <aside class="bloc UI rangePercentageContainer">
-        <span class="skillInRange">Temps</span>
+        <span class="skillInRange">{{'projects.projectView.time' | translate}}</span>
         <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
         <div class="rangePercentage time" ng-style="{width: (currentProject.time * 10) + '%'}"></div>
       </aside>
       <aside class="bloc UI rangePercentageContainer">
-        <span class="skillInRange">Personnes</span>
+        <span class="skillInRange">{{'projects.projectPreview.persons' | translate}}</span>
         <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
         <div class="rangePercentage numberPerson" ng-style="{width: (currentProject.numberPerson * 15) + '%'}"></div>
       </aside>
       <aside class="bloc UI rangePercentageContainer">
-        <span class="skillInRange">Amour</span>
+        <span class="skillInRange">{{'projects.projectPreview.love' | translate}}</span>
         <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
         <div class="rangePercentage love" ng-style="{width: (currentProject.love * 20) + '%'}"></div>
       </aside>
       <aside class="downloadBloc">
-        <em>Telechargez moi !</em>
+        <em>{{'projects.projectView.downloadMe' | translate}}</em>
       </aside>
     </section>
   </div>

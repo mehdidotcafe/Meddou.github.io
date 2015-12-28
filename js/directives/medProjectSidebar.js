@@ -12,7 +12,6 @@ medProjectSidebarApp.directive("medProjectSidebar", function()
     {
       scope.changeVisibility = function()
       {
-        console.log(scope.visibleSidebar);
         scope.visibleSidebar = !scope.visibleSidebar;
       };
     },

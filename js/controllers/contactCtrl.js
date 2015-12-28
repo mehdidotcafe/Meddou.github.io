@@ -1,36 +1,88 @@
 var contactApp = angular.module("contactApp", []);
 
-contactApp.controller("contactCtrl", function($scope)
+contactApp.controller("contactCtrl", function($scope, $timeout)
 {
-  $scope.info = {
-    name: "",
-    subject: "",
-    mail: "",
-    email: ""
+  $scope.isPlaying = false;
+  var containerRect = document.getElementById("game");
+  var FPS = 60;
+  var player = {
+    isDead: false,
+    isJumping: false,
+    player: document.getElementById("player"),
+    hitbox: document.getElementById("hitbox"),
+    score: 0,
+    jumpValue: 50,
+    jump: function()
+    {
+      if (player.jumpValue > 0)
+      {
+        --player.jumpValue;
+        if (!player.player.style.marginTop) player.player.style.marginTop = '100px';
+        player.player.style.marginTop = parseFloat(player.player.style.marginTop) - 1 + "px";
+      }
+      else
+        {
+          player.jumpValue = 50;
+          player.isJumping = false;
+        }
+    },
+    wall: function()
+    {
+      var legsRect = document.getElementById("legs").getBoundingClientRect();
+      var headRect = document.getElementById("head").getBoundingClientRect();
+
+      console.log(document.getElementById("game").offsetTop);
+      console.log(headRect);
+      legsRect.top -= containerRect.offsetTop + 80;
+      headRect.top -= containerRect.top;
+      // if (legsRect + parseInt(document.getElementById("legs").style.height) >= 400)
+      // {
+      //   console.log("mort");
+      //   player.isDead = true;
+      // }
+      if (headRect.top <= 0)
+      {
+        console.log("mort");
+        player.isDead = true;
+      }
+    },
+    intersec: function(t1, t2)
+    {
+
+    },
+    fall: function()
+    {
+      if (!player.player.style.marginTop) player.player.style.marginTop = '100px';
+      player.player.style.marginTop = parseFloat(player.player.style.marginTop) + 2 + "px";
+    }
   };
+
+  $scope.jump = function()
+  {
+    if ($scope.isPlaying)
+      player.isJumping = true;
+  }
 
   $scope.doMailto = function()
   {
-    var mailto = "mailto:meddegivet@hotmail.fr?";
-
-    if ($scope.info.subject)
-      mailto += "subject=" + escape($scope.info.subject);
-    if ($scope.info.mail)
-      mailto += "&body=" + $scope.info.mail;
-    // if ($scope.info.email)
-    //   mailto += "body=" + $scope.info.subject + "&";
-    // if ($scope.info.subject)
-    //   mailto += "subject=" + $scope.info.subject;
-
-    window.location.href = mailto;
+    window.location.href = "mailto:mehdi.meddour@epitech.eu?";
   }
 
-  $scope.sendMail = function()
+  $scope.play = function()
   {
-    if (!$scope.name || !$scope.subject || !$scope.email)
-      return ;
-    var req = XMLHttpRequest();
 
-    req.open("POST", "https://mandrillapp.com/api/1.0/messages/send.json")
+    function loop()
+    {
+      if (player.isJumping)
+      {
+        player.jump();
+      }
+      else
+        player.fall();
+      if (!player.isDead)
+        $timeout(loop, 1000 / FPS);
+    }
+    $scope.isPlaying = true;
+    loop();
   }
 });

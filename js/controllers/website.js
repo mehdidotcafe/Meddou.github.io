@@ -1,42 +1,22 @@
 var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "blogApp", "contactApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medMdParserApp", "medLazyLoadApp", "indexingServiceApp", "translationServiceApp", "ngAnimate"]);
 
-websiteApp.run(function(translationService)
+websiteApp.run(function(translationService, $location)
 {
-  translationService.setLanguage("fr", true);
+  if ($location.search().lang)
+    translationService.setLanguage($location.search().lang, true);
+  else
+    translationService.setLanguage("fr", true);
 });
 
 websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, translationService)
 {
   $scope.isChrome = !!window.chrome;
   $scope.navbarIsHidden = false;
-  // $scope.configFile = {
-  //   blog: [],
-  //   skills: [],
-  //   projects: {},
-  //   hobbies: [],
-  //   gestures: []
-  // };
 
   $scope.indexingService = function()
   {
     indexingService.setCurrentWindow(window.location.href);
   };
-
-  // function getConfigFile()
-  // {
-  //   var req = new XMLHttpRequest();
-  //
-  //   req.open("GET", "./config.json", true);
-  //   req.onload = function(event)
-  //   {
-  //     if (req.readyState == 4 && req.status >= 200 && req.status < 400)
-  //       $scope.configFile = JSON.parse(req.responseText);
-  //     else
-  //       $scope.configFile = JSON.parse("{}");
-  //   }
-  //   req.send(null);
-  // }
-
   $scope.handleKey = function(event)
   {
     var activeElement = document.activeElement.tagName;
@@ -46,7 +26,5 @@ websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, t
     else if ((event.keyCode == 39 || event.keyCode == 74 || event.keyCode == 68) && activeElement != "INPUT")
       indexingService.goToIndex(indexingService.getCurrentIndex() + 1);
   }
-
   translationService.setScope($scope);
-  // getConfigFile();
 });

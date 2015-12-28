@@ -9,31 +9,25 @@ routeApp.config(function($routeProvider, $locationProvider)
     controller: "meCtrl"
   });
 
-  $routeProvider.when("/me",
+  $routeProvider.when("/Me",
   {
     templateUrl: "templates/views/me.html",
     controller: "meCtrl"
   });
 
-  $routeProvider.when("/projects",
+  $routeProvider.when("/Projects",
   {
     templateUrl: "templates/views/projects.html",
     controller: "projectsCtrl"
   });
 
-  $routeProvider.when("/blog",
+  $routeProvider.when("/Blog",
   {
     templateUrl: "templates/views/blog.html",
     controller: "blogCtrl"
   });
 
-  $routeProvider.when("/skills",
-  {
-    templateUrl: "templates/views/skills.html",
-    controller: "skillsCtrl"
-  });
-
-  $routeProvider.when("/contact",
+  $routeProvider.when("/Contact",
   {
     templateUrl: "templates/views/contact.html",
     controller: "contactCtrl"
