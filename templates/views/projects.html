@@ -6,7 +6,7 @@
   <div class="medInfoContainer" med-scroll-on-swipe="vertical" tabindex="0">
     <div class="infoBloc bloc underline fromTop" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
       <h1 ng-class="info.name.split(' ').length > 1 ? 'twoPart' : 'onePart'">{{info.name}}</h1>
-      <img ng-src="{{info.ico}}"/>
+      <img id="project-img-preview" ng-src="{{info.ico}}"/>
     </div>
   </div>
 </article>
@@ -14,52 +14,54 @@
   <div ng-hide="currentProject">
   </div>
   <div class="projectPresentation" ng-hide="!currentProject"  med-scroll-on-swipe="vertical">
-    <section class="projectSummaryContainer">
-      <div class="bloc topic underline">
-        <h2> <span ng-bind-html="'projects.projectView.projectSummary' | translate"></span> </h2>
-        <div>
-          {{currentProject.description[0]}}
-        </div>
+    <div id="global-project">
+      <section id="project-name">
+        <div class="bloc underline" id="project-name">
+          <span class="keyword">{{currentProject.name}}</span>
+      </section>
+      <div id="project-info">
+        <section class="projectSummaryContainer">
+          <div class="bloc topic underline">
+            <h2> <span ng-bind-html="'projects.projectView.projectSummary' | translate"></span> </h2>
+            <div>
+              {{currentProject.description[0]}}
+            </div>
+          </div>
+          <div class="bloc difficulties underline">
+            <h2>{{'projects.projectView.difficulties' | translate}}</h2>
+            <div>
+              {{currentProject.description[1]}}
+            </div>
+          </div>
+          <div class="bloc debriefing underline">
+            <h2><span ng-bind-html="'projects.projectView.debriefing' | translate"></span></h2>
+            <div>
+              {{currentProject.description[2]}}
+            </div>
+          </div>
+        </section>
+        <section class="projectDataContainer">
+          <img id="project-img" class="bloc underline" src="{{currentProject.ico}}"></img>
+          <aside class="bloc UI underline rangePercentageContainer">
+            <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
+          </aside>
+          <aside class="bloc UI rangePercentageContainer">
+            <span class="skillInRange">{{'projects.projectView.time' | translate}}</span>
+            <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
+            <div class="rangePercentage time" ng-style="{width: (currentProject.time * 10) + '%'}"></div>
+          </aside>
+          <aside class="bloc UI rangePercentageContainer">
+            <span class="skillInRange">{{'projects.projectPreview.persons' | translate}}</span>
+            <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
+            <div class="rangePercentage numberPerson" ng-style="{width: (currentProject.numberPerson * 15) + '%'}"></div>
+          </aside>
+          <aside class="bloc UI rangePercentageContainer">
+            <span class="skillInRange">{{'projects.projectPreview.love' | translate}}</span>
+            <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
+            <div class="rangePercentage love" ng-style="{width: (currentProject.love * 20) + '%'}"></div>
+          </aside>
+        </section>
       </div>
-      <div class="bloc difficulties underline">
-        <h5>{{'projects.projectView.difficulties' | translate}}</h5>
-        <div>
-          {{currentProject.description[1]}}
-        </div>
-      </div>
-      <div class="bloc debriefing underline">
-        <h5><span ng-bind-html="'projects.projectView.debriefing' | translate"></span></h5>
-        <div>
-          {{currentProject.description[2]}}
-        </div>
-      </div>
-    </section>
-    <section class="projectDataContainer">
-      <aside class="bloc UI underline projectName">
-        <h2>{{currentProject.name}}</h2>
-      </aside>
-      <aside class="bloc UI underline rangePercentageContainer">
-        <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
-      </aside>
-      <!-- <img class="bloc imgContainer underline"src="{{currentProject.img}}"></img> -->
-      <aside class="bloc UI rangePercentageContainer">
-        <span class="skillInRange">{{'projects.projectView.time' | translate}}</span>
-        <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
-        <div class="rangePercentage time" ng-style="{width: (currentProject.time * 10) + '%'}"></div>
-      </aside>
-      <aside class="bloc UI rangePercentageContainer">
-        <span class="skillInRange">{{'projects.projectPreview.persons' | translate}}</span>
-        <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
-        <div class="rangePercentage numberPerson" ng-style="{width: (currentProject.numberPerson * 15) + '%'}"></div>
-      </aside>
-      <aside class="bloc UI rangePercentageContainer">
-        <span class="skillInRange">{{'projects.projectPreview.love' | translate}}</span>
-        <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
-        <div class="rangePercentage love" ng-style="{width: (currentProject.love * 20) + '%'}"></div>
-      </aside>
-      <aside class="downloadBloc">
-        <em>{{'projects.projectView.downloadMe' | translate}}</em>
-      </aside>
-    </section>
+    </div>
   </div>
 </article>

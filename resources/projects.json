@@ -10,9 +10,41 @@
     "ico": "style/images/projects/lemin.png",
     "downloadLink": "",
     "description": [
-      "Le sujet original etait de faire traverser des fourmis d'un point A a un point B, dans une fourmiliere representee par des tubes et des salles tout ca via un fichier de conf.Evidemment il fallait eviter collisions entre fourmis.Cependant notre rendu est bien mieux, avec deux equipes de fourmis guerrieres voulant atteindre la base de l'autre dans une meme fourmiliere.",
+      "Il fallait faire traverser des fourmis d'un point A a un point B dans une fourmiliere representee par des tubes et des salles tout ca via un fichier de conf. Il fallait eviter collisions entre fourmis. Notre rendu est bien mieux, avec deux equipes de fourmis guerrieres voulant atteindre la base de l'autre dans une meme fourmiliere.",
       "Interface graphique en OpenGL, Arbre binaire",
       "Tres bon projet agreable a realiser, note finale 42 / 20"
+    ]
+  },
+  "this": {
+    "name": "This",
+    "language": ["javascript", "angularjs", "html"],
+    "time": 8,
+    "difficulty": "high",
+    "context": "home",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "style/images/projects/myWebsite.png",
+    "downloadLink": "",
+    "description": [
+      "Mon portfolio. Le but premier de sa creation etait d'augmenter mes competences en web sur le temps libre que j'avais apres mon stage, il est aussi fait pour me demarque.",
+      "Premier projet personnel de cette ampleur, retard d'une semaine sur ma prevision de delai :(",
+      "Quelques points ne me plaise pas"
+    ]
+  },
+  "cloudindus": {
+    "name": "Cloudindus",
+    "language": ["javascript", "angularjs", "nodejs", "mongodb", "html"],
+    "time": 24,
+    "difficulty": "high",
+    "context": "school",
+    "numberPerson": 5,
+    "love": 4,
+    "ico": "style/images/projects/cloudindus.png",
+    "downloadLink": "",
+    "description": [
+      "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS",
+      "Un code tres peu documente",
+      ""
     ]
   },
   "raytracer": {
@@ -26,7 +58,7 @@
     "ico": "style/images/projects/raytracer.png",
     "downloadLink": "",
     "description": [
-      "Il fallait decrire des scenes de raytracing avec des objets plus ou moins compliques, cercle, cylindre, cone.Le sujet autorisant beaucoup de bonus, nous avons ajoutes plusieurs fonctionnalites comme la transparence, la reflexion, les textures, le clustering",
+      "Il fallait decrire des scenes de raytracing avec tels que des cercles, cylindres, cones. Le sujet autorisant beaucoup de bonus, nous avons ajoutes plusieurs fonctionnalites comme la transparence, la reflexion, les textures, le clustering...",
       "Des formules mathemetiques assez difficiles a comprendre, une librarie by Epitech assez compliquee a utiliser",
       "N'aimant pas tellement le raytracing j'ai eu la chance de faire le clustering, qui fut tres agreable. Note finale 28 / 20"
     ]
@@ -59,15 +91,15 @@
     "ico": "style/images/projects/minishell2.png",
     "downloadLink": "",
     "description": [
-      "Episode 2 de la trilogie de recode d'un terminal sh. Les ajouts etaient les redirections ainsi que les pipes.En consequence, il fallait un parseur qui tienne la route.",
+      "Episode 2 de la trilogie de recode d'un terminal sh. Les ajouts etaient les redirections ainsi que les pipes. En consequence, il fallait un parseur qui tienne la route.",
       "Aucune.",
-      "Projet que j'ai tres bien aime, que j'ai fini tres tot ce qui m'a permis de faire des bonus (prompt en termcaps, historique). Note finale 20 / 20"
+      "Projet que j'ai fini tres tot ce qui m'a permis de faire des bonus (prompt en termcaps, historique...). Note 20 / 20"
     ]
   },
   "bocalEmblem": {
     "name": "Bocal Emblem",
     "language": ["c", "sfml"],
-    "time": 4,
+    "time": 1,
     "difficulty": "medium",
     "context": "school",
     "numberPerson": 1,
@@ -80,36 +112,20 @@
       "Ma grande premiere sur une interface graphique, un push apres l'heure limite aura raison de nous :(. Note finale: 1.5 / 20"
     ]
   },
-  "this": {
-    "name": "This",
-    "language": ["javascript", "angularjs", "html"],
-    "time": 8,
-    "difficulty": "high",
-    "context": "home",
+  "Wolf3d": {
+    "name": "Wolf3d",
+    "language": ["c", "libx"],
+    "time": 2,
+    "difficulty": "hard",
+    "context": "school",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/myWebsite.png",
+    "ico": "style/images/projects/wolf.png",
     "downloadLink": "",
     "description": [
-      "Mon portfolio. Le but premier de sa creation etait d'augmenter mes competences en web sur le temps libre que j'avais apres mon stage.Il est aussi evident qu'il sert a me promouvoir aussi et a me demarquer.",
-      "Premier projet personnel de cette ampleur, retard d'une semaine sur ma prevision de delai :(",
-      "Pas de debriefing, le site etant en constante evolution"
-    ]
-  },
-  "cloudindus": {
-    "name": "Cloudindus",
-    "language": ["javascript", "angularjs", "nodejs", "mongodb", "html"],
-    "time": 24,
-    "difficulty": "high",
-    "context": "school",
-    "numberPerson": 5,
-    "love": 4,
-    "ico": "style/images/projects/cloudindus.png",
-    "downloadLink": "",
-    "description": [
-      "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS",
-      "Un code tres peu documente",
-      "Toujours en cours"
+      "Un Wolf3D en raycasting. Un projet assez cool lorsqu'on a apprivoise la lib. J'ai eu l'occasion de faire plusieurs bonus tels que la map ou encore l'apparition de bouftous.",
+      "Une lib assez compliquee",
+      "Plein de bonus et d'amour, Note : 21 / 20"
     ]
   },
   "calculator": {

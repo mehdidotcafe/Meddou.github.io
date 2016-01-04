@@ -35,7 +35,14 @@ projectApp.controller("projectsCtrl", function($scope, indexingService, $locatio
     xhr.onload = function(event)
     {
       if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 400)
+      {
         $scope.projects = JSON.parse(xhr.responseText);
+        for (var key in $scope.projects)
+        {
+          $scope.currentProject = $scope.projects[key];
+          break;
+        }
+      }
       else
         $scope.projects = {};
       $scope.$digest();

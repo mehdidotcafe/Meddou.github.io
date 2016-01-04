@@ -952,6 +952,39 @@ div.projectPresentation
   width: 100%;
 }
 
+#global-project
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#project-name
+{
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+}
+
+#project-info
+{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#project-img-preview
+{
+  object-fit: contain;
+}
+
+#project-img
+{
+  object-fit: contain;
+  max-height: 40vh;
+}
+
 div.projectPresentation section.projectSummaryContainer
 {
   flex-grow: 2;
@@ -978,11 +1011,6 @@ span.projectLanguage
   position: absolute;
   bottom: 0;
   right: 5px;
-}
-
-img.imgContainer
-{
-  flex-grow: 2;
 }
 
 aside.UI
@@ -1228,10 +1256,6 @@ div.bloc.picture:hover med-svg svg, div.bloc div.comments:hover + med-svg svg, d
 {
   cursor: pointer;
   transition: 1s;
-  -webkit-filter: brightness(2);
-  -moz-filter: brightness(2);
-  -o-filter: brightness(2);
-  -ms-filter: brightness(2);
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
   -o-transform: scale(2);
@@ -1355,15 +1379,10 @@ aside.rangePercentageContainer div.rangePercentage.time
 .topic, .difficulties, .debriefing
 {
   position: relative;
-  flex-grow: 4;
-  font-size: 4vmin;
+  flex-grow: 2;
+  flex-basis: 1;
+  font-size: 3.5vmin;
 }
-
-.difficulties, .debriefing
-{
-  flex-grow: 1;
-}
-
 
 .onRemove
 {

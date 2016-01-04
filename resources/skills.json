@@ -43,11 +43,11 @@
     "love": 55
   },
   {
-    "type": "Java",
-    "img": "style/images/skills/java.svg",
-    "comments": "Garbage Collector ♥",
-    "percentage": 60,
-    "love": 95
+    "type": "C++",
+    "img": "style/images/skills/cpp.svg",
+    "comments": "STL ♥",
+    "percentage": 65,
+    "love": 98
   },
   {
     "type": "NodeJS",
@@ -55,6 +55,13 @@
     "comments": "Backend ♥",
     "percentage": 60,
     "love": 65
+  },
+  {
+    "type": "Java",
+    "img": "style/images/skills/java.svg",
+    "comments": "Garbage Collector ♥",
+    "percentage": 50,
+    "love": 95
   },
   {
     "type": "MySQL",
