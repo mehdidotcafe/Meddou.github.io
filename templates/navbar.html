@@ -8,10 +8,6 @@
     <img class="navPicture" src="./style/images/chopper.gif"/>
     <div>{{'navbar.me' | translate}}</div>
   </a>
-  <!-- <a href="Blog" class="navbarTab" ng-hide="!mode">
-    <med-svg class="navPicture" src="./style/images/svg/blog.svg"></med-svg>
-    <div>blog</div>
-  </a> -->
   <a href="Projects" class="navbarTab" ng-hide="!mode">
     <med-svg class="navPicture" src="./style/images/svg/projects.svg"></med-svg>
     <div>{{'navbar.projects' | translate}}</div>
@@ -20,11 +16,11 @@
     <med-svg class="navPicture" src="./style/images/svg/email.svg"></med-svg>
     <div>{{'navbar.contact' | translate}}</div>
   </a>
-  <a class="navbarTab languageTab" ng-click="setLanguage('fr')" ng-hide="mode">
+  <a class="navbarTab" ng-click="setLanguage('fr')" ng-hide="mode">
     <med-svg class="navPicture" src="./style/images/svg/baguette.svg"></med-svg>
     <div>{{'navbar.french' | translate}}</div>
   </a>
-  <a class="navbarTab languageTab" ng-click="setLanguage('en')" ng-hide="mode">
+  <a class="navbarTab" ng-click="setLanguage('en')" ng-hide="mode">
     <med-svg class="navPicture" src="./style/images/svg/bigBen.svg"></med-svg>
     <div>{{'navbar.english' | translate}}</div>
   </a>

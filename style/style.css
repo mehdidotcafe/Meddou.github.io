@@ -174,7 +174,7 @@ nav.navbar a.navbarTab img.navPicture
   fill: white;
 }
 
-nav.navbar a.navbarTab med-svg.navPicture svg
+med-svg.navPicture svg
 {
   transition-duration: 0.5s;
   margin-top: 2px;
@@ -188,23 +188,11 @@ nav.navbar a.navbarTab
   cursor: pointer;
   transition: 0.5s;
   vertical-align: top;
-  width: 9vw;
+  width: 7vw;
   text-align: center;
   height: 100%;
   transition: 1s;
   visibility: visible;
-}
-
-nav.navbar a.languageTab
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-nav.navbar a.languageTab span
-{
-  cursor: pointer;
 }
 
 a.navbarTab.ng-hide-remove
@@ -244,12 +232,12 @@ div.navPictureLittle
   cursor: pointer;
   transition-duration: 0.5s;
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 div.navPictureLittle svg
 {
-   width: 100%;
+width: 100%;
   height: 100%;
   transition-duration: 0.5s;
   fill: white;
@@ -543,10 +531,9 @@ article div div.infoBloc
   cursor: pointer;
   position: relative;
   text-align: center;
-  width: 31%;
-  min-width: 320px;
+  width: 25vw;
   height: 320px;
-  transition: 1s;
+  transition: 1s !important;
 }
 
 article div div.infoBloc:focus
@@ -557,24 +544,24 @@ article div div.infoBloc:focus
 article div div.infoBloc.ng-enter
 {
   opacity: 0;
-  transform: rotate(90deg);
+  transform: rotate(45deg);
 }
 
 article div div.infoBloc.ng-enter-active
 {
   opacity: 1;
-  transform: rotate(-35deg);
+  transform: rotate(-30deg);
 }
 
 article div div.infoBloc.ng-leave-active
 {
   opacity: 0;
-  transform: rotate(135deg);
+  transform: rotate(77deg);
 }
 
 article div.medInfoContainer
 {
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -47,7 +47,7 @@
     "img": "style/images/skills/ocaml.svg",
     "comments": "match ... with ♥",
     "percentage": 70,
-    "love": 65
+    "love": 75
   },
   {
     "type": "MongoDB",
@@ -96,13 +96,13 @@
     "img": "style/images/skills/unity.svg",
     "comments": "3D ♥",
     "percentage": 30,
-    "love": 70
+    "love": 90
   },
   {
     "type": "Google",
     "img": "style/images/skills/google.svg",
     "comments": "Man Google ♥",
-    "percentage": 142,
-    "love": 142
+    "percentage": 42,
+    "love": 42
   }]
 }
