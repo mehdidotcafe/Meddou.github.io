@@ -4,8 +4,8 @@
     <med-svg src="./style/images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
   </aside>
   <div class="medInfoContainer" med-scroll-on-swipe="vertical" tabindex="0">
-    <div class="infoBloc bloc underline fromTop" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
-      <h1 ng-class="info.name.split(' ').length > 1 ? 'twoPart' : 'onePart'">{{info.name}}</h1>
+    <div class="infoBloc bloc underline fromTop" title="{{'projects.click' | translate}}" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
+      <h1>{{info.name}}</h1>
       <img id="project-img-preview" ng-src="{{info.ico}}"/>
     </div>
   </div>

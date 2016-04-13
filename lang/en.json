@@ -20,6 +20,7 @@
       "myResume": "My resume"
     },
     "skills": {
+      "click": "Click to see projects in this language",
       "skill": "Skil*_l_*",
       "love": "*_L_*ove"
     },
@@ -49,7 +50,8 @@
       "difficulties": "Difficulties",
       "time": "Duration",
       "downloadMe": "Download Me !"
-    }
+   },
+   "click": "Click to see the project"   
   },
   "contact": {
     "contactMe": "Contact Me !"

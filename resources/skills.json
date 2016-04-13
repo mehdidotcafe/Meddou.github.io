@@ -8,6 +8,13 @@
     "love": 90
   },
   {
+    "type": "C++",
+    "img": "style/images/skills/cpp.svg",
+    "comments": "STL ♥",
+    "percentage": 90,
+    "love": 100
+  },
+  {
     "type": "Git",
     "img": "style/images/skills/git.svg",
     "comments": "Git merge ♥",
@@ -15,53 +22,67 @@
     "love": 80
   },
   {
-    "type": "HTML",
-    "img": "style/images/skills/html.svg",
-    "comments": "Flexboxes ♥",
-    "percentage": 80,
-    "love": 70
+     "type": "HTML | CSS",
+     "img": "style/images/skills/htmlcss.svg",
+     "comments": "Flexboxes ♥",
+     "percentage": 80,
+     "love": 75
   },
   {
     "type": "AngularJS",
-    "img": "style/images/skills/angularJs.svg",
+    "img": "style/images/skills/angular.png",
     "comments": "MVC ♥",
     "percentage": 75,
-    "love": 70
+    "love": 75
   },
   {
     "type": "Javascript",
     "img": "style/images/skills/javascript.svg",
     "comments": "JSON ♥",
+    "percentage": 75,
+    "love": 85
+  },
+  {
+    "type": "OCAML",
+    "img": "style/images/skills/ocaml.svg",
+    "comments": "match ... with ♥",
     "percentage": 70,
-    "love": 80
+    "love": 65
   },
   {
     "type": "MongoDB",
     "img": "style/images/skills/mongodb.svg",
     "comments": "Collection.insert ♥",
-    "percentage": 65,
-    "love": 55
-  },
-  {
-    "type": "C++",
-    "img": "style/images/skills/cpp.svg",
-    "comments": "STL ♥",
-    "percentage": 65,
-    "love": 98
+    "percentage": 70,
+    "love": 65
   },
   {
     "type": "NodeJS",
     "img": "style/images/skills/nodeJs.svg",
     "comments": "Backend ♥",
-    "percentage": 60,
-    "love": 65
+    "percentage": 65,
+    "love": 75
+  },
+  {
+    "type": "ASM",
+    "img": "style/images/skills/asm.png",
+    "comments": "leave ♥",
+    "percentage": 55,
+    "love": 95
   },
   {
     "type": "Java",
     "img": "style/images/skills/java.svg",
     "comments": "Garbage Collector ♥",
-    "percentage": 50,
+    "percentage": 55,
     "love": 95
+  },
+  {
+    "type": "SFML",
+    "img": "style/images/skills/SFML.svg",
+    "comments": "sfRenderWindow ♥",
+    "percentage": 55,
+    "love": 85
   },
   {
     "type": "MySQL",
@@ -71,24 +92,10 @@
     "love": 10
   },
   {
-    "type": "SFML",
-    "img": "style/images/skills/SFML.svg",
-    "comments": "sfRenderWindow ♥",
-    "percentage": 45,
-    "love": 85
-  },
-  {
-    "type": "OpenGL",
-    "img": "style/images/skills/openGl.svg",
-    "comments": "OpenGL > Direct3D",
+    "type": "Unity",
+    "img": "style/images/skills/unity.svg",
+    "comments": "3D ♥",
     "percentage": 30,
-    "love": 70
-  },
-  {
-    "type": "Anglais",
-    "img": "style/images/skills/ukFlag.svg",
-    "comments": "TOEIC : 680 <br /><a href='https://fr.wikipedia.org/wiki/Test_of_English_for_International_Communication' target='_blank'> What is it ?</a>",
-    "percentage": 68,
     "love": 70
   },
   {

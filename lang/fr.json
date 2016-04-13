@@ -8,7 +8,7 @@
   },
   "me": {
     "me": {
-      "developper": "*_Dev_*loppeur",
+      "developper": "*_Dev_*eloppeur",
       "years": "ans",
       "hours": "heures",
       "secondes": "secondes",
@@ -20,8 +20,9 @@
       "myResume": "Mon CV"
     },
     "skills": {
+      "click": "Cliquez pour voir les projets dans ce language",
       "skill": "*_C_*ompetences",
-      "love": "Amou*_r_*"
+      "love": "Affectio*_n_*"
     },
     "experience": {
       "years": "Annee",
@@ -29,9 +30,6 @@
       "duration": "Duree",
       "status": "Poste"
     }
-  },
-  "blog": {
-
   },
   "projects": {
     "projectPreview": {
@@ -49,7 +47,8 @@
       "difficulties": "Difficultes",
       "time": "Temps",
       "downloadMe": "Telechargez moi !"
-    }
+   },
+   "click": "Cliquez pour voir le projet"
   },
   "contact": {
     "contactMe": "Me contacter !"

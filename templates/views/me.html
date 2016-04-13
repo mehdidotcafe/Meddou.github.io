@@ -35,20 +35,20 @@
 </article>
 <article class="skill right" med-scroll-on-swipe="both" med-lazy-load="getSkill()">
   <div class="skillBloc" ng-repeat="language in skills track by $index">
-    <div class="bloc picture underline" ng-click="showProjects(language.type)">
+    <div class="bloc picture underline" title="{{'me.skills.click' | translate}}" ng-click="showProjects(language.type)">
       <div class="comments">
         <p ng-bind-html="insertHTML(language.comments)"></p>
       </div>
-      <med-svg src="{{language.img}}"></med-svg>
+      <img class="no-extend" ng-src="{{language.img}}"></img>
     </div>
     <aside class="bloc rangePercentageContainer inSkill">
       <span class="skillInRange"><span ng-bind-html="'me.skills.skill' | translate"></span></span>
-      <span class="percentageInRange"><sup>{{language.percentage}}</sup></span>
+      <span class="percentageInRange"><sup>{{language.percentage}}<sub class="keyword">%</sub></sup></span>
       <div class="rangePercentage skill" ng-style="{width: language.percentage + '%'}"></div>
     </aside>
     <aside class="bloc rangePercentageContainer inSkill">
       <span class="skillInRange"><span ng-bind-html="'me.skills.love' | translate"></span></span>
-      <span class="percentageInRange"><sup>{{language.love}}</sup></span>
+      <span class="percentageInRange"><sup>{{language.love}}<sub class="keyword">%</sub></sup></span>
       <div class="rangePercentage love" ng-style="{width: language.love + '%'}"></div>
     </aside>
   </div>
