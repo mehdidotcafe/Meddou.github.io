@@ -1,12 +1,12 @@
 <article class="presentation default" med-scroll-on-swipe="both" med-lazy-load="getGesturesAndHobbies()">
   <section class="infoContainer">
-    <div class="bloc years underline fromLeft">
+    <div class="bloc years underline">
       <em><span class="keyword">{{years}}</span> {{'me.me.years' | translate}} <span class="keyword">&&</span><br /><span class="keyword">{{hours}}</span> {{'me.me.hours' | translate}} <span class="keyword">&&</span><br /> <span class="keyword">{{seconds}}</span> {{'me.me.secondes' | translate}}</em>
     </div>
-    <div class="bloc dev underline fromLeft">
+    <div class="bloc dev underline">
       <em ng-bind-html="'me.me.developper' | translate"></em>
     </div>
-    <div class="bloc like underline fromLeft">
+    <div class="bloc like underline">
         <em>{{'me.me.Ilike' | translate}}</br><med-word-switch class="keyword" words="hobbies" delay="2000" parent-class="presentation"></med-word-switch></em>
     </div>
     <a class="downloadBloc cv underline fromLeft" target="_self" href="resources/CV/MEDDOUR_Mehdi_CV.pdf" download="MEDDOUR_Mehdi_CV.pdf">
@@ -15,23 +15,30 @@
   </div>
   </section>
   <section class="infoContainer">
-    <div class="bloc names underline fromRight">
+    <div class="bloc names underline">
       <em><span class="keyword">M</span>ehdi <span class="keyword">M</span>eddour</em>
     </div>
-    <div class="bloc msg underline fromRight">
-      <em>{{'me.me.currentSatus' | translate}} <span class="epitech"><a href="http://www.epitech.eu" target="_blank">{Epitech}</a></span>.</em>
+    <div class="bloc msg photoContainer underline">
+      <img class="photo" src="style/images/mehdi.jpg"></img>
     </div>
-    <div class="bloc names underline fromRight">
+    <div class="bloc names underline">
       <em><span ng-bind-html="'me.me.codingArt' | translate"></span></em>
     </div>
-    <div class="bloc aboutWebsite underline fromRight">
-      <em><span class="keyword"><med-word-switch delay="5500" words="gestures" parent-class="presentation"></med-word-switch> </span> {{'me.me.toNavigate' | translate}}</span></em>
-    </div>
-    <div class="bloc studient underline fromRight">
+    <div class="bloc studient underline">
       <em><span ng-bind-html="'me.me.studient' | translate"></span></em>
     </div>
   </section>
-  <section class="photoContainer fromBot"></section>
+  <section class="infoContainer">
+    <div class="bloc names underline">
+      <em><span class="keyword">M</span>arseille</em>
+    </div>
+    <div class="bloc msg underline">
+      <em>{{'me.me.currentSatus' | translate}} <span class="epitech"><a href="http://www.epitech.eu" target="_blank">{Epitech}</a></span>.</em>
+    </div>
+    <div class="bloc aboutWebsite underline">
+      <em><span class="keyword"><med-word-switch delay="5500" words="gestures" parent-class="presentation"></med-word-switch> </span> {{'me.me.toNavigate' | translate}}</span></em>
+    </div>
+  </section>
 </article>
 <article class="skill right" med-scroll-on-swipe="both" med-lazy-load="getSkill()">
   <div class="skillBloc" ng-repeat="language in skills track by $index">

@@ -10,13 +10,13 @@
     "ico": "style/images/projects/lemin.png",
     "downloadLink": "",
     "description": [
-      "Il fallait faire traverser des fourmis d'un point A a un point B dans une fourmiliere representee par des tubes et des salles tout ca via un fichier de conf. Il fallait eviter collisions entre fourmis. Notre rendu est bien mieux, avec deux equipes de fourmis guerrieres voulant atteindre la base de l'autre dans une meme fourmiliere.",
-      "Interface graphique en OpenGL, Arbre binaire",
-      "Tres bon projet agreable a realiser, note finale 42 / 20"
+      "Des fourmis guerrieres qui veulent envahir la base adverse dans un graphe.",
+      "Interface graphique en OpenGL, Arbre binaire.",
+      "Tres bon projet agreable a realiser, note finale 42 / 20."
     ]
   },
   "this": {
-    "name": "This",
+    "name": "Meddou.github.io",
     "language": ["javascript", "angularjs", "html"],
     "time": 8,
     "difficulty": "high",
@@ -26,9 +26,25 @@
     "ico": "style/images/projects/myWebsite.png",
     "downloadLink": "",
     "description": [
-      "Mon portfolio. Le but premier de sa creation etait d'augmenter mes competences en web sur le temps libre que j'avais apres mon stage, il est aussi fait pour me demarque.",
-      "Premier projet personnel de cette ampleur, retard d'une semaine sur ma prevision de delai :(",
-      "Quelques points ne me plaise pas"
+      "Mon portfolio.",
+      "Le design c'est pas facile.",
+      ""
+    ]
+  },
+  "arcade": {
+    "name": "Arcade",
+    "language": ["c", "opengl", "ncurses", "sfml"],
+    "time": 3,
+    "difficulty": "high",
+    "context": "school",
+    "numberPerson": 3,
+    "love": 5,
+    "ico": "style/images/projects/arcade.png",
+    "downloadLink": "",
+    "description": [
+      "Creation d'une borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUI (sfml, ncurses, opengl).",
+      "Une architecture qui se devait d'etre generique.",
+      ""
     ]
   },
   "cloudindus": {
@@ -42,8 +58,8 @@
     "ico": "style/images/projects/cloudindus.png",
     "downloadLink": "",
     "description": [
-      "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS",
-      "Un code tres peu documente",
+      "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS.",
+      "Un code tres peu documente.",
       ""
     ]
   },
@@ -58,26 +74,9 @@
     "ico": "style/images/projects/raytracer.png",
     "downloadLink": "",
     "description": [
-      "Il fallait decrire des scenes de raytracing avec tels que des cercles, cylindres, cones. Le sujet autorisant beaucoup de bonus, nous avons ajoutes plusieurs fonctionnalites comme la transparence, la reflexion, les textures, le clustering...",
-      "Des formules mathemetiques assez difficiles a comprendre, une librarie by Epitech assez compliquee a utiliser",
-      "N'aimant pas tellement le raytracing j'ai eu la chance de faire le clustering, qui fut tres agreable. Note finale 28 / 20"
-    ]
-  },
-  "42sh": {
-    "name": "42sh",
-    "language": ["c"],
-    "time": 4,
-    "difficulty": "medium",
-    "context": "school",
-    "numberPerson": 5,
-    "love": 5,
-    "ico": "style/images/projects/minishell2.png",
-    "downloadLink": "",
-    "description":
-    [
-      "L'objectif etait de recoder un shell de type sh. Ce project est la suite d'une trilogie afin de parvenir a un rendu correct. Ici l'ajout majeur etait les '&&' et '||' sachant que le plus gros a ete fait dans le minishell2.",
-      "Fin d'annee, nous etions assez fatigues.",
-      "Finalement 18 / 20 mais ont auraient pu et du faire mieux."
+      "Un generateur d'images de sythese en reseau et selon un fichier de configuration.",
+      "Une librarie interne a Epitech assez compliquee a utiliser.",
+      "N'aimant pas tellement le raytracing j'ai eu la chance de faire le clustering, qui fut tres agreable. Note finale 28 / 20."
     ]
   },
   "minishell2": {
@@ -91,9 +90,41 @@
     "ico": "style/images/projects/minishell2.png",
     "downloadLink": "",
     "description": [
-      "Episode 2 de la trilogie de recode d'un terminal sh. Les ajouts etaient les redirections ainsi que les pipes. En consequence, il fallait un parseur qui tienne la route.",
+      "Recode d'un shell avec notamment les redirections et pipes.",
       "Aucune.",
-      "Projet que j'ai fini tres tot ce qui m'a permis de faire des bonus (prompt en termcaps, historique...). Note 20 / 20"
+      "Projet que j'ai fini tres tot ce qui m'a permis de faire des bonus (prompt en termcaps, historique...). Note 20 / 20."
+    ]
+  },
+  "amazeing": {
+    "name": "A-maze-ing",
+    "language": ["OCAML"],
+    "time": 2,
+    "difficulty": "high",
+    "context": "school",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "style/images/projects/amazeing.png",
+    "downloadLink": "",
+    "description": [
+      "Generateur et solveur de labyrinthe en OCAML.",
+      "Aucune.",
+      ""
+    ]
+  },
+  "philosophes": {
+    "name": "Philosophes",
+    "language": ["c", "SDL"],
+    "time": 2,
+    "difficulty": "medium",
+    "context": "school",
+    "numberPerson": 2,
+    "love": 5,
+    "ico": "style/images/projects/philosophes.png",
+    "downloadLink": "",
+    "description": [
+      "Un projet pour apprendre les threads/mutex et eviter les acces concurrentiels avec une interface en SDL.",
+      "La concurrence.",
+      ""
     ]
   },
   "bocalEmblem": {
@@ -107,9 +138,9 @@
     "ico": "style/images/projects/bocalEmblem.png",
     "downloadLink": "",
     "description": [
-      "Rush de 48h a deux ou il fallait coder un Fire Emblem like sans interface graphique. Neanmoins etant en avance j'ai pu faire une interface graphique en CSFML.",
-      "Le delai",
-      "Ma grande premiere sur une interface graphique, un push apres l'heure limite aura raison de nous :(. Note finale: 1.5 / 20"
+      "Rush de 48h. Developpement d'un Fire Emblem like avec une interface graphique en CSFML.",
+      "Le delai.",
+      "Ma grande premiere sur une interface graphique, un push apres l'heure limite aura raison de nous :(. Note finale: 1.5 / 20."
     ]
   },
   "Wolf3d": {
@@ -123,41 +154,25 @@
     "ico": "style/images/projects/wolf.png",
     "downloadLink": "",
     "description": [
-      "Un Wolf3D en raycasting. Un projet assez cool lorsqu'on a apprivoise la lib. J'ai eu l'occasion de faire plusieurs bonus tels que la map ou encore l'apparition de bouftous.",
-      "Une lib assez compliquee",
-      "Plein de bonus et d'amour, Note : 21 / 20"
-    ]
-  },
-  "calculator": {
-    "name": "Calculator",
-    "language": ["java"],
-    "time": 1,
-    "difficulty": "medium",
-    "context": "home",
-    "numberPerson": 1,
-    "love": 5,
-    "ico": "style/images/projects/ant.png",
-    "downloadLink": "",
-    "description": [
-      "Une calculatrice Java en AWT realisee pendant ma premiere annee pour apprendre le Java tout seul",
-      "Aucune",
-      "Java, c'est lourd"
+      "Un Wolf3D en raycasting avec apparition de bouftous.",
+      "Une lib assez compliquee.",
+      "Plein de bonus et d'amour, Note : 21 / 20."
     ]
   },
   "snake": {
     "name": "Snake",
-    "language": ["java"],
+    "language": ["java", "AWT"],
     "time": 1,
     "difficulty": "easy",
     "context": "home",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/ant.png",
+    "ico": "style/images/projects/snake.png",
     "downloadLink": "",
     "description": [
-      "Un snake en AWT pour apprendre Java",
-      "Aucune",
-      "Un projet plutot facile et efficace"
+      "Un snake en AWT pour apprendre Java.",
+      "Aucune.",
+      "Un projet plutot facile et efficace."
     ]
   }
 }
