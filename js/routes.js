@@ -21,18 +21,6 @@ routeApp.config(function($routeProvider, $locationProvider)
     controller: "projectsCtrl"
   });
 
-  $routeProvider.when("/Blog",
-  {
-    templateUrl: "templates/views/blog.html",
-    controller: "blogCtrl"
-  });
-
-  $routeProvider.when("/Contact",
-  {
-    templateUrl: "templates/views/contact.html",
-    controller: "contactCtrl"
-  });
-
   $routeProvider.otherwise({
     redirectTo: "/"
   });

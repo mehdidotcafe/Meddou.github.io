@@ -267,8 +267,8 @@ aside.navPictureShow
   top: 0;
   right: 0;
   margin-right: 15px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: rgba(30, 24, 43, 0.5);
 }
 
@@ -475,41 +475,6 @@ article.cursus aside
   flex-direction: column;
 }
 
-article.contact
-{
-  flex-direction: column;
-}
-
-.contactInput, #contactButton
-{
-  height: 10%
-}
-
-article.contact fieldset
-{
-  border: 0;
-  width: calc(100% - 26vw);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-
-article.contact fieldset *
-{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  align-self: center;
-  width: 100%;
-}
-
-#contactMsg
-{
-  overflow-y: scroll;
-  height: 35%;
-}
-
 article div.title
 {
   margin-top: 20px;
@@ -575,6 +540,11 @@ article div.medInfoContainer
   min-width: 640px;
 }
 
+article.skill
+{
+  padding-top: 1%;
+}
+
 article div div.infoBloc h1
 {
   z-index: 2;
@@ -600,7 +570,7 @@ article div div.infoBloc h1
    position: absolute;
    left: 0;
     right: 0;
-    top: 0;
+    top: calc(250px - 50px);
     bottom: 0;
     margin: auto auto;
    font-family: futura, "Comic Sans MS", cursive, sans-serif;
@@ -894,7 +864,7 @@ div.projectPresentation
 #project-name
 {
    position: relative;
-   height: 400px;
+   height: 500px;
 }
 
 #project-img
@@ -941,6 +911,7 @@ div.projectPresentation section.projectDataContainer
 
 span.projectLanguage
 {
+  z-index: 2;
   position: absolute;
   bottom: 0;
   right: 5px;
@@ -955,7 +926,7 @@ aside.UI
 .infoContainer
 {
   flex-grow: 1;
-  margin: 0.5%;
+  margin: 0.12%;
   width: 24vw;
   min-width: 400px;
   max-width: 80vw;
@@ -974,6 +945,13 @@ aside.UI
   width: 100%;
   flex-grow: 1;
   text-align: right;
+}
+
+.contact
+{
+  width: 100%;
+  flex-grow: 1;
+  text-align: left;
 }
 
 .names
@@ -1039,7 +1017,7 @@ aside.UI
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border-bottom: 5px solid rgb(0,128,128);
+  border-bottom: 4px solid rgba(0,128,128, 0.8);
 }
 
 .bloc, .sidebarBloc, .bloc-no-margin
@@ -1054,7 +1032,7 @@ aside.UI
 
 .bloc, .downloadBloc
 {
-  margin: 1%;
+  margin: 0.25%;
 }
 
 .downloadBloc
@@ -1191,7 +1169,7 @@ div.bloc.picture:hover
 aside.inSkill
 {
   font-size: 3vh;
-  margin-top: 3%;
+  margin-top: 1.5%;
   height: 15%;
 }
 
@@ -1257,7 +1235,7 @@ aside.rangePercentageContainer div.rangePercentage.numberPerson
 
 aside.rangePercentageContainer div.rangePercentage.time
 {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(255, 255, 255);
 }
 
 .bloc em, .downloadBloc em
@@ -1267,9 +1245,8 @@ aside.rangePercentageContainer div.rangePercentage.time
 
 .skillBloc
 {
-  margin: 1%;
   flex-grow: 1;
-  width: calc(25vw - 2% - 1em);
+  width: calc(20vw - 2% - 1em);
   min-width: 300px;
   height: 37vh;
   animation: opacityOnLoad 1s;

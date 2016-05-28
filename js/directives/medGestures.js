@@ -15,16 +15,6 @@ medGesturesApp.directive("medScrollOnSwipe", function($window, $document, indexi
       var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
       var moveIsOver = false;
 
-      elem.on("touchstart", function(event)
-      {
-        opt = false;
-        event.preventDefault();
-        startX = event.touches[0].clientX;
-        startY = event.touches[0].clientY;
-        $document.on("touchmove", mousemove);
-        $document.on("touchend", mouseup);
-      });
-
       elem.on("mousedown", function(event)
       {
         opt = true;

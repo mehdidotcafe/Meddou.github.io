@@ -52,6 +52,11 @@ meApp.controller("meCtrl", function($scope, $timeout, $sce, $location)
     $location.path("/Projects").search({language: language});
   }
 
+  $scope.doMailto = function()
+  {
+    window.location.href = "mailto:mehdi.meddour@epitech.eu?";
+  }
+
   function getLife()
   {
     var years;

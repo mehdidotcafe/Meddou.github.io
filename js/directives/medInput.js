@@ -33,10 +33,13 @@ medInputApp.directive("medRangeSelector", function()
         this.hoverChildrenElements = function(index, color)
         {
           var colors = color.split('(')[1].split(')')[0].split(',');
+          var r = parseInt(colors[0]);
+          var g = parseInt(colors[1]);
+          var b = parseInt(colors[2]);
 
-          var r = parseInt(parseInt(colors[0]) * 1.5);
-          var g = parseInt(parseInt(colors[1]) * 1.5);
-          var b = parseInt(parseInt(colors[2]) * 1.5);
+          r = parseInt(r * (r > 225 ? 0.5 : 1.5));
+          g = parseInt(g * (g > 225 ? 0.5 : 1.5));
+          b = parseInt(b * (b > 225 ? 0.5 : 1.5));
           var i = -1;
 
           $scope.isClicked = false;
@@ -52,10 +55,25 @@ medInputApp.directive("medRangeSelector", function()
 
         $element.bind("mouseleave", function()
         {
+          var colors = $scope.color.split('(')[1].split(')')[0].split(',');
+          var r = parseInt(colors[0]);
+          var g = parseInt(colors[1]);
+          var b = parseInt(colors[2]);
+
+          r = parseInt(r * (r > 225 ? 0.5 : 1.5));
+          g = parseInt(g * (g > 225 ? 0.5 : 1.5));
+          b = parseInt(b * (b > 225 ? 0.5 : 1.5));
+          var i = -1;
+
+          colors = "rgb(" + r + ", " + g + ", " + b + ")";
           if ($scope.isClicked == false)
           {
             for (var i = 0; i <= $scope.max; ++i)
-              angular.element($element[0].children[i]).css({fill: $scope.color})
+            {
+              angular.element($element[0].children[i]).css({fill: colors});
+              if (i >= $scope.toFill)
+                angular.element($element[0].children[i]).css({fill: $scope.color});
+            }
           }
         });
 
@@ -115,7 +133,6 @@ medInputApp.directive("medRange", function()
     },
     controller: function($scope, $element)
     {
-      console.log($scope.val);
       $scope.stepAsArray = new Array($scope.val);
 
       for (var i = 0; i < $scope.val; ++i)
@@ -189,10 +206,13 @@ medInputApp.directive("medSwitchSelector", function()
       this.hoverChildrenElements = function(index, color)
       {
         var colors = color.split('(')[1].split(')')[0].split(',');
-        var r = parseInt(parseInt(colors[0]) * 1.5);
-        var g = parseInt(parseInt(colors[1]) * 1.5);
-        var b = parseInt(parseInt(colors[2]) * 1.5);
+        var r = parseInt(colors[0]);
+        var g = parseInt(colors[1]);
+        var b = parseInt(colors[2]);
 
+        r = parseInt(r * (r > 225 ? 0.5 : 1.5));
+        g = parseInt(g * (g > 225 ? 0.5 : 1.5));
+        b = parseInt(b * (b > 225 ? 0.5 : 1.5));
         $scope.isClicked = false;
         colors = "rgb(" + r + ", " + g + ", " + b + ")";
         angular.element($element[0].children[index]).css({fill: colors});

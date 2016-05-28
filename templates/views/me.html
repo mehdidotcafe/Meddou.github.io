@@ -9,7 +9,7 @@
     <div class="bloc like underline">
         <em>{{'me.me.Ilike' | translate}}</br><med-word-switch class="keyword" words="hobbies" delay="2000" parent-class="presentation"></med-word-switch></em>
     </div>
-    <a class="downloadBloc cv underline fromLeft" target="_self" href="resources/CV/MEDDOUR_Mehdi_CV.pdf" download="MEDDOUR_Mehdi_CV.pdf">
+    <a class="downloadBloc cv underline" target="_self" href="resources/CV/MEDDOUR_Mehdi_CV.pdf" download="MEDDOUR_Mehdi_CV.pdf">
       <em ng-bind-html="'me.me.myResume' | translate"></em>
     </a>
   </div>
@@ -37,6 +37,9 @@
     </div>
     <div class="bloc aboutWebsite underline">
       <em><span class="keyword"><med-word-switch delay="5500" words="gestures" parent-class="presentation"></med-word-switch> </span> {{'me.me.toNavigate' | translate}}</span></em>
+    </div>
+    <div class="underline downloadBloc contact" ng-click="doMailto()">
+      <h5>Email : mehdi.meddour@epitech.eu</h5>
     </div>
   </section>
 </article>
