@@ -22,7 +22,7 @@
     "love": 80
   },
   {
-     "type": "HTML | CSS",
+     "type": "HTML",
      "img": "style/images/skills/htmlcss.svg",
      "comments": "Flexboxes ♥",
      "percentage": 80,
@@ -43,13 +43,6 @@
     "love": 85
   },
   {
-    "type": "OCAML",
-    "img": "style/images/skills/ocaml.svg",
-    "comments": "match ... with ♥",
-    "percentage": 70,
-    "love": 75
-  },
-  {
     "type": "MongoDB",
     "img": "style/images/skills/mongodb.svg",
     "comments": "Collection.insert ♥",
@@ -61,6 +54,13 @@
     "img": "style/images/skills/nodeJs.svg",
     "comments": "Backend ♥",
     "percentage": 65,
+    "love": 75
+  },
+  {
+    "type": "OCAML",
+    "img": "style/images/skills/ocaml.svg",
+    "comments": "match ... with ♥",
+    "percentage": 60,
     "love": 75
   },
   {

@@ -333,14 +333,14 @@ aside#browserInfo div span
 /* START CONTAINER WITH NAVBAR */
 
 
-div.containerWithNavbar.ng-enter-active
+div.containerWithNavbar.ng-enter-active, div.containerWithNavbar.ng-enter
 {
   -webkit-transform: translate(-100vw, 0);
   -moz-transform: translate(-100vw, 0);
   -ms-transform: translate(-100vw, 0);
   -o-transform: translate(-100vw, 0);
   transform: translate(-100vw, 0);
-  transition: 1s ease-in-out all;
+  transition: 0.7s ease-in-out all;
 }
 
 div.containerWithNavbar.ng-leave-active
@@ -350,7 +350,7 @@ div.containerWithNavbar.ng-leave-active
   -ms-transform: translate(100vw, 0);
   -o-transform: translate(100vw, 0);
   transform: translate(100vw, 0);
-  transition: 1s ease-in-out all;
+  transition: 0.7s ease-in-out all;
 }
 
 div.containerWithNavbar
@@ -383,11 +383,6 @@ div.containerWithoutNavbar
 
 article
 {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -418,27 +413,20 @@ article section
 
 article.default
 {
-  left: 0 !important;
+  transform: translate(0, 0);
 }
 
 article.right
 {
-  left: 100% !important;
+  transform: translate(100%, 0);
 }
 
 article.left
 {
-  left: -100% !important;
+  transform: translate(-100%, 0);
 }
 
-article.projects
-{
-  overflow: hidden;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-article.description
+article.projects, article.description
 {
   overflow: hidden;
   flex-direction: row;
@@ -523,10 +511,10 @@ article div div.infoBloc.ng-enter-active
   opacity: 1;
 }
 
-article div div.infoBloc.ng-leave-active
+/*article div div.infoBloc.ng-leave-active
 {
-  opacity: 0;
-}
+  opacity: 0 !important;
+}*/
 
 article div.medInfoContainer
 {
@@ -1122,12 +1110,13 @@ div.bloc div.comments
   font-size: 5vh;
   text-align: center;
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 128, 128, 0.95);
   visibility: hidden;
-  top: -100%;
-  transition: 0.2s ease-in-out;
+  transform : translate(0, -100%);
+  transition: 0.1s ease-in-out;
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 3);
   -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 3);
   -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 3);
@@ -1147,16 +1136,8 @@ div.bloc div.comments p
 div.bloc:hover div.comments
 {
   cursor: pointer;
-  position: absolute;
-  height: 100%;
-  width: 100%;
   visibility: visible;
-  top: 0;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
+  transform: translate(0, 0);
   transition: 0.5s;
 }
 
