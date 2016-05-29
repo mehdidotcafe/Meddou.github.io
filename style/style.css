@@ -43,7 +43,7 @@ html
 body
 {
   margin: 0px;
-  background-image: url("./images/wallpaper.png");
+  background-image: url("../images/wallpaper.png");
   background-repeat: repeat;
   overflow: hidden;
 }
