@@ -1,9 +1,9 @@
 <article class="projects default" med-scroll-on-swipe="both" med-lazy-load="getProjects()">
   <med-project-sidebar visibility-var="visibleSidebar" class="projectSidebar" ng-show="visibleSidebar" project-model="projectModel"></med-project-sidebar>
   <aside class="sidebarShowButton" ng-hide="visibleSidebar">
-    <med-svg src="./style/images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
+    <med-svg src="./images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
   </aside>
-  <div class="medInfoContainer" med-scroll-on-swipe="vertical" tabindex="0">
+  <div class="medInfoContainer projects-container" med-scroll-on-swipe="vertical" tabindex="0">
     <div class="infoBloc bloc underline fromTop" title="{{'projects.click' | translate}}" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
       <h1>{{info.name}}</h1>
       <img class="project-img-preview" ng-src="{{info.ico}}"/>

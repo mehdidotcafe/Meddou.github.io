@@ -501,20 +501,15 @@ article div div.infoBloc:focus
   border: 0px;
 }
 
-article div div.infoBloc.ng-enter
+article div div.infoBloc.ng-enter, article div div.infoBloc.ng-enter-active
 {
   opacity: 1;
 }
 
-article div div.infoBloc.ng-enter-active
-{
-  opacity: 1;
-}
-
-/*article div div.infoBloc.ng-leave-active
+article div div.infoBloc.ng-leave-active
 {
   opacity: 0 !important;
-}*/
+}
 
 article div.medInfoContainer
 {
@@ -656,6 +651,13 @@ med-project-sidebar
   flex-grow: 1;
   width: 300px;
   min-height: 640px;
+  transition: 0.5s ease-in-out;
+}
+
+med-project-sidebar.ng-hide
+{
+  transform: translate(-100%, 0);
+  transition: 0.5s ease-in-out;
 }
 
 med-project-sidebar div.buttonContainer
@@ -1329,6 +1331,7 @@ aside.sidebarHideButton med-svg svg
 
 aside.sidebarShowButton
 {
+  cursor: pointer;
   background-color: rgba(30, 24, 43, 0.5);
   transition: 0.5s;
 }
@@ -1512,7 +1515,7 @@ article.paper med-html-insert h3
 
 .no-extend
 {
-   object-fit: contain;;
+   object-fit: contain;
 }
 
 #btn-play

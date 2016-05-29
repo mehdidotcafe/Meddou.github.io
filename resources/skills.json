@@ -2,105 +2,105 @@
   "skills": [
   {
     "type": "C",
-    "img": "style/images/skills/c.svg",
+    "img": "images/skills/c.svg",
     "comments": "Malloc ♥",
     "percentage": 90,
     "love": 90
   },
   {
     "type": "C++",
-    "img": "style/images/skills/cpp.svg",
+    "img": "images/skills/cpp.svg",
     "comments": "STL ♥",
     "percentage": 90,
     "love": 100
   },
   {
     "type": "Git",
-    "img": "style/images/skills/git.svg",
+    "img": "images/skills/git.svg",
     "comments": "Git merge ♥",
     "percentage": 85,
     "love": 80
   },
   {
      "type": "HTML",
-     "img": "style/images/skills/htmlcss.svg",
+     "img": "images/skills/htmlcss.svg",
      "comments": "Flexboxes ♥",
      "percentage": 80,
      "love": 75
   },
   {
     "type": "AngularJS",
-    "img": "style/images/skills/angular.png",
+    "img": "images/skills/angular.png",
     "comments": "MVC ♥",
     "percentage": 75,
     "love": 75
   },
   {
     "type": "Javascript",
-    "img": "style/images/skills/javascript.svg",
+    "img": "images/skills/javascript.svg",
     "comments": "JSON ♥",
     "percentage": 75,
     "love": 85
   },
   {
     "type": "MongoDB",
-    "img": "style/images/skills/mongodb.svg",
+    "img": "images/skills/mongodb.svg",
     "comments": "Collection.insert ♥",
     "percentage": 70,
     "love": 65
   },
   {
     "type": "NodeJS",
-    "img": "style/images/skills/nodeJs.svg",
+    "img": "images/skills/nodeJs.svg",
     "comments": "Backend ♥",
     "percentage": 65,
     "love": 75
   },
   {
     "type": "OCAML",
-    "img": "style/images/skills/ocaml.svg",
+    "img": "images/skills/ocaml.svg",
     "comments": "match ... with ♥",
     "percentage": 60,
     "love": 75
   },
   {
     "type": "ASM",
-    "img": "style/images/skills/asm.png",
+    "img": "images/skills/asm.png",
     "comments": "leave ♥",
     "percentage": 55,
     "love": 60
   },
   {
     "type": "Java",
-    "img": "style/images/skills/java.svg",
+    "img": "images/skills/java.svg",
     "comments": "Garbage Collector ♥",
     "percentage": 55,
     "love": 95
   },
   {
     "type": "SFML",
-    "img": "style/images/skills/SFML.svg",
+    "img": "images/skills/SFML.svg",
     "comments": "sfRenderWindow ♥",
     "percentage": 55,
     "love": 85
   },
   {
     "type": "MySQL",
-    "img": "style/images/skills/mySql.svg",
+    "img": "images/skills/mySql.svg",
     "comments": "Select * from epitech_tp < /3",
     "percentage": 50,
     "love": 10
   },
   {
     "type": "Unity",
-    "img": "style/images/skills/unity.svg",
+    "img": "images/skills/unity.svg",
     "comments": "3D ♥",
     "percentage": 30,
     "love": 90
   },
   {
     "type": "Google",
-    "img": "style/images/skills/google.svg",
+    "img": "images/skills/google.svg",
     "comments": "Man Google ♥",
     "percentage": 42,
     "love": 42

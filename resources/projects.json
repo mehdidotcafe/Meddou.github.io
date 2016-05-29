@@ -7,7 +7,7 @@
     "context": "school",
     "numberPerson": 5,
     "love": 4,
-    "ico": "style/images/projects/lemin.png",
+    "ico": "images/projects/lemin.png",
     "downloadLink": "",
     "description": [
       "Des fourmis guerrieres qui veulent envahir la base adverse dans un graphe.",
@@ -23,7 +23,7 @@
     "context": "home",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/myWebsite.png",
+    "ico": "images/projects/myWebsite.png",
     "downloadLink": "",
     "description": [
       "Mon portfolio.",
@@ -39,7 +39,7 @@
     "context": "school",
     "numberPerson": 3,
     "love": 5,
-    "ico": "style/images/projects/arcade.png",
+    "ico": "images/projects/arcade.png",
     "downloadLink": "",
     "description": [
       "Creation d'une borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUI (sfml, ncurses, opengl).",
@@ -55,7 +55,7 @@
     "context": "school",
     "numberPerson": 5,
     "love": 4,
-    "ico": "style/images/projects/cloudindus.png",
+    "ico": "images/projects/cloudindus.png",
     "downloadLink": "",
     "description": [
       "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS.",
@@ -71,7 +71,7 @@
     "context": "school",
     "numberPerson": 5,
     "love": 4,
-    "ico": "style/images/projects/raytracer.png",
+    "ico": "images/projects/raytracer.png",
     "downloadLink": "",
     "description": [
       "Un generateur d'images de sythese en reseau et selon un fichier de configuration.",
@@ -87,7 +87,7 @@
     "context": "school",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/minishell2.png",
+    "ico": "images/projects/minishell2.png",
     "downloadLink": "",
     "description": [
       "Recode d'un shell avec notamment les redirections et pipes.",
@@ -103,7 +103,7 @@
     "context": "school",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/amazeing.png",
+    "ico": "images/projects/amazeing.png",
     "downloadLink": "",
     "description": [
       "Generateur et solveur de labyrinthe en OCAML.",
@@ -119,7 +119,7 @@
     "context": "school",
     "numberPerson": 2,
     "love": 5,
-    "ico": "style/images/projects/philosophes.png",
+    "ico": "images/projects/philosophes.png",
     "downloadLink": "",
     "description": [
       "Un projet pour apprendre les threads/mutex et eviter les acces concurrentiels avec une interface en SDL.",
@@ -135,7 +135,7 @@
     "context": "school",
     "numberPerson": 2,
     "love": 5,
-    "ico": "style/images/projects/bocalEmblem.png",
+    "ico": "images/projects/bocalEmblem.png",
     "downloadLink": "",
     "description": [
       "Rush de 48h. Developpement d'un Fire Emblem like avec une interface graphique en CSFML.",
@@ -151,7 +151,7 @@
     "context": "school",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/wolf.png",
+    "ico": "images/projects/wolf.png",
     "downloadLink": "",
     "description": [
       "Un Wolf3D en raycasting avec apparition de bouftous.",
@@ -167,7 +167,7 @@
     "context": "home",
     "numberPerson": 1,
     "love": 5,
-    "ico": "style/images/projects/snake.png",
+    "ico": "images/projects/snake.png",
     "downloadLink": "",
     "description": [
       "Un snake en AWT pour apprendre Java.",

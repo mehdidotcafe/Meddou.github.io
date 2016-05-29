@@ -1,31 +1,31 @@
 <form class="sidebarForm">
   <input class="sidebarBloc underline noBorder fromRight inputName" ng-model="projectModel.name" med-focusable placeholder="{{'projects.projectPreview.projectName' | translate}}" tabindex="1"/>
   <aside class="sidebarHideButton fromRight">
-    <med-svg src="./style/images/down.svg" ng-click="changeVisibility()"></med-svg>
+    <med-svg src="./images/down.svg" ng-click="changeVisibility()"></med-svg>
   </aside>
   <input class="sidebarBloc underline noBorder fromRight" ng-model="projectModel.language" med-focusable med-post-params var-to-get="language" placeholder="Techno" tabindex="2"/>
   <div class="sidebarBloc underline fromLeft">
     <fieldset>
       <span>{{'me.experience.duration' | translate}}</span><sub class="keyword">[{{'projects.projectPreview.inWeek' | translate}}]</sub></br>
-      <med-range-selector min="1" max="8" src="./style/images/svg/week.svg" to-fill="projectModel.time" color="rgb(255, 255, 255)" tabindex="3"></med-range-selector>
+      <med-range-selector min="1" max="8" src="./images/svg/week.svg" to-fill="projectModel.time" color="rgb(255, 255, 255)" tabindex="3"></med-range-selector>
     </fieldset>
   </div>
   <div class="sidebarBloc underline fromRight">
     <fieldset>
       <span>{{'projects.projectPreview.place' | translate}}</span><br />
-      <med-switch-selector colors="['rgb(0,128,128)', 'rgb(0,128,128)']" values="['School', 'Home']" imgs="['./style/images/svg/homeProject.svg', './style/images/svg/livingRoom.svg']" to-fill="projectModel.context" tabindex="4"></med-switch-selector>
+      <med-switch-selector colors="['rgb(0,128,128)', 'rgb(0,128,128)']" values="['School', 'Home']" imgs="['./images/svg/homeProject.svg', './images/svg/livingRoom.svg']" to-fill="projectModel.context" tabindex="4"></med-switch-selector>
     </fieldset>
   </div>
   <div class="sidebarBloc underline fromLeft">
     <fieldset>
       <span>{{'projects.projectPreview.persons' | translate}}</span><br />
-      <med-range-selector min="1" max="6" src="./style/images/svg/head.svg" to-fill="projectModel.numberPerson" color="rgb(0, 100, 0)" tabindex="5"></med-range-selector>
+      <med-range-selector min="1" max="6" src="./images/svg/head.svg" to-fill="projectModel.numberPerson" color="rgb(0, 100, 0)" tabindex="5"></med-range-selector>
     </fieldset>
   </div>
   <div class="sidebarBloc underline fromRight">
     <fieldset>
       <span>{{'projects.projectPreview.love' | translate}}</span><br />
-      <med-range-selector min="1" max="5" src="./style/images/svg/love.svg" to-fill="projectModel.love" color="rgb(117, 0, 0)" tabindex="6"></med-range-selector>
+      <med-range-selector min="1" max="5" src="./images/svg/love.svg" to-fill="projectModel.love" color="rgb(117, 0, 0)" tabindex="6"></med-range-selector>
     </fieldset>
   </div>
 </form>
