@@ -6,20 +6,20 @@
     <div class="bloc dev underline">
       <em ng-bind-html="'me.me.developper' | translate"></em>
     </div>
-    <div class="bloc like underline">
-        <em>{{'me.me.Ilike' | translate}}</br><med-word-switch class="keyword" words="hobbies" delay="2000" parent-class="presentation"></med-word-switch></em>
+    <div class="bloc like underline text-on-img height-200">
+      <em class="keyword">{{'me.me.Ilike' | translate}}</em>
+      <med-image-switch class="img-cover img-switch" imgs="hobbies" delay="3000" path="./images/hobbies/" extension="jpg"></med-image-switch>
     </div>
     <a class="downloadBloc cv underline" target="_self" href="resources/CV/MEDDOUR_Mehdi_CV.pdf" download="MEDDOUR_Mehdi_CV.pdf">
       <em ng-bind-html="'me.me.myResume' | translate"></em>
     </a>
-  </div>
   </section>
   <section class="infoContainer">
     <div class="bloc names underline">
       <em><span class="keyword">M</span>ehdi <span class="keyword">M</span>eddour</em>
     </div>
     <div class="bloc msg photoContainer underline">
-      <img class="photo" src="images/mehdi.jpg"></img>
+      <img class="photo" src="images/mehdi.jpg" med-fade-on-load></img>
     </div>
     <div class="bloc names underline">
       <em><span ng-bind-html="'me.me.codingArt' | translate"></span></em>
@@ -39,7 +39,7 @@
       <em><span class="keyword"><med-word-switch delay="5500" words="gestures" parent-class="presentation"></med-word-switch> </span> {{'me.me.toNavigate' | translate}}</span></em>
     </div>
     <div class="underline downloadBloc contact" ng-click="doMailto()">
-      <h5>Email : mehdi.meddour@epitech.eu</h5>
+      <em>Email<br />mehdi.meddour@epitech.eu</em>
     </div>
   </section>
 </article>
@@ -49,7 +49,7 @@
       <div class="comments">
         <p ng-bind-html="insertHTML(language.comments)"></p>
       </div>
-      <img class="no-extend" ng-src="{{language.img}}"></img>
+      <img class="no-extend" ng-src="{{language.img}}" med-fade-on-load></img>
     </div>
     <aside class="bloc rangePercentageContainer inSkill">
       <span class="skillInRange"><span ng-bind-html="'me.skills.skill' | translate"></span></span>
@@ -63,34 +63,46 @@
     </aside>
   </div>
 </article>
-<article class="cursus right" med-scroll-on-swipe="both" med-lazy-load="getCV()">
-  <section id="school">
-    <div ng-repeat="school in cv.schools" class="bloc underline grow opacityOnLoad">
-      <h5><span ng-show="school.thing">{{school.thing}} </span><span class="keyword">{{school.name}}<span></h5>
-      <fieldset>
-        <div class="lifeInfo"><span class="keyword">{{'me.experience.years' | translate}}:</span> {{school.year}}</div>
-        <div class="lifeInfo"><span class="keyword">{{'me.experience.title' | translate}}:</span> {{school.title}}</div>
-        <div class="lifeInfo"><span class="keyword">{{'projects.projectPreview.place' | translate}}:</span> {{school.place}}</div>
-      </fieldset>
+<article class="right" med-scroll-on-swipe="both" med-lazy-load="getCV()">
+  <aside class="cursus">
+    <div id="school">
+      <div ng-repeat="school in cv.schools" class="bloc underline opacityOnLoad  text-on-img height-400">
+        <img class="place-img img-cover brightness-50" ng-src="{{school.img}}" med-fade-on-load></img>
+        <div class="absolute">
+          <div>
+            <h5><span ng-show="school.thing">{{school.thing}} </span><span class="keyword">{{school.name}}<span></h5>
+            <fieldset>
+              <div class="lifeInfo"><span class="keyword">{{'me.experience.years' | translate}}:</span> {{school.year}}</div>
+              <div class="lifeInfo"><span class="keyword">{{'me.experience.title' | translate}}:</span> {{school.title}}</div>
+              <div class="lifeInfo"><span class="keyword">{{'projects.projectPreview.place' | translate}}:</span> {{school.place}}</div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-  <section id="work">
-    <div ng-repeat="work in cv.works" class="bloc underline opacityOnLoad grow">
-      <h5>{{work.thing}} <span class="keyword">{{work.name}}</span></h5>
-      <fieldset>
-        <div class="lifeInfo">
-          <span class="keyword">{{'me.experience.years' | translate}}:</span> {{work.year}}
+    <div id="work">
+      <div ng-repeat="work in cv.works" class="bloc underline opacityOnLoad text-on-img height-400">
+        <img class="place-img img-cover brightness-50" ng-src="{{work.img}}" med-fade-on-load></img>
+        <div class="absolute">
+          <div>
+            <h5>{{work.thing}} <span class="keyword">{{work.name}}</span></h5>
+            <fieldset>
+              <div class="lifeInfo">
+                <span class="keyword">{{'me.experience.years' | translate}}:</span> {{work.year}}
+              </div>
+              <div class="lifeInfo">
+                <span class="keyword">{{'me.experience.duration' | translate}}:</span> {{work.length}}
+              </div>
+              <div class="lifeInfo">
+                <span class="keyword">{{'me.experience.status' | translate}}:</span> {{work.job}}
+              </div>
+              <div class="lifeInfo">
+                <span class="keyword">{{'projects.projectPreview.place' | translate}}:</span> {{work.place}}
+              </div>
+            </fieldset>
+          </div>
         </div>
-        <div class="lifeInfo">
-          <span class="keyword">{{'me.experience.duration' | translate}}:</span> {{work.length}}
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">{{'me.experience.status' | translate}}:</span> {{work.job}}
-        </div>
-        <div class="lifeInfo">
-          <span class="keyword">{{'projects.projectPreview.place' | translate}}:</span> {{work.place}}
-        </div>
-      </fieldset>
+      </div>
     </div>
-  </section>
+  </aside>
 </article>

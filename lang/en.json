@@ -38,7 +38,7 @@
     "projectPreview": {
       "projectName": "Project's Name",
       "language": "Language",
-      "place": "Place",
+      "place": "City",
       "persons": "Team's Length",
       "love": "Love",
       "inWeek": "In weeks"
@@ -51,7 +51,7 @@
       "time": "Duration",
       "downloadMe": "Download Me !"
    },
-   "click": "Click to see the project"   
+   "click": "Click to see the project"
   },
   "contact": {
     "contactMe": "Contact Me !"

@@ -4,9 +4,9 @@
     <med-svg src="./images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
   </aside>
   <div class="medInfoContainer projects-container" med-scroll-on-swipe="vertical" tabindex="0">
-    <div class="infoBloc bloc underline fromTop" title="{{'projects.click' | translate}}" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
+    <div class="infoBloc bloc underline fromTop" ng-class="isFiltered ? 'filtered' : ''" title="{{'projects.click' | translate}}" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
       <h1>{{info.name}}</h1>
-      <img class="project-img-preview" ng-src="{{info.ico}}"/>
+      <img class="project-img-preview" ng-src="{{info.ico}}" med-fade-on-load/>
     </div>
   </div>
 </article>
@@ -18,7 +18,7 @@
       <section class="bloc-no-margin underline">
          <div id="project-name">
             <h1>{{currentProject.name}}</h1>
-            <img id="project-img" ng-src="{{currentProject.ico}}"></img>
+            <img id="project-img" ng-src="{{currentProject.ico}}" med-fade-on-load></img>
          </div>
       </section>
       <section class="projectDataContainer">

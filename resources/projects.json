@@ -1,4 +1,36 @@
 {
+  "gauntlet": {
+    "name": "Gauntlet",
+    "language": ["c++", "ogre3d"],
+    "time": 2,
+    "difficulty": "high",
+    "context": "school",
+    "numberPerson": 6,
+    "love": 5,
+    "ico": "images/projects/gauntlet.png",
+    "downloadLink": "",
+    "description": [
+      "Realisation d'un gauntlet-like avec Ogre3D avec menus, sons, ennemies, IA...",
+      "Comprehension de la librarie, IA.",
+      ""
+    ]
+  },
+  "zappy": {
+    "name": "Zappy",
+    "language": ["c", "c++", "unity"],
+    "time": 2,
+    "difficulty": "high",
+    "context": "school",
+    "numberPerson": 6,
+    "love": 4,
+    "ico": "images/projects/zappy.png",
+    "downloadLink": "",
+    "description": [
+      "Creation d'un jeu de gestion en reseau a la maniere d'un Sims ou les joueurs sont controles par des IAs.",
+      "Interface en Unity3D, IA en C++ qui doit prendre les meilleurs decisions, serveur asychrone en C.",
+      ""
+    ]
+  },
   "lemin": {
     "name": "Lemin",
     "language": ["c", "opengl"],
@@ -82,7 +114,7 @@
   "minishell2": {
     "name": "Minishell 2",
     "language": ["c"],
-    "time": 4,
+    "time": 2,
     "difficulty": "medium",
     "context": "school",
     "numberPerson": 1,
@@ -98,7 +130,7 @@
   "amazeing": {
     "name": "A-maze-ing",
     "language": ["OCAML"],
-    "time": 2,
+    "time": 1,
     "difficulty": "high",
     "context": "school",
     "numberPerson": 1,

@@ -23,6 +23,52 @@ medAnimationApp.directive("medRotateOnHover", function()
   })
 });
 
+medAnimationApp.directive("medImageSwitch", function($timeout)
+{
+  return ({
+    restrict: "E",
+    scope: {
+      imgs: "=",
+      delay: "=",
+      path: "@",
+      extension: "@"
+    },
+    template: "<img id='first-img' class='img-cover'></img><img id='second-img' class='img-cover'></img>",
+    link: function(scope, elem)
+    {
+      var idx = 0;
+      var firstImg = document.getElementById("first-img");
+      var secondImg = document.getElementById("second-img");
+
+      function changeImg()
+      {
+        var nextIdx = (idx + 1) % scope.imgs.length;
+
+        if (scope.imgs.length > 0)
+        {
+          if (idx % 2)
+          {
+            firstImg.setAttribute("src", scope.path + scope.imgs[idx] + '.' + scope.extension);
+            firstImg.style.opacity = "1";
+            secondImg.style.opacity = "0";
+          }
+          else
+          {
+            secondImg.setAttribute("src", scope.path + scope.imgs[idx] + '.' + scope.extension);
+            firstImg.style.opacity = "0";
+            secondImg.style.opacity = "1";
+          }
+        if (++idx >= scope.imgs.length)
+          idx = 0;
+        }
+      }
+
+      scope.$watch("imgs", changeImg);
+      setInterval(changeImg, parseInt(scope.delay));
+    }
+  })
+});
+
 medAnimationApp.directive("medWordSwitch", function($timeout)
 {
   return ({
@@ -51,7 +97,6 @@ medAnimationApp.directive("medWordSwitch", function($timeout)
           elem[0].style.opacity = "0";
           $timeout(addWord, 500);
         }
-        // $timeout(innerWord, parseInt(scope.delay) + 1000);
       }
 
       elem[0].innerHTML = scope.words[0];

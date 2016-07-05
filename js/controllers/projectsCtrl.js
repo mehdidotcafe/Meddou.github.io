@@ -6,6 +6,7 @@ projectApp.controller("projectsCtrl", function($scope, indexingService, $locatio
   $scope.currentProject = undefined;
   $scope.unmatchedProject = [];
   $scope.filteredProject = [];
+  $scope.isFiltered = false;
   $scope.projectModel = {
     name: "",
     language: "",
@@ -122,6 +123,7 @@ projectApp.filter("filterProject", function()
         $scope.unmatchedProject = unmatched;
       }
       $scope.filteredProject = res;
+      $scope.isFiltered = Object.keys($scope.projects).length != 0 && Object.keys(res).length != Object.keys($scope.projects).length;
       return (res);
     });
 });

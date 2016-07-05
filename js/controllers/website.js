@@ -1,4 +1,4 @@
-var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medLazyLoadApp", "indexingServiceApp", "translationServiceApp", "ngAnimate"]);
+var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medLazyLoadApp", "indexingServiceApp", "translationServiceApp", , "medFadeOnLoadApp", "ngAnimate"]);
 
 websiteApp.run(function(translationService, $location)
 {
@@ -17,6 +17,7 @@ websiteApp.controller("indexCtrl", function($scope, $timeout, indexingService, t
   {
     indexingService.setCurrentWindow(window.location.href);
   };
+
   $scope.handleKey = function(event)
   {
     var activeElement = document.activeElement.tagName;

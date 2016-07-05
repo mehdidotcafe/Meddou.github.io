@@ -43,6 +43,20 @@
     "love": 85
   },
   {
+    "type": "NodeJS",
+    "img": "images/skills/nodeJs.svg",
+    "comments": "Backend ♥",
+    "percentage": 75,
+    "love": 75
+  },
+  {
+    "type": "OCAML",
+    "img": "images/skills/ocaml.svg",
+    "comments": "match ... with ♥",
+    "percentage": 70,
+    "love": 75
+  },
+  {
     "type": "MongoDB",
     "img": "images/skills/mongodb.svg",
     "comments": "Collection.insert ♥",
@@ -50,31 +64,17 @@
     "love": 65
   },
   {
-    "type": "NodeJS",
-    "img": "images/skills/nodeJs.svg",
-    "comments": "Backend ♥",
-    "percentage": 65,
-    "love": 75
-  },
-  {
-    "type": "OCAML",
-    "img": "images/skills/ocaml.svg",
-    "comments": "match ... with ♥",
-    "percentage": 60,
-    "love": 75
-  },
-  {
     "type": "ASM",
     "img": "images/skills/asm.png",
     "comments": "leave ♥",
-    "percentage": 55,
+    "percentage": 60,
     "love": 60
   },
   {
     "type": "Java",
     "img": "images/skills/java.svg",
     "comments": "Garbage Collector ♥",
-    "percentage": 55,
+    "percentage": 60,
     "love": 95
   },
   {

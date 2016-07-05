@@ -5,6 +5,7 @@
         "name": "{Epitech}",
         "year": "2014 - 2019",
         "title": "Expert en informatique",
+        "img": "./images/cv/epitech.jpg",
         "place": "Marseille"
       },
       {
@@ -12,6 +13,7 @@
         "name": "Thiers",
         "year": "2014",
         "title": "Baccalaureat Scientifique",
+        "img": "./images/cv/thiers.jpg",
         "place": "Marseille"
       }
     ],
@@ -22,6 +24,7 @@
         "year": "2015",
         "length": "6 mois",
         "job": "Developpeur",
+        "img": "./images/projects/cloudindus.png",
         "place": "Bouc Bel Air"
       },
       {
@@ -30,6 +33,7 @@
         "year": "2012",
         "length": "1 semaine",
         "job": "Vendeur",
+        "img": "./images/cv/numericable.jpg",
         "place": "Marseille"
       },
       {
@@ -38,6 +42,7 @@
         "year": "2011",
         "length": "1 semaine",
         "job": "Vendeur",
+        "img": "./images/cv/micromania.jpg",
         "place": "Marseille"
       }
     ]
