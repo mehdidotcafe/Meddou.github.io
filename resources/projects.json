@@ -47,22 +47,6 @@
       "Tres bon projet agreable a realiser, note finale 42 / 20."
     ]
   },
-  "this": {
-    "name": "Meddou.github.io",
-    "language": ["javascript", "angularjs", "html"],
-    "time": 8,
-    "difficulty": "high",
-    "context": "home",
-    "numberPerson": 1,
-    "love": 5,
-    "ico": "images/projects/myWebsite.png",
-    "downloadLink": "",
-    "description": [
-      "Mon portfolio.",
-      "Le design c'est pas facile.",
-      ""
-    ]
-  },
   "arcade": {
     "name": "Arcade",
     "language": ["c", "opengl", "ncurses", "sfml"],
@@ -76,6 +60,22 @@
     "description": [
       "Creation d'une borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUI (sfml, ncurses, opengl).",
       "Une architecture qui se devait d'etre generique.",
+      ""
+    ]
+  },
+  "this": {
+    "name": "Meddou.github.io",
+    "language": ["javascript", "angularjs", "html"],
+    "time": 8,
+    "difficulty": "high",
+    "context": "home",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "images/projects/myWebsite.png",
+    "downloadLink": "",
+    "description": [
+      "Mon portfolio.",
+      "Le design c'est pas facile.",
       ""
     ]
   },

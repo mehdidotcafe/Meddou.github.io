@@ -403,7 +403,6 @@ article section
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 article.default
@@ -430,6 +429,7 @@ article.projects, article.description
 
 article.presentation
 {
+  overflow-y: auto;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -917,58 +917,32 @@ aside.UI
 .infoContainer
 {
   flex-grow: 1;
-  margin: 0.12%;
+  /*margin: 0.12%;*/
   width: 24vw;
   min-width: 400px;
   max-width: 80vw;
   min-height: 97%;
 }
 
-.like
+.text-right
 {
   width: 100%;
   flex-grow: 1;
   text-align: right;
 }
 
-.cv
-{
-  width: 100%;
-  flex-grow: 1;
-  text-align: right;
-}
-
-.contact
+.text-left
 {
   width: 100%;
   flex-grow: 1;
   text-align: left;
 }
 
-.names
-{
-  flex-grow: 1;
-  width: 100%;
-}
-
-.years
-{
-  flex-grow: 2;
-  width: 100%;
-  text-align: right;
-}
-
-.dev
+.text-center
 {
   width: 100%;
   flex-grow: 1;
-  text-align: right;
-}
-
-.studient
-{
-  width: 100%;
-  flex-grow: 1;
+  text-align: center;
 }
 
 .photoContainer
@@ -1040,10 +1014,10 @@ aside.UI
   height: 100%;
 }
 
-.bloc, .downloadBloc
+/*.bloc, .downloadBloc
 {
   margin: 0.25%;
-}
+}*/
 
 .downloadBloc
 {
@@ -1114,6 +1088,16 @@ div.bloc.picture med-svg svg, div.bloc.picture img
   transition: 1s;
   height: 60%;
   width: auto;
+}
+
+.marged-2
+{
+  margin: 2px;
+}
+
+.marged-bottom-5
+{
+  margin-bottom: 5px;  
 }
 
 div.bloc div.comments
@@ -1301,7 +1285,7 @@ fieldset div.lifeInfo
 
 #work div fieldset div.lifeInfo
 {
-  font-size: 3vh;
+  font-size: 5vh;
 }
 
 .grow
@@ -1394,16 +1378,28 @@ aside.sidebarShowButton med-svg svg
    object-fit: contain;
 }
 
-.text-on-img.height-200
+.height-200
 {
   max-height: 200px !important;
   height: 200px;
 }
 
-.text-on-img.height-400
+.height-400
 {
   max-height: 400px !important;
   height: 400px;
+}
+
+.height-500
+{
+  max-height: 500px !important;
+  height: 500px;
+}
+
+.height-600
+{
+  max-height: 600px !important;
+  height: 600px;
 }
 
 .text-on-img
@@ -1422,13 +1418,27 @@ aside.sidebarShowButton med-svg svg
   display: inline-block;
 }
 
+.relative
+{
+  position: relative;
+}
+
 .brightness-50
 {
   filter: brightness(50%);
--webkit-filter: brightness(50%);
--moz-filter: brightness(50%);
--o-filter: brightness(50%);
--ms-filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+}
+
+.brightness-75
+{
+  filter: brightness(75%);
+  -webkit-filter: brightness(75%);
+  -moz-filter: brightness(75%);
+  -o-filter: brightness(75%);
+  -ms-filter: brightness(75%);
 }
 
 #first-img

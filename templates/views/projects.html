@@ -21,21 +21,21 @@
             <img id="project-img" ng-src="{{currentProject.ico}}" med-fade-on-load></img>
          </div>
       </section>
-      <section class="projectDataContainer">
-        <aside class="bloc UI underline rangePercentageContainer">
+      <section class="projectDataContainer marged-bottom-5">
+        <aside class="bloc UI underline rangePercentageContainer marged-2">
           <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
         </aside>
-        <aside class="bloc UI rangePercentageContainer">
+        <aside class="bloc UI rangePercentageContainer marged-2">
           <span class="skillInRange">{{'projects.projectView.time' | translate}}<sub class="keyword">[{{'projects.projectPreview.inWeek' | translate}}]</sub></span>
           <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
           <div class="rangePercentage time" ng-style="{width: (currentProject.time * 10) + '%'}"></div>
         </aside>
-        <aside class="bloc UI rangePercentageContainer">
+        <aside class="bloc UI rangePercentageContainer marged-2">
           <span class="skillInRange">{{'projects.projectPreview.persons' | translate}}</span>
           <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
           <div class="rangePercentage numberPerson" ng-style="{width: (currentProject.numberPerson * 15) + '%'}"></div>
         </aside>
-        <aside class="bloc UI rangePercentageContainer">
+        <aside class="bloc UI rangePercentageContainer marged-2">
           <span class="skillInRange">{{'projects.projectPreview.love' | translate}}</span>
           <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
           <div class="rangePercentage love" ng-style="{width: (currentProject.love * 20) + '%'}"></div>
@@ -43,7 +43,7 @@
       </section>
       <div id="project-info">
         <section class="projectSummaryContainer">
-          <div class="bloc topic underline">
+          <div class="bloc topic underline  marged-bottom-5">
             <h2> <span ng-bind-html="'projects.projectView.projectSummary' | translate"></span> </h2>
             <div>
               {{currentProject.description[0]}}
