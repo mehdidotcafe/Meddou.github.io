@@ -50,6 +50,7 @@ projectApp.controller("projectsCtrl", function($scope, indexingService, $locatio
     }
     xhr.send();
   }
+
 });
 
 projectApp.filter("filterProject", function()

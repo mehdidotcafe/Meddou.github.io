@@ -11,8 +11,7 @@
     "downloadLink": "",
     "description": [
       "Realisation d'un gauntlet-like avec Ogre3D avec menus, sons, ennemies, IA...",
-      "Comprehension de la librarie, IA.",
-      ""
+      "Comprehension de la librarie, IA."
     ]
   },
   "zappy": {
@@ -27,8 +26,7 @@
     "downloadLink": "",
     "description": [
       "Creation d'un jeu de gestion en reseau a la maniere d'un Sims ou les joueurs sont controles par des IAs.",
-      "Interface en Unity3D, IA en C++ qui doit prendre les meilleurs decisions, serveur asychrone en C.",
-      ""
+      "Interface en Unity3D, IA en C++ qui doit prendre les meilleurs decisions, serveur asychrone en C."
     ]
   },
   "lemin": {
@@ -43,8 +41,7 @@
     "downloadLink": "",
     "description": [
       "Des fourmis guerrieres qui veulent envahir la base adverse dans un graphe.",
-      "Interface graphique en OpenGL, Arbre binaire.",
-      "Tres bon projet agreable a realiser, note finale 42 / 20."
+      "Interface graphique en OpenGL, Arbre binaire."
     ]
   },
   "arcade": {
@@ -59,8 +56,7 @@
     "downloadLink": "",
     "description": [
       "Creation d'une borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUI (sfml, ncurses, opengl).",
-      "Une architecture qui se devait d'etre generique.",
-      ""
+      "Une architecture qui se devait d'etre generique."
     ]
   },
   "this": {
@@ -76,7 +72,55 @@
     "description": [
       "Mon portfolio.",
       "Le design c'est pas facile.",
+      "https://github.com/Meddou/Meddou.github.io"
+    ]
+  },
+  "yeyo": {
+    "name": "Yeyo",
+    "language": ["Javascript", "electron"],
+    "time": 2,
+    "difficulty": "medium",
+    "context": "home",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "images/projects/yeyo.png",
+    "downloadLink": "",
+    "description": [
+      "Lecteur mp3 de bureau assez simple utilisant Electron.",
+      "Encodage des metadata d'un fichier mp3.",
+      "https://github.com/Meddou/yeyo"
+    ]
+  },
+  "deezdl": {
+    "name": "Deezdl",
+    "language": ["Javascript", "Chrome"],
+    "time": 1,
+    "difficulty": "low",
+    "context": "home",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "images/projects/deezdl.png",
+    "downloadLink": "",
+    "description": [
+      "Extension chrome permettant a partir du dom Deezer de rechercher un album sur un site defini.",
+      "Comprehension du fonctionnement d'une extension Google Chrome.",
       ""
+    ]
+  },
+  "c_container": {
+    "name": "C_Container",
+    "language": ["c"],
+    "time": 1,
+    "difficulty": "low",
+    "context": "home",
+    "numberPerson": 1,
+    "love": 1,
+    "ico": "images/projects/ccontainer.png",
+    "downloadLink": "",
+    "description": [
+      "Librarie de containers generiques en c, comme la STL de c++.",
+      "",
+      "https://github.com/Meddou/C_Container"
     ]
   },
   "cloudindus": {
@@ -91,8 +135,7 @@
     "downloadLink": "",
     "description": [
       "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS.",
-      "Un code tres peu documente.",
-      ""
+      "Un code tres peu documente."
     ]
   },
   "raytracer": {
@@ -107,13 +150,12 @@
     "downloadLink": "",
     "description": [
       "Un generateur d'images de sythese en reseau et selon un fichier de configuration.",
-      "Une librarie interne a Epitech assez compliquee a utiliser.",
-      "N'aimant pas tellement le raytracing j'ai eu la chance de faire le clustering, qui fut tres agreable. Note finale 28 / 20."
+      "Une librarie interne a Epitech assez compliquee a utiliser."
     ]
   },
   "minishell2": {
     "name": "Minishell 2",
-    "language": ["c"],
+    "language": ["c", "termcaps"],
     "time": 2,
     "difficulty": "medium",
     "context": "school",
@@ -122,9 +164,8 @@
     "ico": "images/projects/minishell2.png",
     "downloadLink": "",
     "description": [
-      "Recode d'un shell avec notamment les redirections et pipes.",
-      "Aucune.",
-      "Projet que j'ai fini tres tot ce qui m'a permis de faire des bonus (prompt en termcaps, historique...). Note 20 / 20."
+      "Recode d'un shell avec redirections, pipes, prompt en termcaps, historique.",
+      ""
     ]
   },
   "amazeing": {
@@ -139,8 +180,7 @@
     "downloadLink": "",
     "description": [
       "Generateur et solveur de labyrinthe en OCAML.",
-      "Aucune.",
-      ""
+      "Aucune."
     ]
   },
   "philosophes": {
@@ -155,7 +195,6 @@
     "downloadLink": "",
     "description": [
       "Un projet pour apprendre les threads/mutex et eviter les acces concurrentiels avec une interface en SDL.",
-      "La concurrence.",
       ""
     ]
   },
@@ -171,8 +210,7 @@
     "downloadLink": "",
     "description": [
       "Rush de 48h. Developpement d'un Fire Emblem like avec une interface graphique en CSFML.",
-      "Le delai.",
-      "Ma grande premiere sur une interface graphique, un push apres l'heure limite aura raison de nous :(. Note finale: 1.5 / 20."
+      "Le delai."
     ]
   },
   "Wolf3d": {
@@ -186,9 +224,8 @@
     "ico": "images/projects/wolf.png",
     "downloadLink": "",
     "description": [
-      "Un Wolf3D en raycasting avec apparition de bouftous.",
-      "Une lib assez compliquee.",
-      "Plein de bonus et d'amour, Note : 21 / 20."
+      "Un Wolf3D en raycasting avec apparition de monstres.",
+      "Une lib assez compliquee."
     ]
   },
   "snake": {
@@ -203,8 +240,7 @@
     "downloadLink": "",
     "description": [
       "Un snake en AWT pour apprendre Java.",
-      "Aucune.",
-      "Un projet plutot facile et efficace."
+      ""
     ]
   }
 }

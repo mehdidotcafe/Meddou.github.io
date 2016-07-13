@@ -43,17 +43,23 @@
       </section>
       <div id="project-info">
         <section class="projectSummaryContainer">
-          <div class="bloc topic underline  marged-bottom-5">
+          <div class="bloc topic underline marged-bottom-5">
             <h2> <span ng-bind-html="'projects.projectView.projectSummary' | translate"></span> </h2>
             <div>
               {{currentProject.description[0]}}
             </div>
           </div>
-          <div class="bloc difficulties underline">
+          <div class="bloc difficulties underline" ng-show="currentProject.description[1] != ''">
             <h2>{{'projects.projectView.difficulties' | translate}}</h2>
             <div>
               {{currentProject.description[1]}}
             </div>
+          </div>
+          <div class="bloc difficulties underline" ng-show="currentProject.description[2]">
+            <h2>{{'projects.projectView.link' | translate}}</h2>
+            <a href="{{currentProject.description[2]}}">
+              {{currentProject.description[2]}}
+            </a>
           </div>
         </section>
       </div>

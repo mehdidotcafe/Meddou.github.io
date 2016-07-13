@@ -46,7 +46,8 @@
       "projectSummary": "Resume du *_sujet_*",
       "difficulties": "Difficultes",
       "time": "Temps",
-      "downloadMe": "Telechargez moi !"
+      "downloadMe": "Telechargez moi !",
+      "link": "Lien"
    },
    "click": "Cliquez pour voir le projet"
   },

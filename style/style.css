@@ -158,7 +158,7 @@ nav.navbar img.navbarLogo
   position: absolute;
   top: 10px;
   left: 50px;
-  height: 75px;
+  height: 70px;
   width: 140px;
   animation: bounce 1s ease;
 }
@@ -521,6 +521,7 @@ article div.medInfoContainer
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 2;
+  align-content: flex-start;
   width: calc(90vw - 300px);
   flex-basis: calc(90vw - 300px);
   min-width: 640px;
@@ -528,7 +529,7 @@ article div.medInfoContainer
 
 article.skill
 {
-  padding-top: 1%;
+  padding-top: 2px;
 }
 
 article div div.infoBloc h1
@@ -869,7 +870,6 @@ div.projectPresentation
 #project-info
 {
   width: calc(100vw - 15px);
-  min-height: calc(100vh - 400px);
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -1097,7 +1097,7 @@ div.bloc.picture med-svg svg, div.bloc.picture img
 
 .marged-bottom-5
 {
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
 }
 
 div.bloc div.comments
@@ -1198,6 +1198,7 @@ aside.rangePercentageContainer div.rangePercentage
   bottom: 0px;
   width: 0px;
   transition: 2s ease-in-out all;
+  transition-delay: 1s;
 }
 
 aside.rangePercentageContainer div.rangePercentage.skill
@@ -1222,6 +1223,7 @@ aside.rangePercentageContainer div.rangePercentage.time
 
 .filtered
 {
+  width: inherit !important;
   flex-grow: 0 !important;
 }
 
@@ -1261,7 +1263,6 @@ aside.rangePercentageContainer div.rangePercentage.time
 
 .topic, .difficulties, .debriefing, .projectDataContainer aside
 {
-  flex-grow: 1;
   font-size: 3.5vmin;
 }
 
