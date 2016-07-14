@@ -119,11 +119,6 @@ fieldset span
   outline: 1px solid;
 }
 
-img.imgOnLoad
-{
-  animation: opacityOnLoad 5s;
-}
-
 /* NAVBAR */
 
 nav.navbar
@@ -142,13 +137,15 @@ nav.navbar
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 5);
   -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 5);
   -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 5);
-  transition: 1s ease-in-out;
+  transition-property: height;
+  transition-duration: 0.5s;
   height: 8vh;
 }
 
 nav.navbar.ng-hide
 {
-  transition: 1s ease-in-out;
+  transition-property: transform;
+  transition-duration: : 0.5s;
   transform: translate(0, -80px);
 }
 
@@ -182,9 +179,8 @@ med-svg.navPicture svg
 nav.navbar a.navbarTab
 {
   cursor: pointer;
-  transition: 0.5s;
   vertical-align: top;
-  width: 7vw;
+  width: 100px;
   text-align: center;
   height: 100%;
   transition: 1s;
@@ -219,7 +215,7 @@ nav.navbar div.navbarTabOption
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2vw;
+  width: 50px;
   height: 100%;
 }
 
@@ -354,7 +350,10 @@ div.containerWithNavbar
   overflow: hidden;
   height: calc(100vh - 8vh);
   width: 100vw;
-  transition: 1s ease-in-out;
+  -webkit-transition: transform 0.7s, height 0.3s;
+  -moz-transition: transform 0.7s, height 0.3s;
+  -o-transition: transform 0.7s, height 0.3s;
+  transition: transform 0.7s, height 0.3s;
 }
 
 div.containerWithoutNavbar
@@ -369,7 +368,10 @@ div.containerWithoutNavbar
   -ms-transform: translate(0, -80px);
   -o-transform: translate(0, -80px);
   transform: translate(0, -80px);
-  transition: 1s ease-in-out;
+  -webkit-transition: transform 0.7s, height 0.3s;
+  -moz-transition: transform 0.7s, height 0.3s;
+  -o-transition: transform 0.7s, height 0.3s;
+  transition: transform 0.7s, height 0.3s;
 }
 
 /* END CONTAINERWITHNAVBAR */
@@ -384,10 +386,10 @@ article
   display: flex;
   overflow-y: auto;
   flex-wrap: wrap;
-  -webkit-transition: 0.7s ease-in-out all !important;
-  -moz-transition: 0.7s ease-in-out all !important;
-  -o-transition: 0.7s ease-in-out all !important;
-  transition: 0.7s ease-in-out all !important;
+  -webkit-transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
+  transition: transform 0.7s;
 }
 
 article h1
@@ -420,7 +422,7 @@ article.left
   transform: translate(-100%, 0);
 }
 
-article.projects, article.description
+article.description
 {
   overflow: hidden;
   flex-direction: row;
@@ -435,21 +437,6 @@ article.presentation
   flex-wrap: wrap;
 }
 
-.hobbies
-{
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.cursus
-{
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: row;
-}
-
 .place-img
 {
   position: relative;
@@ -461,40 +448,16 @@ article.presentation
   filter: blur(2px);
 }
 
-.work
-{
-  height: auto;
-}
-
-article div.title
-{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: auto;
-}
-
-div.title em
-{
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: futura, "Comic Sans MS", cursive, sans-serif;
-  font-size: 128px;
-  color: white;
-}
-
 /* directive d'info bloc */
 
 article div div.infoBloc
 {
-  flex-grow: 1;
   overflow: hidden;
   cursor: pointer;
   position: relative;
   text-align: center;
-  width: 27vw;
+  width: 33.333%;
+  min-width: 290px;
   height: 320px;
   transition: 0.5s !important;
 }
@@ -514,17 +477,14 @@ article div div.infoBloc.ng-leave-active
   opacity: 0 !important;
 }
 
-article div.medInfoContainer
+article div.med-info-container
 {
-  overflow-y: auto;
+  overflow-y: scroll;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 2;
+  flex-grow: 1;
   align-content: flex-start;
   width: calc(90vw - 300px);
-  flex-basis: calc(90vw - 300px);
-  min-width: 640px;
 }
 
 article.skill
@@ -532,7 +492,7 @@ article.skill
   padding-top: 2px;
 }
 
-article div div.infoBloc h1
+div.infoBloc h1
 {
   z-index: 2;
   position: absolute;
@@ -551,20 +511,20 @@ article div div.infoBloc h1
 
 #project-name h1
 {
-   justify-content: center;
-   text-align: center;
-   z-index: 2;
-   position: absolute;
-   left: 0;
-    right: 0;
-    top: calc(250px - 50px);
-    bottom: 0;
-    margin: auto auto;
-   font-family: futura, "Comic Sans MS", cursive, sans-serif;
-   font-weight: bold;
-   font-size: 100px;
-   text-transform: uppercase;
-   color: rgb(0,128,128);
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(250px - 50px);
+  bottom: 0;
+  margin: auto auto;
+  font-family: futura, "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: rgb(0,128,128);
 }
 
 article div div.infoBloc:hover img
@@ -582,10 +542,10 @@ article div div.infoBloc img
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transition: 0.5s ease-in-out all;
-  -moz-transition: 0.5s ease-in-out all;
-  -o-transition: 0.5s ease-in-out all;
-  transition: 0.5s ease-in-out all;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
  /* END ARTICLE */
@@ -632,6 +592,8 @@ article div div.infoBloc img
   background-color: rgb(0,128,128);
 }
 
+/* start directive med rotate on hover */
+
 img.rotateOnHover
 {
   transition: 1.5s ease-in-out;
@@ -648,12 +610,14 @@ img.rotateOnHoverReverse
   transform: rotate(-180deg);
 }
 
+/* END rotate on hover */
+
 med-project-sidebar
 {
   display: flex;
   justify-content: center;
   flex-grow: 1;
-  width: 220px;
+  max-width: 280px;
   min-height: 640px;
   transition: 0.5s ease-in-out;
 }
@@ -662,30 +626,6 @@ med-project-sidebar.ng-hide
 {
   transform: translate(-100%, 0);
   transition: 0.5s ease-in-out;
-}
-
-med-project-sidebar div.buttonContainer
-{
-  display: flex;
-  height: 50px;
-  justify-content: flex-end;
-  border-bottom: 1px solid black;
-}
-
-med-project-sidebar div.buttonContainer med-svg
-{
-  border-left: 1px solid black;
-}
-
-
-med-project-sidebar div.buttonContainer med-svg svg
-{
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  margin-top: 5px;
-  width: 45px;
-  height: 35px;
 }
 
 med-project-sidebar form
@@ -781,53 +721,12 @@ med-project-sidebar
   animation: fromRight 1.5s;
 }
 
-.fromTop
-{
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  animation: fromTop 1.5s;
-}
-
-.fromBot
-{
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  animation: fromBot 1.5s;
-}
-
-.translateEffect
-{  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  animation: translateEffect 5s;
-}
-
-@keyframes translateEffect
-{
-  from {transform: translate(0px, 0px); opacity: 1;}
-  60% {transform: translate(200px, 0px); opacity: 0;}
-  to {transform: translate(0px, 0px); opacity: 1;}
-
-}
-
-
 form.sidebarForm
 {
-  margin-top: 5%;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  overflow: hidden;
   position: relative;
   transition: 0.5s ease-in-out;
 }
@@ -882,17 +781,16 @@ div.projectPresentation
   height: 100%;
 }
 
-div.projectPresentation section.projectSummaryContainer
+.projectSummaryContainer
 {
-  flex-grow: 2;
-  min-width: 500px;
-  min-height: 98%;
+  flex-grow: 1;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   text-align: right;
 }
 
-div.projectPresentation section.projectDataContainer
+.projectDataContainer
 {
   width: calc(100vw - 15px);
   flex-grow: 1;
@@ -900,7 +798,7 @@ div.projectPresentation section.projectDataContainer
   flex-direction: row;
 }
 
-span.projectLanguage
+span.project-language
 {
   z-index: 2;
   position: absolute;
@@ -914,14 +812,11 @@ aside.UI
   font-size: 36px;
 }
 
-.infoContainer
+.info-container
 {
   flex-grow: 1;
-  /*margin: 0.12%;*/
   width: 24vw;
   min-width: 400px;
-  max-width: 80vw;
-  min-height: 97%;
 }
 
 .text-right
@@ -945,21 +840,6 @@ aside.UI
   text-align: center;
 }
 
-.photoContainer
-{
-   display: flex;
-   flex-direction: column;
-   max-height: 50vh;
-   text-align: center;
-}
-
-.photo
-{
-   width: 100%;
-   align-self: center;
-   object-fit: cover;
-}
-
 .img-cover
 {
   object-fit: cover;
@@ -971,23 +851,6 @@ aside.UI
   -webkit-transition: 0.5s ease-in-out;
   -webkit-filter: blur(2px);
   filter: blur(2px);
-}
-
-.msg
-{
-  width: 100%;
-  flex-grow: 2;
-}
-
-.aboutWebsite
-{
-  width: 100%;
-  flex-grow: 1;
-}
-
-.highlighted
-{
-  background-color: rgb(40, 34, 53);
 }
 
 .underline
@@ -1013,11 +876,6 @@ aside.UI
   width: 100%;
   height: 100%;
 }
-
-/*.bloc, .downloadBloc
-{
-  margin: 0.25%;
-}*/
 
 .downloadBloc
 {
@@ -1117,7 +975,7 @@ div.bloc div.comments
   background-color: rgba(0, 128, 128, 0.95);
   visibility: hidden;
   transform : translate(0, -100%);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 3);
   -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 3);
   -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 3);
@@ -1155,17 +1013,6 @@ aside.inSkill
   height: 15%;
 }
 
-aside.projectName
-{
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: futura, "Comic Sans MS", cursive, sans-serif;
-  background-color: rgb(40, 34, 53);
-  max-height: 150px;
-}
-
 aside.rangePercentageContainer
 {
   font-weight: bold;
@@ -1197,7 +1044,7 @@ aside.rangePercentageContainer div.rangePercentage
   height: 5px;
   bottom: 0px;
   width: 0px;
-  transition: 2s ease-in-out all;
+  transition: 2s ease-in-out width;
   transition-delay: 1s;
 }
 
@@ -1219,11 +1066,6 @@ aside.rangePercentageContainer div.rangePercentage.numberPerson
 aside.rangePercentageContainer div.rangePercentage.time
 {
   background-color: rgb(255, 255, 255);
-}
-
-.filtered
-{
-  flex-grow: 0 !important;
 }
 
 .bloc em, .downloadBloc em
@@ -1262,16 +1104,8 @@ aside.rangePercentageContainer div.rangePercentage.time
 
 .topic, .difficulties, .debriefing, .projectDataContainer aside
 {
-  font-size: 3.5vmin;
+  font-size: 36px;
 }
-
-.onRemove
-{
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-  margin-left: 0;
-}
-
 
 fieldset div.lifeInfo
 {
@@ -1288,29 +1122,15 @@ fieldset div.lifeInfo
   font-size: 5vh;
 }
 
-.grow
-{
-  flex-grow: 2;
-}
-
 #school, #work
 {
+  min-width: 500px;
   width: 50%;
 }
 
 #school div, #work div
 {
   cursor: pointer;
-}
-
-#school div
-{
-  text-align: right;
-}
-
-#work div
-{
-  text-align: left;
 }
 
 med-word-switch
@@ -1380,25 +1200,25 @@ aside.sidebarShowButton med-svg svg
 
 .height-200
 {
-  max-height: 200px !important;
+  max-height: 200px;
   height: 200px;
 }
 
 .height-400
 {
-  max-height: 400px !important;
+  max-height: 400px;
   height: 400px;
 }
 
 .height-500
 {
-  max-height: 500px !important;
+  max-height: 500px;
   height: 500px;
 }
 
 .height-600
 {
-  max-height: 600px !important;
+  max-height: 600px;
   height: 600px;
 }
 
@@ -1441,6 +1261,8 @@ aside.sidebarShowButton med-svg svg
   -ms-filter: brightness(75%);
 }
 
+/* START MED ANIMATION */
+
 #first-img
 {
   position: absolute;
@@ -1460,6 +1282,8 @@ aside.sidebarShowButton med-svg svg
   height: 100%;
   opacity: 0;
 }
+
+/* END MED ANIMATION */
 
 
 /* MEDIA QUERIES */
@@ -1482,7 +1306,7 @@ aside.sidebarShowButton med-svg svg
   nav.navbar
   {
     justify-content: space-around;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   nav.navbar a.navbarTab
@@ -1493,19 +1317,35 @@ aside.sidebarShowButton med-svg svg
 
 @media screen and (max-width: 640px)
 {
-  article div.medInfoContainer
+  .height-600, .height-500, .height-400, .height-200
   {
-    min-width: 99%;
-    max-width: 99%;
+    max-height: 300px;
   }
-}
 
-@media screen and (max-width: 500px)
-{
-  div.projectPresentation section.projectSummaryContainer, div.projectPresentation section.projectDataContainer, article.paper med-html-insert.readable
+  .info-container, #school, #work
   {
-    min-width: 99%;
-    max-width: 99%;
+    width: calc(100vw - 15px) !important;
+    min-width: 0px;
+  }
+
+  med-project-sidebar
+  {
+    display: none;
+  }
+
+  .infoBloc
+  {
+    width: calc(100vw - 15px) !important;
+  }
+
+  .projectDataContainer
+  {
+    flex-direction: column !important;
+  }
+
+  .text-left, .text-right
+  {
+    text-align: center !important;
   }
 }
 

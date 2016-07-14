@@ -15,6 +15,15 @@ medGesturesApp.directive("medScrollOnSwipe", function($window, $document, indexi
       var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
       var moveIsOver = false;
 
+      elem.on("touchstart", function(event)
+      {
+        opt = false;
+        startX = event.touches[0].clientX;
+        startY = event.touches[0].clientY;
+        $document.on("touchmove", mousemove);
+        $document.on("touchend", mouseup);
+      });
+
       elem.on("mousedown", function(event)
       {
         opt = true;
@@ -37,7 +46,7 @@ medGesturesApp.directive("medScrollOnSwipe", function($window, $document, indexi
           newY = event.touches[0].clientY - startY;
           newX = event.touches[0].clientX - startX;
         }
-        if ((attrs.medScrollOnSwipe == "vertical" || attrs.medScrollOnSwipe == "both") && Math.abs(newY) > Math.abs(newX))
+        if (opt == true && (attrs.medScrollOnSwipe == "vertical" || attrs.medScrollOnSwipe == "both") && Math.abs(newY) > Math.abs(newX))
           (elem[0].scrollTop -= newY / 7) < 0 && (elem[0].scrollTop = 0);
         else if ((attrs.medScrollOnSwipe == "horizontal"  || attrs.medScrollOnSwipe == "both") && Math.abs(newX) >= Math.abs(newY))
         {

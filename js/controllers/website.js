@@ -1,4 +1,4 @@
-var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medLazyLoadApp", "indexingServiceApp", "translationServiceApp", , "medFadeOnLoadApp", "ngAnimate"]);
+var websiteApp = angular.module("websiteApp", ["routeApp", "indexUIApp", "medNavbarApp", "meApp", "medAnimationApp", "medSvgApp", "medProjectSidebarApp", "medGesturesApp", "medInputApp", "medLazyLoadApp", "indexingServiceApp", "translationServiceApp", "medFadeOnLoadApp", "ngAnimate"]);
 
 websiteApp.run(function(translationService, $location)
 {

@@ -1,5 +1,5 @@
 <article class="presentation default" med-scroll-on-swipe="both" med-lazy-load="getGesturesAndHobbies()">
-  <section class="infoContainer">
+  <section class="info-container">
     <div class="bloc text-right underline text-on-img height-600">
       <img class="place-img img-cover brightness-50" src="images/home/time.jpg" med-fade-on-load></img>
       <div class="absolute">
@@ -17,7 +17,7 @@
       </div>
     </div>
   </section>
-  <section class="infoContainer">
+  <section class="info-container">
     <div class="bloc text-center underline text-on-img height-600">
       <img class="place-img img-cover brightness-50" src="images/mehdi.jpg" med-fade-on-load></img>
       <div class="absolute">
@@ -37,7 +37,7 @@
       </div>
     </a>
   </section>
-  <section class="infoContainer">
+  <section class="info-container">
     <div class="bloc text-left underline text-on-img height-400">
       <img class="place-img img-cover brightness-50" src="./images/home/marseille.jpg" med-fade-on-load></img>
       <div class="absolute">
@@ -76,12 +76,11 @@
   </div>
 </article>
 <article class="right" med-scroll-on-swipe="both" med-lazy-load="getCV()">
-  <aside class="cursus">
     <div id="school">
-      <div ng-repeat="school in cv.schools" class="bloc underline opacityOnLoad  text-on-img height-400">
+      <div ng-repeat="school in cv.schools" class="bloc underline opacityOnLoad text-on-img height-400">
         <img class="place-img img-cover brightness-50" ng-src="{{school.img}}" med-fade-on-load></img>
         <div class="absolute">
-          <div>
+          <div class="text-right">
             <h5><span ng-show="school.thing">{{school.thing}} </span><span class="keyword">{{school.name}}<span></h5>
             <fieldset>
               <div class="lifeInfo"><span class="keyword">{{'me.experience.years' | translate}}:</span> {{school.year}}</div>
@@ -96,7 +95,7 @@
       <div ng-repeat="work in cv.works" class="bloc underline opacityOnLoad text-on-img height-400">
         <img class="place-img img-cover brightness-50" ng-src="{{work.img}}" med-fade-on-load></img>
         <div class="absolute">
-          <div>
+          <div class="text-left">
             <h5>{{work.thing}} <span class="keyword">{{work.name}}</span></h5>
             <fieldset>
               <div class="lifeInfo">
@@ -116,5 +115,4 @@
         </div>
       </div>
     </div>
-  </aside>
 </article>

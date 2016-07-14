@@ -1,10 +1,10 @@
-<article class="projects default" med-scroll-on-swipe="both" med-lazy-load="getProjects()">
+<article class="projects-container default" med-scroll-on-swipe="both" med-lazy-load="getProjects()">
   <med-project-sidebar visibility-var="visibleSidebar" class="projectSidebar" ng-show="visibleSidebar" project-model="projectModel"></med-project-sidebar>
   <aside class="sidebarShowButton" ng-hide="visibleSidebar">
     <med-svg src="./images/down.svg" ng-click="visibleSidebar = !visibleSidebar"></med-svg>
   </aside>
-  <div class="medInfoContainer projects-container" med-scroll-on-swipe="vertical" tabindex="0">
-    <div class="infoBloc bloc underline fromTop" ng-class="isFiltered ? 'filtered' : ''" title="{{'projects.click' | translate}}" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)" med-on-touch>
+  <div class="med-info-container" med-scroll-on-swipe="vertical">
+    <div class="infoBloc bloc underline" ng-class="isFiltered ? 'filtered' : ''" title="{{'projects.click' | translate}}" ng-repeat="info in projects | filterProject:this track by $index" ng-click="setProject(info)">
       <h1>{{info.name}}</h1>
       <img class="project-img-preview" ng-src="{{info.ico}}" med-fade-on-load/>
     </div>
@@ -23,7 +23,7 @@
       </section>
       <section class="projectDataContainer marged-bottom-5">
         <aside class="bloc UI underline rangePercentageContainer marged-2">
-          <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="projectLanguage">{{currentProject.language.join(' | ')}}</span></span>
+          <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="project-language">{{currentProject.language.join(' | ')}}</span></span>
         </aside>
         <aside class="bloc UI rangePercentageContainer marged-2">
           <span class="skillInRange">{{'projects.projectView.time' | translate}}<sub class="keyword">[{{'projects.projectPreview.inWeek' | translate}}]</sub></span>
@@ -45,21 +45,21 @@
         <section class="projectSummaryContainer">
           <div class="bloc topic underline marged-bottom-5">
             <h2> <span ng-bind-html="'projects.projectView.projectSummary' | translate"></span> </h2>
-            <div>
+            <p>
               {{currentProject.description[0]}}
-            </div>
+            </p>
           </div>
           <div class="bloc difficulties underline" ng-show="currentProject.description[1] != ''">
             <h2>{{'projects.projectView.difficulties' | translate}}</h2>
-            <div>
+            <p>
               {{currentProject.description[1]}}
-            </div>
+            </p>
           </div>
           <div class="bloc difficulties underline" ng-show="currentProject.description[2]">
             <h2>{{'projects.projectView.link' | translate}}</h2>
-            <a href="{{currentProject.description[2]}}">
+            <p><a href="{{currentProject.description[2]}}">
               {{currentProject.description[2]}}
-            </a>
+            </a></p>
           </div>
         </section>
       </div>
