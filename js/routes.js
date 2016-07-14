@@ -9,12 +9,6 @@ routeApp.config(function($routeProvider, $locationProvider)
     controller: "meCtrl"
   });
 
-  $routeProvider.when("/Me",
-  {
-    templateUrl: "templates/views/me.html",
-    controller: "meCtrl"
-  });
-
   $routeProvider.when("/Projects",
   {
     templateUrl: "templates/views/projects.html",
