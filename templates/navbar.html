@@ -3,9 +3,9 @@
     <med-svg src="./images/down.svg"></med-svg>
 </aside>
 <nav class="navbar" ng-hide="$parent.navbarIsHidden == true">
-  <a href="/"><img med-rotate-on-hover class="navbarLogo" src="./images/newlogo.png"/></a>
+  <a href="/"><img med-rotate-on-hover class="navbarLogo" src="./images/newlogo.png" med-fade-on-load/></a>
   <a href="/" class="navbarTab" ng-hide="!mode">
-    <img class="navPicture" src="./images/chopper.gif"/>
+    <img class="navPicture" src="./images/chopper.gif" med-fade-on-load/>
     <div>{{'navbar.me' | translate}}</div>
   </a>
   <a href="Projects" class="navbarTab" ng-hide="!mode">

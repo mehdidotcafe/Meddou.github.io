@@ -8,6 +8,8 @@ app.directive("medFadeOnLoad", function()
     {
       var loader = document.createElement("div");
       var subloader = document.createElement("div");
+      var oldTransition = element[0].style.transition;
+      var oldOpacity = element[0].style.opacity;
 
       loader.className = "absolute uil-ring-css";
       loader.style.transform = "scale(0.6)";
@@ -20,7 +22,8 @@ app.directive("medFadeOnLoad", function()
       element.bind("load", function()
       {
         loader.remove();
-        element[0].style.opacity = "1";
+        element[0].style.opacity = oldOpacity;
+        element[0].style.transition = oldTransition;
       });
     }
   });

@@ -12,14 +12,6 @@
   </head>
   <body ng-controller="indexCtrl" tabindex="0" ng-keydown="handleKey($event)">
     <med-navbar ng-controller="navbarCtrl"></med-navbar>
-    <aside id="browserInfo" ng-hide="isChrome">
-      <div>
-        <med-svg src="images/svg/cross.svg" ng-click="isChrome = !isChrome"></med-svg>
-        <span>
-          Attention ce site est optimise pour Google Chrome, AngularJS oblige...
-        </span>
-      </div>
-    </aside>
     <div ng-view ng-class="!navbarIsHidden ? 'containerWithNavbar' : 'containerWithoutNavbar'" onload="indexingService()"></div>
     <aside id="indexUI" ng-controller="indexUICtrl">
       <div ng-class="$index == indexingService.getCurrentIndex() ? 'indexCircleActive' : 'indexCircle'" ng-click="indexingService.goToIndex($index)" ng-repeat="window in indexingService.getWindowMax() track by $index"></div>

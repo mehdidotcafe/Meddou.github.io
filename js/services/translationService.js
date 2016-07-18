@@ -49,6 +49,8 @@ translation.filter("translate", ["translationService", "$sce", function(translat
           return (parseJson(key.slice(1), jsonField[key[0]]));
         return (jsonField[id] || keyAsString)
       }
+      if (!translationService.getFile())
+        return ("");
       return ($sce.trustAsHtml(parseJson(keyAsArray, translationService.getFile()).replace("*_", "<span class='keyword'>").replace("_*", "</span>")));
     });
 }]);

@@ -92,6 +92,8 @@ medInputApp.directive("medRangeSelector", function()
 
 medInputApp.directive("medSvgInRangeSelector", function()
 {
+  var cachedSvgs = [];
+
   return ({
     require: "^medRangeSelector",
     restrict: "E",
@@ -102,17 +104,43 @@ medInputApp.directive("medSvgInRangeSelector", function()
     },
     link: function(scope, elem, attrs, rangeSelectorCtrl)
     {
-      var request = new XMLHttpRequest();
       var color;
+      var idx;
 
-      request.onload = function()
+      function cachedSvgsContains(src)
       {
-        if (request.status >= 200 && request.status < 400)
-          elem[0].innerHTML = request.responseText;
-      }
-      request.open("GET", scope.src, true);
-      request.send();
+        var i = 0;
 
+        cachedSvgs.forEach(function(svg)
+        {
+          if (svg.src == src)
+            return (i);
+          ++i;
+        });
+        return (-1);
+      }
+
+      function getSvg()
+      {
+        var request = new XMLHttpRequest();
+
+        request.onload = function()
+        {
+          if (request.status >= 200 && request.status < 400)
+          {
+            elem[0].innerHTML = request.responseText;
+            cachedSvgs.push({src: scope.src, responseText: request.responseText});
+          }
+        }
+        request.open("GET", scope.src, true);
+        request.send();
+      }
+
+
+      if ((idx = cachedSvgsContains(scope.src)) == -1)
+        getSvg();
+      else
+        elem[0].innerHTML = cachedSvgs[idx].responseText;
       elem.css({fill: scope.color});
       elem.bind("mouseenter", function()
       {
