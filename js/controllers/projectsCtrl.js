@@ -11,7 +11,7 @@ projectApp.controller("projectsCtrl", function($scope, indexingService, $locatio
     name: "",
     language: "",
     time: -1,
-    difficulty: "",
+    difficulty: -1,
     context: "",
     numberPerson: -1,
     love: -1,
@@ -21,6 +21,11 @@ projectApp.controller("projectsCtrl", function($scope, indexingService, $locatio
     description: []
   };
   $scope.projects = {};
+
+  $scope.range = function(num)
+  {
+    return (new Array(num));
+  }
 
   $scope.setProject = function(project)
   {

@@ -36,6 +36,7 @@
       "projectName": "Nom du projet",
       "language": "Langage",
       "place": "Lieu",
+      "difficulty": "Difficulte",
       "persons": "Personnes",
       "love": "Affection",
       "inWeek": "En Semaines"

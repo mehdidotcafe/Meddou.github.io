@@ -26,19 +26,36 @@
           <span><span class="keyword">{{'projects.projectView.techno' | translate}}</span> <span class="project-language">{{currentProject.language.join(' | ')}}</span></span>
         </aside>
         <aside class="bloc UI rangePercentageContainer marged-2">
-          <span class="skillInRange">{{'projects.projectView.time' | translate}}<sub class="keyword">[{{'projects.projectPreview.inWeek' | translate}}]</sub></span>
-          <span class="percentageInRange"><sup>{{currentProject.time}}</sup></span>
-          <div class="rangePercentage time" ng-style="{width: (currentProject.time * 10) + '%'}"></div>
+          <div class="skillInRange">{{'projects.projectView.time' | translate}}<sub class="keyword">[{{'projects.projectPreview.inWeek' | translate}}]</sub></div>
+          <div class="svg-ui-container">
+            <div class="svg-ui time" ng-repeat="t in range(currentProject.time) track by $index">
+              <med-svg src="./images/svg/week.svg"></med-svg>
+            </div>
+          </div>
         </aside>
         <aside class="bloc UI rangePercentageContainer marged-2">
-          <span class="skillInRange">{{'projects.projectPreview.persons' | translate}}</span>
-          <span class="percentageInRange"><sup>{{currentProject.numberPerson}}</sup></span>
-          <div class="rangePercentage numberPerson" ng-style="{width: (currentProject.numberPerson * 15) + '%'}"></div>
+          <span class="skillInRange">{{'projects.projectPreview.difficulty' | translate}}</span>
+          <div class="svg-ui-container">
+            <div class="svg-ui star" ng-repeat="t in range(currentProject.difficulty) track by $index">
+              <med-svg src="./images/svg/star.svg"></med-svg>
+            </div>
+          </div>
         </aside>
         <aside class="bloc UI rangePercentageContainer marged-2">
           <span class="skillInRange">{{'projects.projectPreview.love' | translate}}</span>
-          <span class="percentageInRange"><sup>{{currentProject.love}}</sup></span>
-          <div class="rangePercentage love" ng-style="{width: (currentProject.love * 20) + '%'}"></div>
+          <div class="svg-ui-container">
+            <div class="svg-ui love" ng-repeat="t in range(currentProject.love) track by $index">
+              <med-svg src="./images/svg/love.svg"></med-svg>
+            </div>
+          </div>
+        </aside>
+        <aside class="bloc UI rangePercentageContainer marged-2">
+          <span class="skillInRange">{{'projects.projectPreview.persons' | translate}}</span>
+          <div class="svg-ui-container">
+            <div class="svg-ui head" ng-repeat="t in range(currentProject.numberPerson) track by $index">
+              <med-svg src="./images/svg/head.svg"></med-svg>
+            </div>
+          </div>
         </aside>
       </section>
       <div id="project-info">
@@ -49,7 +66,7 @@
               {{currentProject.description[0]}}
             </p>
           </div>
-          <div class="bloc difficulties underline" ng-show="currentProject.description[1] != ''">
+          <div class="bloc difficulties underline" ng-show="currentProject.description.length > 1 && currentProject.description[1] != ''">
             <h2>{{'projects.projectView.difficulties' | translate}}</h2>
             <p>
               {{currentProject.description[1]}}

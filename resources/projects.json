@@ -3,14 +3,14 @@
     "name": "Gauntlet",
     "language": ["c++", "ogre3d"],
     "time": 2,
-    "difficulty": "high",
+    "difficulty": 4,
     "context": "school",
     "numberPerson": 6,
     "love": 5,
     "ico": "images/projects/gauntlet.png",
     "downloadLink": "",
     "description": [
-      "Realisation d'un gauntlet-like avec Ogre3D avec menus, sons, ennemies, IA...",
+      "Gauntlet-like en Ogre3D avec menus, sons, ennemies, IA...",
       "Comprehension de la librarie, IA."
     ]
   },
@@ -18,14 +18,14 @@
     "name": "Zappy",
     "language": ["c", "c++", "unity"],
     "time": 2,
-    "difficulty": "high",
+    "difficulty": 5,
     "context": "school",
     "numberPerson": 6,
     "love": 4,
     "ico": "images/projects/zappy.png",
     "downloadLink": "",
     "description": [
-      "Creation d'un jeu de gestion en reseau a la maniere d'un Sims ou les joueurs sont controles par des IAs.",
+      "Jeu de gestion en reseau a la maniere d'un Sims ou les joueurs sont controles par des IAs.",
       "Interface en Unity3D, IA en C++ qui doit prendre les meilleurs decisions, serveur asychrone en C."
     ]
   },
@@ -33,7 +33,7 @@
     "name": "Lemin",
     "language": ["c", "opengl"],
     "time": 4,
-    "difficulty": "medium",
+    "difficulty": 4,
     "context": "school",
     "numberPerson": 5,
     "love": 4,
@@ -44,18 +44,33 @@
       "Interface graphique en OpenGL, Arbre binaire."
     ]
   },
+  "corewar": {
+    "name": "Corewar",
+    "language": ["c", "sdl"],
+    "time": 3,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 4,
+    "love": 3,
+    "ico": "images/projects/corewar.png",
+    "downloadLink": "",
+    "description": [
+      "Jeu de programmation ou deux programmes informatiques s'affrontent. Ces programmes sont ecris en Redcode",
+      "Les instructions redcode"
+    ]
+  },
   "arcade": {
     "name": "Arcade",
     "language": ["c", "opengl", "ncurses", "sfml"],
     "time": 3,
-    "difficulty": "high",
+    "difficulty": 4,
     "context": "school",
     "numberPerson": 3,
     "love": 5,
     "ico": "images/projects/arcade.png",
     "downloadLink": "",
     "description": [
-      "Creation d'une borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUI (sfml, ncurses, opengl).",
+      "Borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUIs (sfml, ncurses, opengl).",
       "Une architecture qui se devait d'etre generique."
     ]
   },
@@ -63,7 +78,7 @@
     "name": "Meddou.github.io",
     "language": ["javascript", "angularjs", "html"],
     "time": 8,
-    "difficulty": "high",
+    "difficulty": 3,
     "context": "home",
     "numberPerson": 1,
     "love": 5,
@@ -77,9 +92,9 @@
   },
   "yeyo": {
     "name": "Yeyo",
-    "language": ["Javascript", "electron"],
+    "language": ["Javascript", "electron", "html", "css"],
     "time": 2,
-    "difficulty": "medium",
+    "difficulty": 2,
     "context": "home",
     "numberPerson": 1,
     "love": 5,
@@ -95,7 +110,7 @@
     "name": "Deezdl",
     "language": ["Javascript", "Chrome"],
     "time": 1,
-    "difficulty": "low",
+    "difficulty": 3,
     "context": "home",
     "numberPerson": 1,
     "love": 5,
@@ -111,10 +126,10 @@
     "name": "C_Container",
     "language": ["c"],
     "time": 1,
-    "difficulty": "low",
+    "difficulty": 1,
     "context": "home",
     "numberPerson": 1,
-    "love": 1,
+    "love": 3,
     "ico": "images/projects/ccontainer.png",
     "downloadLink": "",
     "description": [
@@ -127,7 +142,7 @@
     "name": "Cloudindus",
     "language": ["javascript", "angularjs", "nodejs", "mongodb", "html"],
     "time": 24,
-    "difficulty": "high",
+    "difficulty": 5,
     "context": "school",
     "numberPerson": 5,
     "love": 4,
@@ -142,14 +157,14 @@
     "name": "Raytracer",
     "language": ["c", "libx"],
     "time": 4,
-    "difficulty": "medium",
+    "difficulty": 4,
     "context": "school",
     "numberPerson": 5,
-    "love": 4,
+    "love": 3,
     "ico": "images/projects/raytracer.png",
     "downloadLink": "",
     "description": [
-      "Un generateur d'images de sythese en reseau et selon un fichier de configuration.",
+      "Generateur d'images de sythese en reseau et selon un fichier de configuration.",
       "Une librarie interne a Epitech assez compliquee a utiliser."
     ]
   },
@@ -157,59 +172,70 @@
     "name": "Minishell 2",
     "language": ["c", "termcaps"],
     "time": 2,
-    "difficulty": "medium",
+    "difficulty": 3,
     "context": "school",
     "numberPerson": 1,
     "love": 5,
     "ico": "images/projects/minishell2.png",
     "downloadLink": "",
     "description": [
-      "Recode d'un shell avec redirections, pipes, prompt en termcaps, historique.",
-      ""
+      "Recode d'un shell avec redirections, pipes, prompt en termcaps, historique."
     ]
   },
   "amazeing": {
     "name": "A-maze-ing",
-    "language": ["OCAML"],
+    "language": ["OCAML", "SDL"],
     "time": 1,
-    "difficulty": "high",
+    "difficulty": 3,
     "context": "school",
     "numberPerson": 1,
-    "love": 5,
+    "love": 4,
     "ico": "images/projects/amazeing.png",
     "downloadLink": "",
     "description": [
-      "Generateur et solveur de labyrinthe en OCAML.",
-      "Aucune."
+      "Generateur et solveur de labyrinthe en OCAML."
     ]
   },
   "philosophes": {
     "name": "Philosophes",
     "language": ["c", "SDL"],
     "time": 2,
-    "difficulty": "medium",
+    "difficulty": 2,
     "context": "school",
     "numberPerson": 2,
-    "love": 5,
+    "love": 3,
     "ico": "images/projects/philosophes.png",
     "downloadLink": "",
     "description": [
-      "Un projet pour apprendre les threads/mutex et eviter les acces concurrentiels avec une interface en SDL.",
-      ""
+      "Projet pour apprendre les threads/mutex mettant en avant le probleme des philosophes avec une interface en SDL."
+    ]
+  },
+  "my irc": {
+    "name": "My IRC",
+    "language": ["c"],
+    "time": 2,
+    "difficulty": 1,
+    "context": "school",
+    "numberPerson": 1,
+    "love": 3,
+    "ico": "images/projects/myirc.png",
+    "downloadLink": "",
+    "description": [
+      "Serveur et client IRC avec transfert de fichiers DCC."
     ]
   },
   "bocalEmblem": {
     "name": "Bocal Emblem",
     "language": ["c", "sfml"],
     "time": 1,
-    "difficulty": "medium",
+    "difficulty": 2,
     "context": "school",
     "numberPerson": 2,
     "love": 5,
     "ico": "images/projects/bocalEmblem.png",
     "downloadLink": "",
     "description": [
-      "Rush de 48h. Developpement d'un Fire Emblem like avec une interface graphique en CSFML.",
+      "Rush de 48h. Fire-Emblem like avec une interface graphique en CSFML.",
       "Le delai."
     ]
   },
@@ -217,7 +243,7 @@
     "name": "Wolf3d",
     "language": ["c", "libx"],
     "time": 2,
-    "difficulty": "hard",
+    "difficulty": 3,
     "context": "school",
     "numberPerson": 1,
     "love": 5,
@@ -228,19 +254,47 @@
       "Une lib assez compliquee."
     ]
   },
+  "bsq": {
+    "name": "BSQ",
+    "language": ["c"],
+    "time": 1,
+    "difficulty": 2,
+    "context": "school",
+    "numberPerson": 1,
+    "love": 4,
+    "ico": "images/projects/bsq.png",
+    "downloadLink": "",
+    "description": [
+      "Algorithme de recherche du plus grand carre dans un carre parseme d'obstacle."
+    ]
+  },
+  "pushswap": {
+    "name": "Pushswap",
+    "language": ["c"],
+    "time": 1,
+    "difficulty": 2,
+    "context": "school",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "images/projects/pushswap.png",
+    "downloadLink": "",
+    "description": [
+      "Algorithme de tri d'une liste de nombre dans l'ordre croissant avec des commandes limitees.",
+      "Complexite de l'algorithme, algorithme inspire du tri rapide avec definition d'une valeur pivot."
+    ]
+  },
   "snake": {
     "name": "Snake",
     "language": ["java", "AWT"],
     "time": 1,
-    "difficulty": "easy",
+    "difficulty": 1,
     "context": "home",
     "numberPerson": 1,
-    "love": 5,
+    "love": 2,
     "ico": "images/projects/snake.png",
     "downloadLink": "",
     "description": [
-      "Un snake en AWT pour apprendre Java.",
-      ""
+      "Un snake en AWT pour apprendre Java."
     ]
   }
 }

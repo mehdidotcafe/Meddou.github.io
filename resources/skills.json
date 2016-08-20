@@ -5,14 +5,21 @@
     "img": "images/skills/c.svg",
     "comments": "Malloc ♥",
     "percentage": 90,
-    "love": 90
+    "love": 85
   },
   {
     "type": "C++",
     "img": "images/skills/cpp.svg",
     "comments": "STL ♥",
     "percentage": 90,
-    "love": 100
+    "love": 95
+  },
+  {
+    "type": "Html",
+    "img": "images/skills/htmlcss.svg",
+    "comments": "Flexboxes ♥",
+    "percentage": 90,
+    "love": 75
   },
   {
     "type": "Git",
@@ -22,24 +29,17 @@
     "love": 80
   },
   {
-     "type": "HTML",
-     "img": "images/skills/htmlcss.svg",
-     "comments": "Flexboxes ♥",
-     "percentage": 80,
-     "love": 75
-  },
-  {
     "type": "AngularJS",
     "img": "images/skills/angular.png",
     "comments": "MVC ♥",
-    "percentage": 75,
-    "love": 75
+    "percentage": 80,
+    "love": 80
   },
   {
     "type": "Javascript",
     "img": "images/skills/javascript.svg",
     "comments": "JSON ♥",
-    "percentage": 75,
+    "percentage": 80,
     "love": 85
   },
   {

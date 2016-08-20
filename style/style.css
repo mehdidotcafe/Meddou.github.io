@@ -82,7 +82,7 @@ sub
 
 em
 {
-  font-size: 6vmin;
+  font-size: 60px;
 }
 
 form
@@ -102,7 +102,7 @@ fieldset
 
 fieldset span
 {
-  font-size: 3vh;
+  font-size: 30px;
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar {
@@ -126,10 +126,9 @@ nav.navbar
   z-index: 2;
   font-family: futura, "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
-  font-size: 2.3vmin;
+  font-size: 23px;
   text-transform: uppercase;
   color: white;
-  height: auto;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -139,7 +138,7 @@ nav.navbar
   -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 5);
   transition-property: height;
   transition-duration: 0.5s;
-  height: 8vh;
+  height: 80px;
 }
 
 nav.navbar.ng-hide
@@ -149,15 +148,19 @@ nav.navbar.ng-hide
   transform: translate(0, -80px);
 }
 
-nav.navbar img.navbarLogo
+.navbarLogo
 {
-  z-index: 3;
-  position: absolute;
-  top: 10px;
-  left: 50px;
-  height: 70px;
-  width: 140px;
-  animation: bounce 1s ease;
+  align-self: center;
+  margin-right: auto;
+  margin-left: 20px;
+  height: 50px;
+  width: 100px;
+}
+
+.navbarLogo img
+{
+  height: 100%;
+  width: 100%;
 }
 
 nav.navbar a.navbarTab img.navPicture
@@ -176,10 +179,50 @@ med-svg.navPicture svg
   fill: white;
 }
 
+.svg-ui-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  justify-content: flex-end;
+}
+
+.svg-ui
+{
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+}
+
+.svg-ui *
+{
+  width: 100%;
+  height: 100%;
+}
+
+.star
+{
+  fill: rgb(255, 255, 0);
+}
+
+.time
+{
+  fill: rgb(255, 255, 255);
+}
+
+.love
+{
+  fill: rgb(117, 0, 0);
+}
+
+.head
+{
+  fill: rgb(0, 100, 0);
+}
+
 nav.navbar a.navbarTab
 {
   cursor: pointer;
-  vertical-align: top;
   width: 100px;
   text-align: center;
   height: 100%;
@@ -187,17 +230,7 @@ nav.navbar a.navbarTab
   visibility: visible;
 }
 
-a.navbarTab.ng-hide-remove
-{
-  -webkit-transform: translate(-500%, 0);
-  -moz-transform: translate(-500%, 0);
-  -ms-transform: translate(-500%, 0);
-  -o-transform: translate(-500%, 0);
-  transform: translate(-500%, 0);
-  opacity: 0;
-}
-
-a.navbarTab.ng-hide-add.ng-hide-add-active
+a.navbarTab.ng-hide-remove, a.navbarTab.ng-hide-add.ng-hide-add-active
 {
   -webkit-transform: translate(-500%, 0);
   -moz-transform: translate(-500%, 0);
@@ -234,7 +267,7 @@ div.navPictureLittle
 
 div.navPictureLittle svg
 {
-   width: 100%;
+  width: 100%;
   height: 100%;
   transition-duration: 0.5s;
   fill: white;
@@ -291,7 +324,7 @@ div.containerWithNavbar
 {
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 80px);
   width: 100vw;
   -webkit-transition: transform 0.7s, height 0.3s;
   -moz-transition: transform 0.7s, height 0.3s;
@@ -303,7 +336,7 @@ div.containerWithoutNavbar
 {
   z-index: 0;
   position: absolute;
-  top: 8vh;
+  top: 80px;
   width: 100vw;
   height: 100vh;
   -webkit-transform: translate(0, -80px);
@@ -498,11 +531,11 @@ article div div.infoBloc img
   overflow: hidden;
   position: fixed;
   display: flex;
+  justify-content: center;
   bottom: 0;
+  left: 0;
   z-index: 2;
   width: 100%;
-  justify-content: center;
-  visibility: visible;
 }
 
 .indexCircle
@@ -751,6 +784,8 @@ span.project-language
 
 aside.UI
 {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   font-size: 36px;
 }
@@ -891,6 +926,11 @@ div.bloc.picture med-svg svg, div.bloc.picture img
   width: auto;
 }
 
+.marged-top-2 svg
+{
+  margin-top: 2px;
+}
+
 .marged-2
 {
   margin: 2px;
@@ -951,7 +991,7 @@ div.bloc.picture:hover
 
 aside.inSkill
 {
-  font-size: 3vh;
+  font-size: 30px;
   margin-top: 1.5%;
   height: 15%;
 }
@@ -961,7 +1001,6 @@ aside.rangePercentageContainer
   font-weight: bold;
   font-family: futura, "Comic Sans MS", cursive, sans-serif;
   background-color: rgb(40, 34, 53);
-  max-height: 75px;
 }
 
 aside.rangePercentageContainer span
@@ -969,7 +1008,7 @@ aside.rangePercentageContainer span
   text-transform: uppercase;
 }
 
-aside.rangePercentageContainer span.skillInRange
+aside.rangePercentageContainer div.skillInRange
 {
   margin-left: 10px;
   float: left;
@@ -1021,7 +1060,7 @@ aside.rangePercentageContainer div.rangePercentage.time
   flex-grow: 1;
   width: calc(20vw - 2% - 1em);
   min-width: 300px;
-  height: 37vh;
+  height: 370px;
   animation: opacityOnLoad 1s;
 }
 
@@ -1057,18 +1096,19 @@ fieldset div.lifeInfo
 
 #school div fieldset div.lifeInfo
 {
-  font-size: 5vh;
+  font-size: 50px;
 }
 
 #work div fieldset div.lifeInfo
 {
-  font-size: 5vh;
+  font-size: 50px;
 }
 
 #school, #work
 {
   min-width: 500px;
   width: 50%;
+  flex-grow: 1;
 }
 
 #school div, #work div
@@ -1249,7 +1289,6 @@ aside.sidebarShowButton med-svg svg
   nav.navbar
   {
     justify-content: space-around;
-    font-size: 14px;
   }
 
   nav.navbar a.navbarTab

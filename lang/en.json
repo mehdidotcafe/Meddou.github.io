@@ -39,6 +39,7 @@
       "projectName": "Project's Name",
       "language": "Language",
       "place": "City",
+      "difficulty": "Difficulty",
       "persons": "Team's Length",
       "love": "Love",
       "inWeek": "In weeks"
