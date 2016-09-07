@@ -8,26 +8,26 @@
   },
   "me": {
     "me": {
-      "developper": "*_Dev_*eloppeur",
-      "years": "ans",
-      "hours": "heures",
-      "secondes": "secondes",
+      "developper": "*_Dév_*eloppeur",
+      "years": "Ans",
+      "hours": "Heures",
+      "secondes": "Secondes",
       "Ilike": "J'aime bien",
       "codingArt": "Coder *_=_* Art",
-      "currentSatus": "Actuellement en deuxieme annee a",
+      "currentSatus": "Actuellement en deuxième année à",
       "toNavigate": "Pour naviguer",
       "studient": "Etudian*_t_*",
       "myResume": "Mon CV"
     },
     "skills": {
       "click": "Cliquez pour voir les projets dans ce langage",
-      "skill": "*_C_*ompetences",
+      "skill": "*_C_*ompétences",
       "love": "Affectio*_n_*"
     },
     "experience": {
-      "years": "Annee",
+      "years": "Année",
       "title": "Titre",
-      "duration": "Duree",
+      "duration": "Durée",
       "status": "Poste"
     }
   },
@@ -36,7 +36,7 @@
       "projectName": "Nom du projet",
       "language": "Langage",
       "place": "Lieu",
-      "difficulty": "Difficulte",
+      "difficulty": "Difficulté",
       "persons": "Personnes",
       "love": "Affection",
       "inWeek": "En Semaines"
@@ -44,10 +44,10 @@
     "projectView": {
       "techno": "Technologies",
       "debriefing": "Debrief*_ing_*",
-      "projectSummary": "Resume du *_sujet_*",
-      "difficulties": "Difficultes",
+      "projectSummary": "Resumé du *_sujet_*",
+      "difficulties": "Difficultés",
       "time": "Temps",
-      "downloadMe": "Telechargez moi !",
+      "downloadMe": "Téléchargez moi !",
       "link": "Lien"
    },
    "click": "Cliquez pour voir le projet"
