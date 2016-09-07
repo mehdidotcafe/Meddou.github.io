@@ -10,8 +10,8 @@
     "ico": "images/projects/gauntlet.png",
     "downloadLink": "",
     "description": [
-      "Gauntlet-like en Ogre3D avec menus, sons, ennemies, IA...",
-      "Comprehension de la librarie, IA."
+      "Gauntlet-like en Ogre3D avec menus, sons, scores, ennemies, IA, map faite maison ...",
+      "Comprehension de la librarie, IA en pathfiding."
     ]
   },
   "zappy": {
@@ -41,12 +41,12 @@
     "downloadLink": "",
     "description": [
       "Des fourmis guerrieres qui veulent envahir la base adverse dans un graphe.",
-      "Interface graphique en OpenGL, Arbre binaire."
+      "Interface graphique en OpenGL, Arbre binaire, IA A*."
     ]
   },
   "corewar": {
     "name": "Corewar",
-    "language": ["c", "sdl"],
+    "language": ["c", "openGL"],
     "time": 3,
     "difficulty": 5,
     "context": "school",
@@ -56,7 +56,7 @@
     "downloadLink": "",
     "description": [
       "Jeu de programmation ou deux programmes informatiques s'affrontent. Ces programmes sont ecris en Redcode",
-      "Les instructions redcode"
+      "Instructions redcode, UI OpenGL"
     ]
   },
   "arcade": {
@@ -71,7 +71,23 @@
     "downloadLink": "",
     "description": [
       "Borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUIs (sfml, ncurses, opengl).",
-      "Une architecture qui se devait d'etre generique."
+      "Architecture qui se devait d'etre generique."
+    ]
+  },
+  "cll1p": {
+    "name": "C_LL(1) P",
+    "language": ["c"],
+    "time": 1,
+    "difficulty": 4,
+    "context": "home",
+    "numberPerson": 1,
+    "love": 4,
+    "ico": "images/projects/cll1p.png",
+    "downloadLink": "",
+    "description": [
+      "Parser LL(1) generique",
+      "",
+      "https://github.com/Meddou/CLL1P"
     ]
   },
   "this": {
@@ -118,7 +134,7 @@
     "downloadLink": "",
     "description": [
       "Extension chrome permettant a partir du dom Deezer de rechercher un album sur un site defini.",
-      "Comprehension du fonctionnement d'une extension Google Chrome.",
+      "Fonctionnement d'une extension Google Chrome.",
       ""
     ]
   },
@@ -193,7 +209,7 @@
     "ico": "images/projects/amazeing.png",
     "downloadLink": "",
     "description": [
-      "Generateur et solveur de labyrinthe en OCAML."
+      "Generateur et solveur de labyrinthe en OCAML avec une UI SDL."
     ]
   },
   "philosophes": {
@@ -255,7 +271,7 @@
     ]
   },
   "bsq": {
-    "name": "BSQ",
+    "name": "bsq",
     "language": ["c"],
     "time": 1,
     "difficulty": 2,

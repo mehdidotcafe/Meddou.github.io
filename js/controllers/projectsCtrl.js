@@ -1,6 +1,6 @@
 var projectApp = angular.module("projectsCtrl", ["indexingServiceApp", "postParamsApp"])
 
-projectApp.controller("projectsCtrl", function($scope, indexingService, $location)
+projectApp.controller("projectsCtrl", function($scope, indexingService, $location, $sce)
 {
   $scope.visibleSidebar = true;
   $scope.currentProject = undefined;
