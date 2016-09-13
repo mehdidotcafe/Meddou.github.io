@@ -1,7 +1,7 @@
 {
   "gauntlet": {
     "name": "Gauntlet",
-    "language": ["c++", "ogre3d"],
+    "language": ["C++", "Ogre3D"],
     "time": 2,
     "difficulty": 4,
     "context": "school",
@@ -10,13 +10,13 @@
     "ico": "images/projects/gauntlet.png",
     "downloadLink": "",
     "description": [
-      "Gauntlet-like en Ogre3D avec menus, sons, scores, ennemies, IA, map faite maison ...",
-      "Comprehension de la librarie, IA en pathfiding."
+      "Gauntlet-like en Ogre3D avec menus, sons, scores, sauvegarde, ennemies, IA, map faite maison ...",
+      "Comprehension de la librairie, IA en pathfiding."
     ]
   },
   "zappy": {
     "name": "Zappy",
-    "language": ["c", "c++", "unity"],
+    "language": ["C", "C++", "Unity"],
     "time": 2,
     "difficulty": 5,
     "context": "school",
@@ -25,13 +25,13 @@
     "ico": "images/projects/zappy.png",
     "downloadLink": "",
     "description": [
-      "Jeu de gestion en reseau a la maniere d'un Sims ou les joueurs sont controles par des IAs.",
-      "Interface en Unity3D, IA en C++ qui doit prendre les meilleurs decisions, serveur asychrone en C."
+      "Jeu de gestion en réseau a la manière d'un Sims ou les joueurs sont controlés par des IAs.",
+      "Interface en Unity3D, IA en C++ qui doit prendre les meilleurs décisions, serveur asychrone en C."
     ]
   },
   "lemin": {
     "name": "Lemin",
-    "language": ["c", "opengl"],
+    "language": ["C", "OpenGL"],
     "time": 4,
     "difficulty": 4,
     "context": "school",
@@ -40,13 +40,13 @@
     "ico": "images/projects/lemin.png",
     "downloadLink": "",
     "description": [
-      "Des fourmis guerrieres qui veulent envahir la base adverse dans un graphe.",
+      "Des fourmis guerrières qui veulent envahir la base adverse dans un graphe.",
       "Interface graphique en OpenGL, Arbre binaire, IA A*."
     ]
   },
   "corewar": {
     "name": "Corewar",
-    "language": ["c", "openGL"],
+    "language": ["C", "OpenGL"],
     "time": 3,
     "difficulty": 5,
     "context": "school",
@@ -55,13 +55,13 @@
     "ico": "images/projects/corewar.png",
     "downloadLink": "",
     "description": [
-      "Jeu de programmation ou deux programmes informatiques s'affrontent. Ces programmes sont ecris en Redcode",
-      "Instructions redcode, UI OpenGL"
+      "Jeu de programmation ou plusieurs programmes informatiques s'affrontent. Ces programmes sont écris en Redcode.",
+      "Instructions redcode, UI OpenGL."
     ]
   },
   "arcade": {
     "name": "Arcade",
-    "language": ["c", "opengl", "ncurses", "sfml"],
+    "language": ["C", "OpenGL", "NCurses", "SFML"],
     "time": 3,
     "difficulty": 4,
     "context": "school",
@@ -71,12 +71,12 @@
     "downloadLink": "",
     "description": [
       "Borne d'arcade virtuelle pouvant switcher entre trois jeux (pacman, nibbler, centipede) et trois GUIs (sfml, ncurses, opengl).",
-      "Architecture qui se devait d'etre generique."
+      "Architecture qui se devait d'être générique."
     ]
   },
   "cll1p": {
     "name": "C_LL(1) P",
-    "language": ["c"],
+    "language": ["C"],
     "time": 1,
     "difficulty": 4,
     "context": "home",
@@ -85,14 +85,14 @@
     "ico": "images/projects/cll1p.png",
     "downloadLink": "",
     "description": [
-      "Parser LL(1) generique",
+      "Parser LL(1) générique.",
       "",
       "https://github.com/Meddou/CLL1P"
     ]
   },
   "this": {
     "name": "Meddou.github.io",
-    "language": ["javascript", "angularjs", "html"],
+    "language": ["Javascript", "Angularjs", "HTML"],
     "time": 8,
     "difficulty": 3,
     "context": "home",
@@ -108,7 +108,7 @@
   },
   "yeyo": {
     "name": "Yeyo",
-    "language": ["Javascript", "electron", "html", "css"],
+    "language": ["Javascript", "Electron", "HTML"],
     "time": 2,
     "difficulty": 2,
     "context": "home",
@@ -133,14 +133,14 @@
     "ico": "images/projects/deezdl.png",
     "downloadLink": "",
     "description": [
-      "Extension chrome permettant a partir du dom Deezer de rechercher un album sur un site defini.",
+      "Extension chrome permettant à partir de Deezer de rechercher un album sur un site defini.",
       "Fonctionnement d'une extension Google Chrome.",
       ""
     ]
   },
   "c_container": {
     "name": "C_Container",
-    "language": ["c"],
+    "language": ["C"],
     "time": 1,
     "difficulty": 1,
     "context": "home",
@@ -149,15 +149,15 @@
     "ico": "images/projects/ccontainer.png",
     "downloadLink": "",
     "description": [
-      "Librarie de containers generiques en c, comme la STL de c++.",
+      "Librairie de containers génériques en C, comme la STL de C++.",
       "",
       "https://github.com/Meddou/C_Container"
     ]
   },
   "cloudindus": {
     "name": "Cloudindus",
-    "language": ["javascript", "angularjs", "nodejs", "mongodb", "html"],
-    "time": 24,
+    "language": ["Javascript", "Angularjs", "Nodejs", "Mongodb", "HTML"],
+    "time": 8,
     "difficulty": 5,
     "context": "school",
     "numberPerson": 5,
@@ -165,8 +165,8 @@
     "ico": "images/projects/cloudindus.png",
     "downloadLink": "",
     "description": [
-      "Ma premiere vraie experience dans le monde professionel. Realisation d'un site de d'objet connectes en AngularJS.",
-      "Un code tres peu documente."
+      "Ma première expérience dans le monde professionel. Réalisation d'un site de d'objet connectés en AngularJS.",
+      "Un code très peu documenté."
     ]
   },
   "raytracer": {
@@ -180,13 +180,13 @@
     "ico": "images/projects/raytracer.png",
     "downloadLink": "",
     "description": [
-      "Generateur d'images de sythese en reseau et selon un fichier de configuration.",
-      "Une librarie interne a Epitech assez compliquee a utiliser."
+      "Générateur d'images de sythèse en réseau, selon un fichier de configuration.",
+      "Librairie interne à Epitech assez compliquée à utiliser."
     ]
   },
   "minishell2": {
     "name": "Minishell 2",
-    "language": ["c", "termcaps"],
+    "language": ["C", "Termcaps"],
     "time": 2,
     "difficulty": 3,
     "context": "school",
@@ -209,12 +209,12 @@
     "ico": "images/projects/amazeing.png",
     "downloadLink": "",
     "description": [
-      "Generateur et solveur de labyrinthe en OCAML avec une UI SDL."
+      "Générateur et solveur de labyrinthe en OCAML avec une UI SDL."
     ]
   },
   "philosophes": {
     "name": "Philosophes",
-    "language": ["c", "SDL"],
+    "language": ["C", "SDL"],
     "time": 2,
     "difficulty": 2,
     "context": "school",
@@ -223,12 +223,12 @@
     "ico": "images/projects/philosophes.png",
     "downloadLink": "",
     "description": [
-      "Projet pour apprendre les threads/mutex mettant en avant le probleme des philosophes avec une interface en SDL."
+      "Projet pour apprendre les threads/mutex mettant en avant le problème des philosophes avec une interface en SDL."
     ]
   },
   "my irc": {
     "name": "My IRC",
-    "language": ["c"],
+    "language": ["C"],
     "time": 2,
     "difficulty": 1,
     "context": "school",
@@ -242,7 +242,7 @@
   },
   "bocalEmblem": {
     "name": "Bocal Emblem",
-    "language": ["c", "sfml"],
+    "language": ["C", "SMFL"],
     "time": 1,
     "difficulty": 2,
     "context": "school",
@@ -252,12 +252,12 @@
     "downloadLink": "",
     "description": [
       "Rush de 48h. Fire-Emblem like avec une interface graphique en CSFML.",
-      "Le delai."
+      "Le délai."
     ]
   },
   "Wolf3d": {
-    "name": "Wolf3d",
-    "language": ["c", "libx"],
+    "name": "Wolf3D",
+    "language": ["C", "LibX"],
     "time": 2,
     "difficulty": 3,
     "context": "school",
@@ -267,12 +267,12 @@
     "downloadLink": "",
     "description": [
       "Un Wolf3D en raycasting avec apparition de monstres.",
-      "Une lib assez compliquee."
+      "Une librarie assez compliquée."
     ]
   },
   "bsq": {
-    "name": "bsq",
-    "language": ["c"],
+    "name": "BSQ",
+    "language": ["C"],
     "time": 1,
     "difficulty": 2,
     "context": "school",
@@ -281,7 +281,7 @@
     "ico": "images/projects/bsq.png",
     "downloadLink": "",
     "description": [
-      "Algorithme de recherche du plus grand carre dans un carre parseme d'obstacle."
+      "Algorithme de recherche du plus grand carré dans un carré parsemé d'obstacles."
     ]
   },
   "pushswap": {
@@ -295,13 +295,13 @@
     "ico": "images/projects/pushswap.png",
     "downloadLink": "",
     "description": [
-      "Algorithme de tri d'une liste de nombre dans l'ordre croissant avec des commandes limitees.",
-      "Complexite de l'algorithme, algorithme inspire du tri rapide avec definition d'une valeur pivot."
+      "Algorithme de tri d'une liste de nombre dans l'ordre croissant avec des commandes limitées.",
+      "Complexité de l'algorithme, algorithme inspiré du tri rapide avec définition d'une valeur pivot."
     ]
   },
   "snake": {
     "name": "Snake",
-    "language": ["java", "AWT"],
+    "language": ["Java", "AWT"],
     "time": 1,
     "difficulty": 1,
     "context": "home",
