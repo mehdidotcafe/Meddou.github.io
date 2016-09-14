@@ -64,13 +64,6 @@
     "love": 65
   },
   {
-    "type": "ASM",
-    "img": "images/skills/asm.png",
-    "comments": "leave ♥",
-    "percentage": 60,
-    "love": 60
-  },
-  {
     "type": "Java",
     "img": "images/skills/java.svg",
     "comments": "Garbage Collector ♥",
@@ -78,11 +71,25 @@
     "love": 95
   },
   {
+    "type": "Lua",
+    "img": "images/skills/lua.svg",
+    "comments": "Tables ♥",
+    "percentage": 60,
+    "love": 80
+  },
+  {
     "type": "SFML",
     "img": "images/skills/SFML.svg",
     "comments": "sfRenderWindow ♥",
     "percentage": 55,
     "love": 85
+  },
+  {
+    "type": "ASM",
+    "img": "images/skills/asm.png",
+    "comments": "leave ♥",
+    "percentage": 50,
+    "love": 60
   },
   {
     "type": "MySQL",
@@ -95,7 +102,7 @@
     "type": "Unity",
     "img": "images/skills/unity.svg",
     "comments": "3D ♥",
-    "percentage": 30,
+    "percentage": 20,
     "love": 90
   },
   {

@@ -896,7 +896,7 @@ aside.UI
 div.bloc.picture
 {
   transition: 1s;
-  height: 60%;
+  height: 195px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -915,7 +915,6 @@ div.bloc.picture med-svg, div.bloc.picture img
 div.bloc.picture med-svg svg, div.bloc.picture img
 {
   transition: 1s;
-  height: 60%;
   width: auto;
 }
 
@@ -1010,7 +1009,7 @@ aside.rangePercentageContainer span.percentageInRange
 aside.rangePercentageContainer div.rangePercentage
 {
   position: absolute;
-  height: 5px;
+  height: 6px;
   bottom: 0px;
   width: 0px;
   transition: 2s ease-in-out width;
@@ -1045,10 +1044,15 @@ aside.rangePercentageContainer div.rangePercentage.time
 .skillBloc
 {
   flex-grow: 1;
-  width: calc(20vw - 2% - 1em);
+  width: calc(20% - 4px);
   min-width: 300px;
-  height: 370px;
+  margin-bottom: 10px;
   animation: opacityOnLoad 1s;
+}
+
+.skillBloc:last-of-type
+{
+  flex-grow: 0 !important;
 }
 
 .skillBloc .picture {
@@ -1166,6 +1170,11 @@ aside.sidebarShowButton med-svg svg
 .no-extend
 {
    object-fit: contain;
+}
+
+.cover
+{
+  object-fit: cover;
 }
 
 .height-200
