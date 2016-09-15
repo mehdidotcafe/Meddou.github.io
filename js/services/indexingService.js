@@ -12,19 +12,9 @@ sliderService.service("indexingService", function($timeout)
       max: 3,
       currIdx: 0
     },
-    "Blog": {
-      name: "Blog",
-      max: 2,
-      currIdx: 0
-    },
     "Projects": {
       name: "Projects",
       max: 2,
-      currIdx: 0
-    },
-    "Contact": {
-      name: "Contact",
-      max: 1,
       currIdx: 0
     }
   };

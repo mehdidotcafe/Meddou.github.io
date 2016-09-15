@@ -171,7 +171,7 @@
   },
   "raytracer": {
     "name": "Raytracer",
-    "language": ["c", "libx"],
+    "language": ["C", "LibX"],
     "time": 4,
     "difficulty": 4,
     "context": "school",
@@ -242,7 +242,7 @@
   },
   "bocalEmblem": {
     "name": "Bocal Emblem",
-    "language": ["C", "SMFL"],
+    "language": ["C", "SFML"],
     "time": 1,
     "difficulty": 2,
     "context": "school",
@@ -286,7 +286,7 @@
   },
   "pushswap": {
     "name": "Pushswap",
-    "language": ["c"],
+    "language": ["C"],
     "time": 1,
     "difficulty": 2,
     "context": "school",
