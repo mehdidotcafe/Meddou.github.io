@@ -12,23 +12,32 @@
         "thing": "Lycee",
         "name": "Thiers",
         "year": "2014",
-        "title": "Baccalaureat Scientifique",
+        "title": "Baccalauréat Scientifique",
         "img": "./images/cv/thiers.jpg",
         "place": "Marseille"
       }
     ],
     "works": [
       {
-        "thing": "Stage A",
+        "thing": "Alternance à",
         "name": "Logique Industrie",
-        "year": "2015",
+        "year": "2016",
         "length": "6 mois",
-        "job": "Developpeur",
+        "job": "Développeur",
         "img": "./images/projects/cloudindus.png",
         "place": "Bouc Bel Air"
       },
       {
-        "thing": "Stage A",
+        "thing": "Stage à",
+        "name": "Logique Industrie",
+        "year": "2015",
+        "length": "6 mois",
+        "job": "Développeur",
+        "img": "./images/projects/cloudindus.png",
+        "place": "Bouc Bel Air"
+      },
+      {
+        "thing": "Stage à",
         "name": "Numericable",
         "year": "2012",
         "length": "1 semaine",
@@ -37,7 +46,7 @@
         "place": "Marseille"
       },
       {
-        "thing": "Stage A",
+        "thing": "Stage à",
         "name": "Micromania",
         "year": "2011",
         "length": "1 semaine",
