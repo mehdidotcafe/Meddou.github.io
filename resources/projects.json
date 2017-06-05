@@ -1,4 +1,35 @@
 {
+  "foodyBasket": {
+    "name": "Foody Basket",
+    "language": ["Lua", "Corona", "Android"],
+    "time": 5,
+    "difficulty": 5,
+    "context": "home",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "images/projects/foodyBasket.png",
+    "downloadLink": "",
+    "description": [
+      "Jeu mobile de basket avec de la nourriture de fast-food.",
+      "Interface graphique, IA, Cross-platform, Design, ...",
+      "https://play.google.com/store/apps/details?id=fr.hotmail.meddegivet.FoodyBasket&hl=fr"
+    ]
+  },
+  "rtype": {
+    "name": "Rtype",
+    "language": ["C++", "SFML"],
+    "time": 2,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 6,
+    "love": 5,
+    "ico": "images/projects/rtype.png",
+    "downloadLink": "",
+    "description": [
+      "RType en réseau avec des vagues de monstres progressives.",
+      "Interface en SFML, IA, Réseau, Lobby, Cross-platform, ..."
+    ]
+  },
   "gauntlet": {
     "name": "Gauntlet",
     "language": ["C++", "Ogre3D"],
@@ -12,6 +43,21 @@
     "description": [
       "Gauntlet-like en Ogre3D avec menus, sons, scores, sauvegarde, ennemies, IA, map faite maison ...",
       "Comprehension de la librairie, IA en pathfiding."
+    ]
+  },
+  "babel": {
+    "name": "Babel",
+    "language": ["C++", "QT"],
+    "time": 2,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 5,
+    "love": 5,
+    "ico": "images/projects/babel.png",
+    "downloadLink": "",
+    "description": [
+      "Logiciel de communication audio comme Skype",
+      "Comprehension du VoIP, Réseau, Interface Graphique."
     ]
   },
   "zappy": {
@@ -135,7 +181,7 @@
     "description": [
       "Extension chrome permettant à partir de Deezer de rechercher un album sur un site defini.",
       "Fonctionnement d'une extension Google Chrome.",
-      ""
+      "https://chrome.google.com/webstore/detail/deezdl/ojkgeljdeihmnoamceidbdlcfogjlmmg"
     ]
   },
   "c_container": {
@@ -157,7 +203,7 @@
   "cloudindus": {
     "name": "Cloudindus",
     "language": ["Javascript", "Angularjs", "Nodejs", "Mongodb", "HTML"],
-    "time": 8,
+    "time": 5,
     "difficulty": 5,
     "context": "school",
     "numberPerson": 5,

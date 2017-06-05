@@ -53,7 +53,7 @@
     "type": "OCAML",
     "img": "images/skills/ocaml.svg",
     "comments": "match ... with ♥",
-    "percentage": 70,
+    "percentage": 60,
     "love": 75
   },
   {
@@ -64,18 +64,32 @@
     "love": 65
   },
   {
+    "type": "Corona",
+    "img": "images/skills/corona.png",
+    "comments": "2D ♥",
+    "percentage": 65,
+    "love": 90
+  },
+  {
     "type": "Java",
     "img": "images/skills/java.svg",
     "comments": "Garbage Collector ♥",
     "percentage": 60,
-    "love": 95
+    "love": 85
+  },
+  {
+    "type": "PHP",
+    "img": "images/skills/PHP.svg",
+    "comments": "$_SESSION ♥",
+    "percentage": 60,
+    "love": 45
   },
   {
     "type": "Lua",
     "img": "images/skills/lua.svg",
     "comments": "Tables ♥",
     "percentage": 60,
-    "love": 80
+    "love": 70
   },
   {
     "type": "SFML",
@@ -84,13 +98,7 @@
     "percentage": 55,
     "love": 85
   },
-  {
-    "type": "ASM",
-    "img": "images/skills/asm.png",
-    "comments": "leave ♥",
-    "percentage": 50,
-    "love": 60
-  },
+
   {
     "type": "MySQL",
     "img": "images/skills/mySql.svg",
@@ -104,6 +112,13 @@
     "comments": "3D ♥",
     "percentage": 20,
     "love": 90
+  },
+  {
+    "type": "ASM",
+    "img": "images/skills/asm.png",
+    "comments": "leave ♥",
+    "percentage": 30,
+    "love": 60
   },
   {
     "type": "Google",

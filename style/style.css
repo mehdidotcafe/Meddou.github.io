@@ -817,8 +817,6 @@ aside.UI
 {
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
 }
 
 .underline
@@ -903,7 +901,7 @@ div.bloc.picture med-svg, div.bloc.picture img
   justify-content: center;
   overflow: hidden;
   display: flex;
-  height: 100%;
+  height: 80%;
   width: 100%;
 }
 
@@ -978,7 +976,7 @@ div.bloc.picture:hover
 aside.inSkill
 {
   font-size: 30px;
-  margin-top: 1.5%;
+  margin-top: 3px;
   height: 15%;
 }
 
