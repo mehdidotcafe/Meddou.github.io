@@ -15,21 +15,6 @@
       "https://play.google.com/store/apps/details?id=fr.hotmail.meddegivet.FoodyBasket&hl=fr"
     ]
   },
-  "rtype": {
-    "name": "Rtype",
-    "language": ["C++", "SFML"],
-    "time": 2,
-    "difficulty": 5,
-    "context": "school",
-    "numberPerson": 6,
-    "love": 5,
-    "ico": "images/projects/rtype.png",
-    "downloadLink": "",
-    "description": [
-      "RType en réseau avec des vagues de monstres progressives.",
-      "Interface en SFML, IA, Réseau, Lobby, Cross-platform, ..."
-    ]
-  },
   "gauntlet": {
     "name": "Gauntlet",
     "language": ["C++", "Ogre3D"],
@@ -43,6 +28,37 @@
     "description": [
       "Gauntlet-like en Ogre3D avec menus, sons, scores, sauvegarde, ennemies, IA, map faite maison ...",
       "Comprehension de la librairie, IA en pathfiding."
+    ]
+  },
+  "deezdl": {
+    "name": "Deezdl",
+    "language": ["Javascript", "Chrome"],
+    "time": 1,
+    "difficulty": 3,
+    "context": "home",
+    "numberPerson": 1,
+    "love": 5,
+    "ico": "images/projects/deezdl.png",
+    "downloadLink": "",
+    "description": [
+      "Extension chrome permettant à partir de Deezer de rechercher un album sur un site defini.",
+      "Fonctionnement d'une extension Google Chrome.",
+      "https://chrome.google.com/webstore/detail/deezdl/ojkgeljdeihmnoamceidbdlcfogjlmmg"
+    ]
+  },
+  "rtype": {
+    "name": "Rtype",
+    "language": ["C++", "SFML"],
+    "time": 2,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 6,
+    "love": 5,
+    "ico": "images/projects/rtype.png",
+    "downloadLink": "",
+    "description": [
+      "RType en réseau avec des vagues de monstres progressives.",
+      "Interface en SFML, IA, Réseau, Lobby, Cross-platform, ..."
     ]
   },
   "babel": {
@@ -166,22 +182,6 @@
       "Lecteur mp3 de bureau assez simple utilisant Electron.",
       "Encodage des metadata d'un fichier mp3.",
       "https://github.com/Meddou/yeyo"
-    ]
-  },
-  "deezdl": {
-    "name": "Deezdl",
-    "language": ["Javascript", "Chrome"],
-    "time": 1,
-    "difficulty": 3,
-    "context": "home",
-    "numberPerson": 1,
-    "love": 5,
-    "ico": "images/projects/deezdl.png",
-    "downloadLink": "",
-    "description": [
-      "Extension chrome permettant à partir de Deezer de rechercher un album sur un site defini.",
-      "Fonctionnement d'une extension Google Chrome.",
-      "https://chrome.google.com/webstore/detail/deezdl/ojkgeljdeihmnoamceidbdlcfogjlmmg"
     ]
   },
   "c_container": {
