@@ -50,11 +50,18 @@
     "love": 75
   },
   {
-    "type": "OCAML",
-    "img": "images/skills/ocaml.svg",
-    "comments": "match ... with ♥",
-    "percentage": 60,
-    "love": 75
+    "type": "PHP",
+    "img": "images/skills/PHP.svg",
+    "comments": "$_SESSION ♥",
+    "percentage": 70,
+    "love": 70
+  },
+  {
+    "type": "Laravel",
+    "img": "images/skills/laravel.svg",
+    "comments": "Facades ♥",
+    "percentage": 70,
+    "love": 90
   },
   {
     "type": "MongoDB",
@@ -71,18 +78,18 @@
     "love": 90
   },
   {
+    "type": "OCAML",
+    "img": "images/skills/ocaml.svg",
+    "comments": "match ... with ♥",
+    "percentage": 60,
+    "love": 75
+  },
+  {
     "type": "Java",
     "img": "images/skills/java.svg",
     "comments": "Garbage Collector ♥",
     "percentage": 60,
     "love": 85
-  },
-  {
-    "type": "PHP",
-    "img": "images/skills/PHP.svg",
-    "comments": "$_SESSION ♥",
-    "percentage": 60,
-    "love": 45
   },
   {
     "type": "Lua",
