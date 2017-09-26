@@ -19,6 +19,15 @@
     ],
     "works": [
       {
+        "thing": "Stage à",
+        "name": "Axis Immobilier",
+        "year": "2017",
+        "length": "6 mois",
+        "job": "Développeur full stack",
+        "img": "./images/projects/theBabelCo.png",
+        "place": "Marseille"
+      },
+      {
         "thing": "Alternance à",
         "name": "Logique Industrie",
         "year": "2016",

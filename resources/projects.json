@@ -15,6 +15,51 @@
       "https://play.google.com/store/apps/details?id=fr.hotmail.meddegivet.FoodyBasket&hl=fr"
     ]
   },
+  "babelAxis": {
+    "name": "The Babel Co",
+    "language": ["Laravel", "Php", "SQL", "CSS", "HTML", "Javascript"],
+    "time": 5,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 5,
+    "love": 4,
+    "ico": "images/projects/theBabelCo.png",
+    "downloadLink": "",
+    "description": [
+      "Développement d'une app en technologie web pour la résidence \"The Babel Community\". Les clients peuvent réserver au restaurant depuis l'app, s'inscrire à des cours de sport ...",
+      "Responsive, API externes."
+    ]
+  },
+  "erpAxis": {
+    "name": "ERP Axis Immobilier",
+    "language": ["Javascript", "Php", "SQL", "CSS", "HTML"],
+    "time": 5,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 5,
+    "love": 4,
+    "ico": "images/projects/intraaxis.png",
+    "downloadLink": "",
+    "description": [
+      "Développement d'un ERP pour Axis Immobilier. Outil central de la société, il regroupe toutes ses informations, les réservations, les prospects, les travaux ...",
+      "Code très peu documenté."
+    ]
+  },
+  "cloudindus": {
+    "name": "Cloudindus",
+    "language": ["Javascript", "Angularjs", "Nodejs", "Mongodb", "HTML"],
+    "time": 5,
+    "difficulty": 5,
+    "context": "school",
+    "numberPerson": 5,
+    "love": 4,
+    "ico": "images/projects/cloudindus.png",
+    "downloadLink": "",
+    "description": [
+      "Ma première expérience dans le monde professionel. Réalisation d'un site de d'objet connectés en MEAN Stack.",
+      "Un code très peu documenté."
+    ]
+  },
   "gauntlet": {
     "name": "Gauntlet",
     "language": ["C++", "Ogre3D"],
@@ -198,21 +243,6 @@
       "Librairie de containers génériques en C, comme la STL de C++.",
       "",
       "https://github.com/Meddou/C_Container"
-    ]
-  },
-  "cloudindus": {
-    "name": "Cloudindus",
-    "language": ["Javascript", "Angularjs", "Nodejs", "Mongodb", "HTML"],
-    "time": 5,
-    "difficulty": 5,
-    "context": "school",
-    "numberPerson": 5,
-    "love": 4,
-    "ico": "images/projects/cloudindus.png",
-    "downloadLink": "",
-    "description": [
-      "Ma première expérience dans le monde professionel. Réalisation d'un site de d'objet connectés en AngularJS.",
-      "Un code très peu documenté."
     ]
   },
   "raytracer": {
