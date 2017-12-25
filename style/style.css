@@ -148,6 +148,7 @@ nav.navbar.ng-hide
 
 .navbarLogo
 {
+  z-index: 999;
   align-self: center;
   margin-right: auto;
   margin-left: 20px;

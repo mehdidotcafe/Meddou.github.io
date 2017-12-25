@@ -19,6 +19,24 @@
     ],
     "works": [
       {
+        "thing": "Freelancer à ",
+        "name": "The Babel Community",
+        "year": "2017",
+        "length": "2 mois",
+        "job": "Développeur web app",
+        "img": "./images/projects/theBabelCo.png",
+        "place": "Marseille"
+      },
+      {
+        "thing": "Freelancer à ",
+        "name": "REDLIGHT GAMING",
+        "year": "2017",
+        "length": "3 mois",
+        "job": "Développeur full stack",
+        "img": "./images/projects/matemeup.jpg",
+        "place": "Paris"
+      },
+      {
         "thing": "Stage à",
         "name": "Axis Immobilier",
         "year": "2017",
