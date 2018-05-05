@@ -43,6 +43,13 @@
     "love": 80
   },
   {
+    "type": "React",
+    "img": "images/skills/react.svg",
+    "comments": "MVC ♥",
+    "percentage": 80,
+    "love": 90
+  },
+  {
     "type": "Redis",
     "img": "images/skills/redis.svg",
     "comments": "Expire ♥",
