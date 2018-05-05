@@ -3,119 +3,119 @@
   {
     "type": "C",
     "img": "images/skills/c.svg",
-    "comments": "Malloc ♥",
+    "comments": "Malloc ",
     "percentage": 90,
     "love": 85
   },
   {
     "type": "C++",
     "img": "images/skills/cpp.svg",
-    "comments": "STL ♥",
+    "comments": "STL ",
     "percentage": 90,
     "love": 95
   },
   {
     "type": "Javascript",
     "img": "images/skills/javascript.svg",
-    "comments": "JSON ♥",
+    "comments": "JSON ",
     "percentage": 90,
     "love": 85
   },
   {
     "type": "Html",
     "img": "images/skills/htmlcss.svg",
-    "comments": "Flexboxes ♥",
+    "comments": "Flexboxes ",
     "percentage": 90,
     "love": 75
   },
   {
     "type": "Git",
     "img": "images/skills/git.svg",
-    "comments": "Git merge ♥",
+    "comments": "Git merge ",
     "percentage": 85,
     "love": 80
   },
   {
     "type": "NodeJS",
     "img": "images/skills/nodeJs.svg",
-    "comments": "Express ♥",
+    "comments": "Express ",
     "percentage": 85,
     "love": 85
   },
   {
     "type": "AngularJS",
     "img": "images/skills/angular.png",
-    "comments": "MVC ♥",
+    "comments": "MVC ",
     "percentage": 80,
     "love": 80
   },
   {
     "type": "React",
     "img": "images/skills/react.svg",
-    "comments": "Components ♥",
+    "comments": "Components ",
     "percentage": 80,
     "love": 90
   },
   {
     "type": "Redis",
     "img": "images/skills/redis.svg",
-    "comments": "Expire ♥",
+    "comments": "Expire ",
     "percentage": 80,
     "love": 90
   },
   {
     "type": "PHP",
     "img": "images/skills/PHP.svg",
-    "comments": "$_SESSION ♥",
+    "comments": "$_SESSION ",
     "percentage": 70,
     "love": 70
   },
   {
     "type": "Laravel",
     "img": "images/skills/laravel.svg",
-    "comments": "Facades ♥",
+    "comments": "Facades ",
     "percentage": 70,
     "love": 90
   },
   {
     "type": "MongoDB",
     "img": "images/skills/mongodb.svg",
-    "comments": "Collection.insert ♥",
+    "comments": "Collection.insert ",
     "percentage": 70,
     "love": 65
   },
   {
     "type": "Lua",
     "img": "images/skills/lua.svg",
-    "comments": "Tables ♥",
+    "comments": "Tables ",
     "percentage": 65,
     "love": 70
   },
   {
     "type": "Corona",
     "img": "images/skills/corona.png",
-    "comments": "2D ♥",
+    "comments": "2D ",
     "percentage": 65,
     "love": 90
   },
   {
     "type": "OCAML",
     "img": "images/skills/ocaml.svg",
-    "comments": "match ... with ♥",
+    "comments": "match ... with ",
     "percentage": 60,
     "love": 95
   },
   {
     "type": "Java",
     "img": "images/skills/java.svg",
-    "comments": "Garbage Collector ♥",
+    "comments": "Garbage Collector ",
     "percentage": 60,
     "love": 85
   },
   {
     "type": "SFML",
     "img": "images/skills/SFML.svg",
-    "comments": "sfRenderWindow ♥",
+    "comments": "sfRenderWindow ",
     "percentage": 55,
     "love": 85
   },
@@ -130,21 +130,21 @@
   {
     "type": "Unity",
     "img": "images/skills/unity.svg",
-    "comments": "3D ♥",
+    "comments": "3D ",
     "percentage": 20,
     "love": 90
   },
   {
     "type": "ASM",
     "img": "images/skills/asm.png",
-    "comments": "leave ♥",
+    "comments": "leave ",
     "percentage": 30,
     "love": 60
   },
   {
     "type": "Google",
     "img": "images/skills/google.svg",
-    "comments": "Man Google ♥",
+    "comments": "Man Google ",
     "percentage": 42,
     "love": 42
   }]
