@@ -29,6 +29,13 @@
     "love": 75
   },
   {
+    "type": "MySQL",
+    "img": "images/skills/mySql.svg",
+    "comments": "LEFT JOIN",
+    "percentage": 90,
+    "love": 10
+  },  
+  {
     "type": "Git",
     "img": "images/skills/git.svg",
     "comments": "Git merge ",
@@ -118,14 +125,6 @@
     "comments": "sfRenderWindow ",
     "percentage": 55,
     "love": 85
-  },
-
-  {
-    "type": "MySQL",
-    "img": "images/skills/mySql.svg",
-    "comments": "Select * from epitech_tp < /3",
-    "percentage": 50,
-    "love": 10
   },
   {
     "type": "Unity",
