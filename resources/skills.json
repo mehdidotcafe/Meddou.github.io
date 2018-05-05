@@ -36,6 +36,13 @@
     "love": 80
   },
   {
+    "type": "NodeJS",
+    "img": "images/skills/nodeJs.svg",
+    "comments": "Express ♥",
+    "percentage": 85,
+    "love": 85
+  },
+  {
     "type": "AngularJS",
     "img": "images/skills/angular.png",
     "comments": "MVC ♥",
@@ -55,13 +62,6 @@
     "comments": "Expire ♥",
     "percentage": 80,
     "love": 90
-  },
-  {
-    "type": "NodeJS",
-    "img": "images/skills/nodeJs.svg",
-    "comments": "Backend ♥",
-    "percentage": 75,
-    "love": 75
   },
   {
     "type": "PHP",
